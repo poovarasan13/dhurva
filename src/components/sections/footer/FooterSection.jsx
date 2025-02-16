@@ -11,8 +11,24 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-import { Mail, Phone, Map } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  Map,
+  // Instagram,
+  FacebookIcon,
+  Facebook,
+  Instagram,
+  InstagramIcon,
+  YoutubeIcon,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  FaceIcon,
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+} from "@radix-ui/react-icons";
+// import { InstagramLogoIcon } from "@radix-ui/react-icons";
 
 export default function FooterSection() {
   return (
@@ -77,6 +93,41 @@ export default function FooterSection() {
                   className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
                 >
                   Pass
+                </a>
+              </div>
+            </FooterColumn>
+            <FooterColumn>
+              <h3 className="text-md font-semibold mb-4 text-white">
+                Social Media
+              </h3>
+              <div className="space-y-2">
+                <a
+                  href="#"
+                  className="text-sm text-gray-400 hover:text-pink-400 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
+                >
+                  <InstagramLogoIcon className="w-4 h-4" />
+                  Instagram
+                </a>
+                <a
+                  href="#"
+                  className="text-sm text-gray-400 hover:text-blue-700 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
+                >
+                  <FacebookIcon className="w-4 h-4" />
+                  Facebook
+                </a>
+                <a
+                  href="#"
+                  className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
+                >
+                  <LinkedInLogoIcon className="w-4 h-4" />
+                  LinkedIn
+                </a>
+                <a
+                  href="#"
+                  className="text-sm text-gray-400 hover:text-red-600 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
+                >
+                  <YoutubeIcon className="w-4 h-4" />
+                  YouTube
                 </a>
               </div>
             </FooterColumn>
