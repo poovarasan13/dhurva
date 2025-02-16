@@ -163,7 +163,6 @@ export default function FooterSection() {
               </div>
             </FooterColumn>
 
-            {/* Google Maps Embed */}
             <FooterColumn className="col-span-1 sm:col-span-2 md:col-span-1">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0986519474127!2d77.01979347480649!3d10.880100889275035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba84ffc9b3ea755%3A0xda7508a90583d22f!2sKarpagam%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1739673858861!5m2!1sen!2sin"
@@ -176,7 +175,6 @@ export default function FooterSection() {
             </FooterColumn>
           </FooterContent>
 
-          {/* Footer Bottom */}
           <FooterBottom className="mt-8 border-t border-gray-800 pt-6">
             <div className="text-gray-400 text-sm text-center sm:text-left">
               © 2025 Karpagam College Of Engineering | KCE - IT
@@ -194,7 +192,6 @@ export default function FooterSection() {
               >
                 Terms of Service
               </a>
-              <ModeToggle />
             </div>
           </FooterBottom>
         </Footer>
