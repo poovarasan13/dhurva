@@ -58,13 +58,10 @@ module.exports = {
   			}
   		},
   		fontFamily: {
-  			code: [
-  				'var(--font-mono)'
-  			],
-  			regular: [
-  				'var(--font-body)'
-  			]
-  		},
+			code: ['var(--font-mono)', 'Courier New', 'monospace'],
+			regular: ['var(--font-body)', 'Inter', 'sans-serif'],
+			jersey: ['Jersey 25 Regular', 'cursive'], // Added font
+		  },
   		keyframes: {
   			'accordion-down': {
   				from: {

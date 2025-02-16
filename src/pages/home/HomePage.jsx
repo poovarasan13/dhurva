@@ -1,24 +1,21 @@
 import Navbar from "@/components/page-components/Navbar";
-import PassCard from "@/components/page-components/PassCard";
-import ProCard from "@/components/page-components/ProCard";
-import ProPassCard from "@/components/page-components/ProPassCard";
-import ProPassList from "@/components/page-components/ProPassList";
+import ElitePassCard from "@/components/page-components/ElitePassCard";
 import FooterSection from "@/components/sections/footer/FooterSection";
 import React from "react";
+// import PassCard from "@/components/page-components/PassCard";
+// import ProPassCard from "@/components/page-components/ProPassCard";
+import ProPassList from "@/components/page-components/ProPassList";
+import "../../assets/fonts/Jersey-25.css"
+import ElitePassList from "@/components/page-components/ElitePassList";
 
 function HomePage() {
   return (
     <div>
       <Navbar />
-
-
-    
-
-      <ProPassList/>
+      <ElitePassList/>
+      <ProPassList/>  
       {/* <ProPassList/> */}
-
-
-
+      {/* <ElitePassGrid/> */}
       {/* <PassCard /> */}
       {/* <div className="flex justify-center items-center min-h-screen bg-gray-800">
         <ProCard
