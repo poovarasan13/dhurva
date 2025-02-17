@@ -12,8 +12,9 @@ function HomePage() {
   return (
     <div>
       <Navbar />
+    
       <ElitePassList/>
-      <ProPassList/>  
+      {/* <ProPassList/>   */}
       {/* <ProPassList/> */}
       {/* <ElitePassGrid/> */}
       {/* <PassCard /> */}

@@ -4,6 +4,8 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 import HomePage from "./pages/home/HomePage";
+import Pass from "./pages/Pass/Pass";
+import LiveinConcert from "./pages/Live-in-Concert/LiveinConcert";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -11,6 +13,8 @@ function App() {
   return (
     <>
       <HomePage />
+      {/* <LiveinConcert/> */}
+      {/* <Test/>  */}
     </>
   );
 }
