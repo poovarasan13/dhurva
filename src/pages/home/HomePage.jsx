@@ -13,8 +13,8 @@ function HomePage() {
   return (
     <div>
       <Navbar />
-    <EventDescription/>
-      {/* <ElitePassList/> */}
+    {/* <EventDescription/> */}
+      <ElitePassList/>
       {/* <ProPassList/>   */}
       {/* <ProPassList/> */}
       {/* <ElitePassGrid/> */}

@@ -8,7 +8,7 @@ import '../../assets/fonts/pacifico.css';
 import { CarouselDemo } from '@/components/page-components/CarouselDemo';
 import '../../assets/fonts/righteous.css';
 import Musicalconcert from '@/components/page-components/Musicalconcert';
-
+import '../../assets/fonts/madimi.css';
 const LiveinConcert = () => {
   return (
     <div>
@@ -21,7 +21,6 @@ const LiveinConcert = () => {
         subtitle="Let's Join With Us!"
         description="Will be conducted every year during the month of MARCH."
         buttonText="BOOK NOW"
-        link="https://www.google.com" // Updated link
         bgColor="#ffffff"
         textColor="black"
         highlightColor="#FFD700"

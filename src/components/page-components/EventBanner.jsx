@@ -3,7 +3,7 @@ import React from 'react';
 function EventBanner({
   venue,
   date,
-  title,
+  title,  
   subtitle,
   description,
   buttonText,
@@ -33,11 +33,8 @@ function EventBanner({
 
         {/* Title */}
         <h1
-          className="text-3xl lg:text-5xl font-bold mb-4"
-          style={{
-            color: textColor,
-            fontFamily: 'Roboto, sans-serif !important', // Apply the font here
-          }}
+          className="text-3xl lg:text-5xl font-bold  mb-4"
+          style={{ color: textColor }}
         >
           {title}
         </h1>

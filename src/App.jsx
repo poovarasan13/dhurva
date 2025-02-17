@@ -12,8 +12,8 @@ function App() {
 
   return (
     <>
-      <HomePage />
-      {/* <LiveinConcert/> */}
+      {/* <HomePage /> */}
+      <LiveinConcert/>
       {/* <Test/>  */}
     </>
   );
