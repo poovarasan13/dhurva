@@ -7,12 +7,13 @@ import React from "react";
 import ProPassList from "@/components/page-components/ProPassList";
 import "../../assets/fonts/Jersey-25.css"
 import ElitePassList from "@/components/page-components/ElitePassList";
+import EventDescription from "@/components/page-components/EventDescription";
 
 function HomePage() {
   return (
     <div>
       <Navbar />
-    
+    <EventDescription/>
       {/* <ElitePassList/> */}
       {/* <ProPassList/>   */}
       {/* <ProPassList/> */}
