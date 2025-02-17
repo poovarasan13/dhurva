@@ -10,7 +10,7 @@ import "../../assets/fonts/dmsans.css";
 function EventPage() {
   return (
     <div className="pt-20 lg:pt-30   bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-      <Navbar />
+      {/* <Navbar /> */}
 
       <motion.div
         className="my-10 container mx-auto px-6 text-center"
@@ -18,8 +18,8 @@ function EventPage() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight dm-serif bg-gradient-to-r text-black text-transparent bg-clip-text">
-          Electronics & Communication Engineering
+        <h1 className="text-3xl sm:text-6xl font-extrabold tracking-tight dm-serif bg-gradient-to-r text-black  bg-clip-text">
+          Computer Science And Engineering{" "}
         </h1>
         <p className="mt-4 dm-sans  text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
           The Department of EC is excited to announce its upcoming lineup of
@@ -50,7 +50,7 @@ function EventPage() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        <FooterSection />
+        {/* <FooterSection /> */}
       </motion.div>
     </div>
   );

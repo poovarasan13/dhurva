@@ -3,7 +3,8 @@ import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "../../assets/images/dhurva-logo.png";
 import "../../assets/fonts/opensans.css";
-
+import { NavLink } from "react-router-dom";
+import navData from "../../data/NavData";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,21 +21,15 @@ const Navbar = () => {
         </a>
 
         <ul className="hidden md:flex flex-grow justify-center space-x-8">
-          {[
-            "Home",
-            "Cultural Fest",
-            "Live-in Concert",
-            "Technical Fest",
-            "Pass",
-            "Registration",
-          ].map((item, index) => (
+          {navData.map((item, index) => (
             <li key={index}>
-              <a
-                href="#"
+              <NavLink
+                // href={item.route}
+                to={item.route}
                 className="text-white border-b-2 border-transparent hover:border-white transition-all duration-300"
               >
-                {item}
-              </a>
+                {item.name}
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -65,21 +60,14 @@ const Navbar = () => {
           </Button>
         </div>
         <ul className="flex flex-col items-center space-y-6 mt-10">
-          {[
-            "Home",
-            "Cultural Fest",
-            "Live-in Concert",
-            "Technical Fest",
-            "Pass",
-            "Registration",
-          ].map((item, index) => (
+          {navData.map((item, index) => (
             <li key={index}>
               <a
-                href="#"
+                href={item.route}
                 className="text-white text-lg hover:text-gray-400 transition-all duration-300"
                 onClick={toggleMenu}
               >
-                {item}
+                {item.name}
               </a>
             </li>
           ))}

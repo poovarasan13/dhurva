@@ -6,8 +6,11 @@ import { Separator } from "../ui/separator";
 import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/dmsans.css";
 import "../../assets/fonts/arapey.css";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function DepartmentCard({ events }) {
+  const navigate = useNavigate();
+
   return (
     <div className="group hover:scale-105 transition-transform duration-300 w-full sm:w-[380px] md:w-[400px]">
       <Card className="w-full bg-white dark:bg-gray-800 shadow-md hover:shadow-lg rounded-lg overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-300 group-hover:bg-black">
@@ -26,7 +29,6 @@ function DepartmentCard({ events }) {
         {/* Separator */}
         <Separator className="bg-gray-100 dark:bg-gray-700 group-hover:bg-gray-600 transition-all duration-300" />
 
-        {/* Card Content */}
         <CardContent className="p-4 sm:p-6 dm-sans text-sm sm:text-lg">
           <div className="space-y-3 sm:space-y-4">
             {[
@@ -77,9 +79,9 @@ function DepartmentCard({ events }) {
             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md group-hover:bg-white group-hover:text-black"
             asChild
           >
-            <a href={events.href} className="arapey-visit">
+            <NavLink to={events.href} className="arapey-visit">
               Visit
-            </a>
+            </NavLink>
           </Button>
         </CardFooter>
       </Card>

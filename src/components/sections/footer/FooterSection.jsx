@@ -28,7 +28,7 @@ import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
 } from "@radix-ui/react-icons";
-// import { InstagramLogoIcon } from "@radix-ui/react-icons";
+import { NavLink } from "react-router-dom";
 
 export default function FooterSection() {
   return (
@@ -36,7 +36,6 @@ export default function FooterSection() {
       <div className="mx-auto max-w-container px-4 py-8">
         <Footer className="bg-black">
           <FooterContent className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            {/* Logo and Hover Card */}
             <FooterColumn className="flex flex-col items-center sm:items-start">
               <div className="mb-4">
                 <img
@@ -77,19 +76,19 @@ export default function FooterSection() {
               </h3>
               <div className="space-y-2">
                 <a
-                  href="/"
+                  href="/culturalFest"
                   className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
                 >
                   Cultural Fest
                 </a>
                 <a
-                  href="/"
+                  href="/technicalFest"
                   className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
                 >
                   Technical Fest
                 </a>
                 <a
-                  href="/"
+                  href="/pass"
                   className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
                 >
                   Pass
@@ -101,29 +100,29 @@ export default function FooterSection() {
                 Social Media
               </h3>
               <div className="space-y-2">
-                <a
-                  href="#"
+                <NavLink
+                  href="https://www.instagram.com/wekceians/"
                   className="text-sm text-gray-400 hover:text-pink-400 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
                 >
                   <InstagramLogoIcon className="w-4 h-4" />
                   Instagram
-                </a>
+                </NavLink>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/wekceians/"
                   className="text-sm text-gray-400 hover:text-blue-700 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
                 >
                   <FacebookIcon className="w-4 h-4" />
                   Facebook
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/school/wekceians/posts/?feedView=all"
                   className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
                 >
                   <LinkedInLogoIcon className="w-4 h-4" />
                   LinkedIn
                 </a>
                 <a
-                  href="#"
+                  href=""
                   className="text-sm text-gray-400 hover:text-red-600 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
                 >
                   <YoutubeIcon className="w-4 h-4" />
@@ -167,7 +166,7 @@ export default function FooterSection() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0986519474127!2d77.01979347480649!3d10.880100889275035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba84ffc9b3ea755%3A0xda7508a90583d22f!2sKarpagam%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1739673858861!5m2!1sen!2sin"
                 allowFullScreen
-                className="w-full h-48 sm:h-64 md:h-48 border rounded-lg shadow-lg"
+                className="max-w-max h-48 sm:h-64 md:h-48 border rounded-lg shadow-lg"
                 title="Google Maps Embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

@@ -1,0 +1,11 @@
+.blinking-cursor::after {
+  content: "|";
+  display: inline-block;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

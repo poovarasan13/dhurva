@@ -10,7 +10,7 @@ import "../../assets/fonts/sourcesans.css";
 function EventShowPage() {
   return (
     <div className="mt-20  min-h-screen font-sans">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="container mx-auto px-6 lg:px-20 py-12 flex flex-col md:flex-row items-center md:items-start">
         <div className="md:w-1/2 w-full flex justify-center md:justify-start">
           <img
@@ -63,7 +63,7 @@ function EventShowPage() {
           </Button>
         </div>
       </div>
-      <FooterSection />
+      {/* <FooterSection /> */}
     </div>
   );
 }
