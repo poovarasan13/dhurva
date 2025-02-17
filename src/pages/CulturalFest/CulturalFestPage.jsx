@@ -14,7 +14,7 @@ function CulturalFestPage() {
       <HeroSection />
       <RulesAndRegulation />
       <Banners />
-      <FooterSection />
+      {/* <FooterSection />  */}
     </div>
   );
 }
