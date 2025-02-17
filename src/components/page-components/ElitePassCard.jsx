@@ -3,31 +3,25 @@ import { motion } from "framer-motion";
 import "../../assets/fonts/Jersey-25.css";
 import "../../assets/fonts/anton.css";
 import "../../assets/fonts/liter.css";
-
 const ElitePassCard = ({ title, price, dates, buttonText, link }) => {
     const [hoverDirection, setHoverDirection] = useState("");
     const [isHovered, setIsHovered] = useState(false);
-
     // Handle mouse movement to determine hover effect direction
     const handleMouseMove = (e) => {
         const { clientX, clientY, currentTarget } = e;
         const { left, top, width, height } = currentTarget.getBoundingClientRect();
         const x = clientX - left;
         const y = clientY - top;
-
         const xOffset = x / width - 0.5;
         const yOffset = y / height - 0.5;
-
         if (Math.abs(xOffset) > Math.abs(yOffset)) {
             setHoverDirection(xOffset > 0 ? "right" : "left");
         } else {
             setHoverDirection(yOffset > 0 ? "bottom" : "top");
         }
     };
-
     const normalGradient = "bg-gradient-to-br from-blue-500 to-blue-700"; // Define normal gradient
     const hoverGradient = "bg-gradient-to-br from-sky-400 to-sky-600";  // Define hover gradient
-
     return (
         <motion.div
             onMouseMove={handleMouseMove}
@@ -51,10 +45,8 @@ const ElitePassCard = ({ title, price, dates, buttonText, link }) => {
         >
             {/* Title */}
             <h2 className="text-3xl font-bold mb-3 anton-regular">{title}</h2>
-
             {/* Price */}
             <p className="text-xl font-semibold liter-regular">Rs : {price}</p>
-
             {/* Dates List */}
             <div className="mt-4 space-y-2">
                 {dates.map((date, index) => (
@@ -63,7 +55,6 @@ const ElitePassCard = ({ title, price, dates, buttonText, link }) => {
                     </p>
                 ))}
             </div>
-
             {/* Book Now Button with Razorpay Link */}
             <a
                 href={link}

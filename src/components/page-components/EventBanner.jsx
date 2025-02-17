@@ -7,14 +7,13 @@ function EventBanner({
   subtitle,
   description,
   buttonText,
-  buttonLink,
   bgColor,
   textColor,
   highlightColor,
 }) {
   return (
     <div
-      className="py-12 text-center relative overflow-hidden"
+      className="relative py-16 text-center overflow-hidden"
       style={{ backgroundColor: bgColor }}
     >
       {/* Highlight Circle */}
@@ -22,28 +21,35 @@ function EventBanner({
         className="absolute top-0 right-0 w-40 h-40 rounded-full -mr-20 -mt-10"
         style={{ backgroundColor: highlightColor }}
       ></div>
-
       {/* Content */}
-      <div className="container mx-auto px-4 relative">
+      <div className="container mx-auto px-6 relative z-10">
+        {/* Subtitle */}
         <h2
-          className="uppercase text-sm  font-semibold tracking-wider"
+          className="uppercase text-xl font-semibold tracking-wider mb-2"
           style={{ color: highlightColor }}
         >
           {subtitle}
         </h2>
+
+        {/* Title */}
         <h1
-          className="text-3xl lg:text-4xl font-bold mb-2"
-          style={{ color: textColor }}
+          className="text-3xl lg:text-5xl font-bold mb-4"
+          style={{
+            color: textColor,
+            fontFamily: 'Roboto, sans-serif !important', // Apply the font here
+          }}
         >
           {title}
         </h1>
-        <p className="mb-6" style={{ color: textColor }}>
+
+        {/* Description */}
+        <p className="text-lg mb-8" style={{ color: textColor }}>
           {description}
         </p>
 
         {/* Button */}
         <button
-          className="font-bold py-2 px-8 rounded-full"
+          className="font-bold py-3 px-12 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2"
           style={{
             backgroundColor: highlightColor,
             color: textColor,
@@ -53,13 +59,14 @@ function EventBanner({
         </button>
 
         {/* Venue and Date */}
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8">
-          <div className="flex items-center mr-4 last:mr-0" style={{ color: textColor }}>
+        <div className="mt-12 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+          <div className="flex items-center" style={{ color: textColor }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="w-5 h-5 mr-2"
+              className="w-6 h-6 mr-2"
+              aria-hidden="true"
             >
               <path
                 fillRule="evenodd"
@@ -67,14 +74,16 @@ function EventBanner({
                 clipRule="evenodd"
               />
             </svg>
-            Venue: {venue}
+            <span className="text-lg">Venue: {venue}</span>
           </div>
-          <div className="flex items-center mt-2 md:mt-0 " style={{ color: textColor }}>
+
+          <div className="flex items-center" style={{ color: textColor }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="w-5 h-5 mr-2"
+              className="w-6 h-6 mr-2"
+              aria-hidden="true"
             >
               <path
                 fillRule="evenodd"
@@ -82,7 +91,7 @@ function EventBanner({
                 clipRule="evenodd"
               />
             </svg>
-            Date: {date}
+            <span className="text-lg">Date: {date}</span>
           </div>
         </div>
       </div>

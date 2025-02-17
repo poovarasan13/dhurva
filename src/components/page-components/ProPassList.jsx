@@ -1,5 +1,4 @@
 import ProPassCard from "./ProPassCard";
-
 const ProPassList = () => {
   const passes = [
     {
@@ -61,5 +60,4 @@ const ProPassList = () => {
     </div>
   );
 };
-
 export default ProPassList;

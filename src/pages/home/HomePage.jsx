@@ -13,7 +13,7 @@ function HomePage() {
     <div>
       <Navbar />
     
-      <ElitePassList/>
+      {/* <ElitePassList/> */}
       {/* <ProPassList/>   */}
       {/* <ProPassList/> */}
       {/* <ElitePassGrid/> */}
