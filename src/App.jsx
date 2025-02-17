@@ -11,6 +11,7 @@ import CulturalFestPage from "./pages/CulturalFest/CulturalFestPage";
 import DepartmentShowOff from "./pages/Technical-Fest/DepartmentShowOff";
 import AppNavigation from "./router/AppNavigation";
 import Banners from "./components/page-components/Banners";
+import MaskedCursor from "./components/page-components/MaskedCursor";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
       {/* <EventShowPage /> */}
       {/* <EventPage /> */}
       {/* <CulturalFestPage /> */}
+      <MaskedCursor />
       <AppNavigation className="blinking-cursor" />
       {/* <Banners /> */}
     </>

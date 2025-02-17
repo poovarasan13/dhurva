@@ -8,13 +8,21 @@ import Promption from "@/components/page-components/Banners";
 import EventCards from "@/components/page-components/EventCards";
 import EventShowOff from "../Events/EventShowOff";
 import HeroSection from "./section/HeroSection";
+import DhurvaFest from "./section/DhurvaFest";
+import Banners from "@/components/page-components/Banners";
+import ProPassList from "./section/ProPassList";
+// import Gallery from "./section/Gallery";
 // import HeroSection from "../CulturalFest/section/HeroSection";
 
 function HomePage() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
+      {/* <Gallery /> */}
+      <DhurvaFest />
+      <ProPassList />
+      <Banners />
     </div>
   );
 }
