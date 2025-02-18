@@ -4,6 +4,7 @@ import CulturalFestPage from "@/pages/CulturalFest/CulturalFestPage";
 import EventShowPage from "@/pages/EventDisplay/EventShowPage";
 import EventPage from "@/pages/Events/EventPage";
 import HomePage from "@/pages/home/HomePage";
+import LiveinConcert from "@/pages/Live-in-Concert/LiveinConcert";
 import SportsPage from "@/pages/sports/SportsPage";
 import SportsInfo from "@/pages/SportsInfo/SportsInfo";
 import TechnicalFest from "@/pages/Technical-Fest/TechnicalFest";
@@ -23,6 +24,7 @@ function AppNavigation() {
         <Route path="/eventInfo" element={<EventShowPage />}></Route>
         <Route path="/sports" element={<SportsPage />}></Route>
         <Route path="/sports/:sportTitle" element={<SportsInfo />}></Route>
+        <Route path="/live" element={<LiveinConcert />}></Route>
       </Routes>
       <FooterSection />
     </div>

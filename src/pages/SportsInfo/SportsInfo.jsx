@@ -11,7 +11,6 @@ import cricketImage from "../../assets/test/4.png";
 import footballImage from "../../assets/test/4.png";
 import soloSingingImage from "../../assets/test/4.png";
 
-// Data for sports
 const sportsData = [
   {
     title: "Handball",
@@ -146,7 +145,6 @@ const sportsData = [
   },
 ];
 
-// Motion animation variants for smooth transitions
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },

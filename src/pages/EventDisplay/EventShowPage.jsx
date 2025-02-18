@@ -1,69 +1,88 @@
 import React from "react";
-import FooterSection from "@/components/sections/footer/FooterSection";
-import Navbar from "@/components/page-components/Navbar";
 import { Calendar, MapPin, Clock, User, Rocket, UserPen } from "lucide-react";
-import paper from "../../assets/test/paper.jpg";
+import paper from "../../assets/test/guest1.png";
 import { Button } from "@/components/ui/button";
 import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/opensans.css";
 import "../../assets/fonts/sourcesans.css";
+
 function EventShowPage() {
+  const rules = [
+    "Each team gets 60-90 seconds per turn. Teams take turns acting and guessing.",
+    "2-4 members per team.",
+    "The actor cannot speak, write, or mouth words only gestures and facial expressions are allowed.",
+    "Words are assigned randomly from different categories.",
+  ];
+
   return (
-    <div className="mt-20  min-h-screen font-sans">
-      {/* <Navbar /> */}
-      <div className="container mx-auto px-6 lg:px-20 py-12 flex flex-col md:flex-row items-center md:items-start">
-        <div className="md:w-1/2 w-full flex justify-center md:justify-start">
+    <div className="mt-20 min-h-screen bg-gray-50 flex justify-center items-center p-8">
+      <div className="container max-w-6xl bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+        {/* Left Section: Event Poster */}
+        <div className="md:w-1/2 w-full flex justify-center items-center p-6">
           <img
             src={paper}
             alt="Event Poster"
-            className="rounded-lg shadow-xl w-full md:w-[500px] lg:w-[600px] object-cover"
+            className="w-full h-auto object-cover rounded-xl shadow-md"
           />
         </div>
 
-        <div className="md:w-1/2 w-full mt-8 md:mt-0 md:pl-12">
-          <h1 className="text-4xl font-bold mb-4 ">Techno Quiz</h1>
-          <h2 className="text-2xl text-gray-400 mb-4">Paper Presentation</h2>
-          <h3 className="text-3xl font-bold mb-4 dm-serif  ">
+        {/* Right Section: Event Details */}
+        <div className="md:w-1/2 w-full p-12 flex flex-col justify-center space-y-6">
+          <h1 className="text-4xl font-bold text-gray-900 leading-tight">
+            Techno Quiz
+          </h1>
+          <h2 className="text-xl text-gray-500 mt-2">Paper Presentation</h2>
+          <h3 className="text-2xl font-serif font-semibold mt-3 text-gray-800">
             Department Of Information Technology
           </h3>
 
-          <div className="space-my-4">
-            <p className="flex items-center gap-2 text-lg">
-              <Clock className="w-5 h-5 text-gray-400" /> 11:10 AM - 1:00 PM
-            </p>
+          {/* Event Timing */}
+          <div className="mt-4 flex items-center gap-2 text-lg text-gray-700 font-medium">
+            <Clock className="w-5 h-5 text-gray-500" /> 11:10 AM - 1:00 PM
           </div>
 
-          <p className=" mt-6 leading-relaxed text-justify source-sans font-bold text-lg">
-            Artificial Intelligence (AI) is defined as ‘the theory and
-            development of computer systems able to perform tasks normally
-            requiring human intelligence.’ Machine learning (ML) is a sub-field
-            within AI. ML can be leveraged in various domains within Cyber
-            Security to enhance security processes, and make it easier for
-            security analysts to quickly identify priorities, deal with and
-            remediate new attacks.
+          {/* Event Description */}
+          <p className="mt-4 text-lg text-gray-800 leading-relaxed">
+            Join us for an exciting Techno Quiz that challenges your knowledge
+            in Artificial Intelligence and Machine Learning. Enhance your
+            understanding, compete with peers, and gain insights into the latest
+            trends in technology.
           </p>
 
-          <div className="space-y-4 mt-3">
-            <p className="flex items-center gap-2 text-lg">
-              <MapPin className="w-5 h-5 text-gray-400" /> C Block – IT Project
+          {/* Event Details */}
+          <div className="space-y-3 mt-4 text-lg text-gray-800">
+            <p className="flex items-center gap-2">
+              <MapPin className="w-5 h-5 text-gray-500" /> C Block – IT Project
               Lab
             </p>
-            <p className="flex items-center gap-2 text-lg">
-              <UserPen className="w-5 h-5   text-gray-400" /> Dr Jothi Prakash V
-              - 6385908383
+            <p className="flex items-center gap-2">
+              <UserPen className="w-5 h-5 text-gray-500" /> Ms. A. Arthi, AP /
+              IT & Ms. K. Ananthi, AP / IT
             </p>
-            <p className="flex items-center gap-2 text-lg">
-              <User className="w-5 h-5 text-gray-400" /> Siranjeevi P -
-              6385908383
+            <p className="flex items-center gap-2">
+              <User className="w-5 h-5 text-gray-500" /> P. Madhan, 9345453082 &
+              R. Karthik Kiran, 8300181333
             </p>
           </div>
 
-          <Button className="mt-6  bg-white border-black border-2 border-b-2 shadow-glow-sm text-black px-6 py-3 text-lg rounded-lg shadow-md hover:bg-black hover:text-white  transition-all">
-            Register Now <Rocket />
+          {/* Event Rules */}
+          <div className="mt-4 text-gray-800 text-lg">
+            <h4 className="font-semibold">Event Rules:</h4>
+            <ul className="list-disc list-inside mt-2">
+              {rules.map((rule, idx) => (
+                <li key={idx}>{rule}</li>
+              ))}
+            </ul>
+            <p className="mt-2">Round 1, Final Round</p>
+            <p>All participants will receive participation certificates.</p>
+          </div>
+
+          {/* Register Button */}
+          <Button className="mt-6 flex dm-sans items-center gap-3 bg-sky-400 text-white px-6 py-3 text-lg rounded-full shadow-lg hover:bg-sky-400 hover:text-black transition-all duration-300">
+            Register Now <Rocket className="w-5 h-5 " />
           </Button>
         </div>
       </div>
-      {/* <FooterSection /> */}
     </div>
   );
 }

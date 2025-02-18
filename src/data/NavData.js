@@ -17,7 +17,7 @@ const navData = [
   },
   {
     name: "Live-in concert",
-    route: "/liveIn",
+    route: "/live",
   },
   {
     name: "Pass",

@@ -12,15 +12,15 @@ function DepartmentCard({ events }) {
   const navigate = useNavigate();
 
   return (
-    <div className="group hover:scale-105 transition-transform duration-300 w-full sm:w-[380px] md:w-[400px]">
-      <Card className="w-full bg-white dark:bg-gray-800 shadow-md hover:shadow-lg rounded-lg overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-300 group-hover:bg-black">
+    <div className="group hover:scale-105 transition-transform duration-300 w-full sm:w-[380px] md:w-[400px] ">
+      <Card className="w-full bg-white dark:from-gray-700 dark:to-gray-800 hover:bg-sky-300 shadow-md hover:shadow-lg rounded-lg overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-300 ">
         {/* Card Header */}
-        <CardHeader className="p-4 sm:p-6 bg-gradient-to-r from-blue-50 to-gray-50 dark:from-gray-700 dark:to-gray-800 group-hover:from-black group-hover:to-black">
+        <CardHeader className="p-4 sm:p-6 ">
           <div className="flex items-center justify-between">
-            <h2 className="text-lg sm:text-2xl font-bold text-gray-800 dark:text-white group-hover:text-white dm-serif transition-all duration-300">
+            <h2 className="text-lg sm:text-2xl font-bold text-gray-800 dark:text-black group-hover:text-black dm-serif transition-all duration-300">
               {events.departmentName}
             </h2>
-            <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-full group-hover:bg-gray-700 transition-all duration-300">
+            <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-full group-hover:bg-white transition-all duration-300">
               <Laptop className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 dark:text-blue-300 transition-all duration-300" />
             </div>
           </div>
@@ -59,13 +59,13 @@ function DepartmentCard({ events }) {
             ].map(({ icon: Icon, text, bg, iconColor }, index) => (
               <div key={index} className="flex items-center gap-3 sm:gap-4">
                 <div
-                  className={`${bg} p-2 rounded-full group-hover:bg-gray-700 transition-all duration-300`}
+                  className={`${bg} p-2 rounded-full group-hover:bg-white transition-all duration-300`}
                 >
                   <Icon
                     className={`w-4 h-4 sm:w-5 sm:h-5 ${iconColor} transition-all duration-300`}
                   />
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 group-hover:text-white transition-all duration-300">
+                <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
                   {text}
                 </p>
               </div>
@@ -79,7 +79,7 @@ function DepartmentCard({ events }) {
             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md group-hover:bg-white group-hover:text-black"
             asChild
           >
-            <NavLink to={events.href} className="arapey-visit">
+            <NavLink to={events.href} className="dm-sans">
               Visit
             </NavLink>
           </Button>

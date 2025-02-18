@@ -12,6 +12,8 @@ import DepartmentShowOff from "./pages/Technical-Fest/DepartmentShowOff";
 import AppNavigation from "./router/AppNavigation";
 import Banners from "./components/page-components/Banners";
 import MaskedCursor from "./components/page-components/MaskedCursor";
+import LiveinConcert from "./pages/Live-in-Concert/LiveinConcert";
+import FlipCard from "./components/page-components/FlipCard";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -23,8 +25,10 @@ function App() {
       {/* <EventShowPage /> */}
       {/* <EventPage /> */}
       {/* <CulturalFestPage /> */}
+      {/* <LiveinConcert/> */}
       <MaskedCursor />
-      <AppNavigation className="blinking-cursor" />
+      <AppNavigation  />
+      {/* <FlipCard /> */}
       {/* <Banners /> */}
     </>
   );
