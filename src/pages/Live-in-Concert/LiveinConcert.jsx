@@ -14,7 +14,7 @@ const LiveinConcert = () => {
     <div>
       <Navbar />
       <ConcertEvent />
-      <EventBanner
+      {/* <EventBanner
         venue="Karpagam College of Engineering"
         date="12th to 13th MAR 2024 09:00 AM"
         title="DHRUVA – A National Level Techno-Management – Cultural Fest"
@@ -24,7 +24,7 @@ const LiveinConcert = () => {
         bgColor="#ffffff"
         textColor="black"
         highlightColor="#FFD700"
-      />
+      /> */}
       <Musicalconcert/>
       <FooterSection />
     </div> 
