@@ -5,10 +5,10 @@ import { useNavigate } from "react-router-dom";
 
 import { Button } from "@/components/ui/button";
 import { FaMale, FaFemale } from "react-icons/fa";
-import volleyBallImage from "../../assets/test/1.png";
-import kabaddiImage from "../../assets/test/1.png";
-import cricketImage from "../../assets/test/1.png";
-import footballImage from "../../assets/test/1.png";
+import volleyBallImage from "../../assets/test/image.png";
+import kabaddiImage from "../../assets/test/image.png";
+import cricketImage from "../../assets/test/image.png";
+import footballImage from "../../assets/test/image.png";
 import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/sourcesans.css";
 
@@ -76,7 +76,7 @@ const SportsPage = () => {
   return (
     <div className="container mx-auto px-4 lg:px-16 py-12 mt-20">
       <h1 className="lg:text-4xl text-2xl font-bold text-center mb-8 dm-serif">
-        Sports Events
+        Sports Meet
       </h1>
       {sportsData.map((sport, index) => (
         <SportCard sport={sport} key={index} />
@@ -110,8 +110,8 @@ const SportCard = ({ sport }) => {
       }`}
       style={
         sport.imageOnLeft
-          ? { backgroundColor: "rgb(254,118,0)" }
-          : { backgroundColor: "rgb(20,61,166)" }
+          ? { backgroundColor: "rgb(250, 167, 94)" }
+          : { backgroundColor: "rgb(127, 162, 252)" }
       }
     >
       <motion.div className="w-full md:w-1/2 flex justify-center items-center">

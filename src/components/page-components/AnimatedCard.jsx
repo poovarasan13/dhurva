@@ -1,0 +1,22 @@
+import React from "react";
+import "../../assets/style/AnimatedCard.css";
+import '../../assets/fonts/opensans.css';
+import '../../assets/fonts/dmsans.css';
+
+const AnimatedCard = () => {
+  return (
+    <div className="flex bg-gray-100 justify-center items-center mt-16">
+      <div className="p-4">
+        <div className="card">
+          <div className="bg">
+            <div className="p-3">
+                <h3 className="text-center text-3xl dm-sans  text-orange-400  ">Pro Pass</h3></div>{" "}
+          </div>
+          <div className="blob"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AnimatedCard;

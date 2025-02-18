@@ -1,15 +1,25 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { FaMale, FaFemale } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Button } from "@/components/ui/button";
 
-import volleyBallImage from "../../assets/test/4.png";
-import kabaddiImage from "../../assets/test/4.png";
-import cricketImage from "../../assets/test/4.png";
-import footballImage from "../../assets/test/4.png";
-import soloSingingImage from "../../assets/test/4.png";
+import {
+  Calendar,
+  Clock,
+  MapPin,
+  Users,
+  Trophy,
+  List,
+  AlertCircle,
+} from "lucide-react";
+
+import volleyBallImage from "../../assets/test/cricket.png";
+import kabaddiImage from "../../assets/test/cricket.png";
+import cricketImage from "../../assets/test/cricket.png";
+import footballImage from "../../assets/test/cricket.png";
+import soloSingingImage from "../../assets/test/cricket.png";
+import Animation2 from "@/assets/Animation/Animation2";
 
 const sportsData = [
   {
@@ -145,7 +155,7 @@ const sportsData = [
   },
 ];
 
-const cardVariants = {
+const containerVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
@@ -169,83 +179,75 @@ const SportsInfo = () => {
   }, [controls, inView]);
 
   if (!sport) {
-    return <div className="text-black text-center py-10">Sport not found!</div>;
+    return (
+      <div className="text-black text-center py-10 flex items-center justify-center gap-2">
+        <AlertCircle className="w-6 h-6 text-red-600" />
+        <span>Sport not found!</span>
+      </div>
+    );
   }
 
-  const getGenderIcon = (gender) => {
-    if (gender === "male") return <FaMale className="ml-2 text-black" />;
-    if (gender === "female") return <FaFemale className="ml-2 text-black" />;
-    return (
-      <>
-        <FaMale className="ml-1  text-black" />
-        <FaFemale className="ml-1 text-black" />
-      </>
-    ); // For both genders
-  };
-
   return (
-    <motion.div
-      ref={ref}
-      variants={cardVariants}
-      initial="hidden"
-      animate={controls}
-      className="bg-white text-black mt-20 py-12"
-    >
-      <div className="container px-5 mx-auto">
-        <div className="mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
-          <div className="flex flex-col-reverse md:flex-row">
-            {" "}
-            <div className="md:w-1/2 p-8 space-y-4">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center md:text-left dm-serif flex items-center ">
-                <span className="text-lg sm:text-xl md:text-2xl">
-                  {sport.title}
-                </span>
-                <div className="flex items-center">
-                  {getGenderIcon(sport.gender)}
-                  <p className="text-xs sm:text-sm md:text-base lg:text-lg font-light text-center">
-                    {sport.gender === "male"
-                      ? "(Only for Male)"
-                      : sport.gender === "female"
-                      ? "(Only for Female)"
-                      : "(Both Male and Female)"}
-                  </p>
-                </div>
-              </h1>
-              <p className="text-sm sm:text-base md:text-lg">
-                <span className="font-medium">Faculty Co-ordinator:</span>{" "}
-                {sport.coordinator}
-              </p>
-              <p className="text-sm sm:text-base md:text-lg">
-                <span className="font-medium">Venue:</span> {sport.venue}
-                <span className="float-right text-xs sm:text-sm md:text-base">
-                  Time: {sport.time}
-                </span>
-              </p>
+    <div  className="mt-16">
+      <Animation2 />
+      <motion.div
+        ref={ref}
+        variants={containerVariants}
+        initial="hidden"
+        animate={controls}
+        className="bg-white text-black py-12 px-4 md:px-12 lg:px-24"
+      >
+        <h1 className="text-4xl font-bold text-gray-800 text-center flex items-center gap-2">
+          <Trophy className="w-8 h-8 text-yellow-500" />
+          {sport.title}
+        </h1>
 
-              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4">
-                Rules and Regulations
-              </h3>
-              <ul className="list-decimal pl-5 text-gray-700 leading-relaxed text-xs sm:text-sm md:text-base lg:text-lg">
-                {sport.rules &&
-                  sport.rules.map((rule, index) => <li key={index}>{rule}</li>)}
-              </ul>
-
-              <Button className=" bg-red-600 text-white font-bold py-2 px-4  rounded mt-6 block mx-auto">
-                Register
-              </Button>
-            </div>
-            <div className="md:w-1/2">
-              <img
-                src={sport.image}
-                alt={sport.title}
-                className="w-full h-full object-cover object-center rounded-r-xl"
-                style={{ maxHeight: "400px" }}
-              />
-            </div>
+        <div className="grid md:grid-cols-2 gap-8 mt-6">
+          <div>
+            <img
+              src={sport.image}
+              alt={sport.title}
+              className="w-full h-full object-cover object-center rounded-lg"
+              style={{ maxHeight: "400px" }}
+            />
+          </div>
+          <div className="space-y-6">
+            <p className="text-gray-700 font-medium flex items-center gap-2">
+              <Users className="w-5 h-5 text-blue-500" />
+              <span>
+                Faculty Coordinator:{" "}
+                <span className="text-gray-900">{sport.coordinator}</span>
+              </span>
+            </p>
+            <p className="text-gray-700 font-medium flex items-center gap-2">
+              <MapPin className="w-5 h-5 text-green-500" />
+              <span>
+                Venue: <span className="text-gray-900">{sport.venue}</span>
+              </span>
+            </p>
+            <p className="text-gray-700 font-medium flex items-center gap-2">
+              <Clock className="w-5 h-5 text-purple-500" />
+              <span>
+                Time: <span className="text-gray-900">{sport.time}</span>
+              </span>
+            </p>
+            <h3 className="text-xl font-semibold text-gray-800 flex items-center gap-2">
+              <List className="w-6 h-6 text-orange-500" />
+              Rules and Regulations
+            </h3>
+            <ul className="list-disc pl-5 space-y-2 text-gray-700">
+              {sport.rules.map((rule, index) => (
+                <li key={index}>{rule}</li>
+              ))}
+            </ul>
+            <Button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg mx-auto block w-40 flex items-center justify-center gap-2">
+              <Calendar className="w-5 h-5" />
+              Register
+            </Button>
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 
