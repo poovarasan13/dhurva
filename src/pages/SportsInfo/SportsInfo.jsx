@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Button } from "@/components/ui/button";
-
+import { Rocket } from "lucide-react";
 import {
   Calendar,
   Clock,
@@ -11,6 +11,7 @@ import {
   Users,
   Trophy,
   List,
+  Phone,
   AlertCircle,
 } from "lucide-react";
 
@@ -27,10 +28,16 @@ const sportsData = [
     description: "Experience the fast-paced action of handball!",
     image: volleyBallImage,
     gender: "male",
-    coordinator: "Ms. Shamadhani Begum",
+    coordinator: "VivekPrasanna SivaSamy",
+    phone: "+91 93422 83487",
     venue: "Sports Complex",
     time: "10:00 AM",
     rules: [
+      "Teams should report at least 30 minutes before the commencement of the match",
+      "Player must produce the college identity card at the time of registration and will be returned only after the tournament. Without Identity card, the players will not be permitted to participate.",
+      "No one else including alumni students will be permitted into our campus. Team with Physical Director or any accompanying staff member must carry the college identity card.",
+      "Coaches will be allowed only with proper authorization letter from the Principal.",
+      "Teams should keep their valuables locked in their bag/suitcase. College will not take responsibility for any loss.",
       "Each team must consist of 7 players, including a goalkeeper.",
       "Matches will be played in two halves of 15 minutes each, with a 5-minute halftime break.",
       "Unlimited substitutions are allowed during stoppages in play.",
@@ -43,10 +50,16 @@ const sportsData = [
     description: "Get ready for intense raiding and defending in Kabaddi!",
     image: kabaddiImage,
     gender: "male",
-    coordinator: "Mr. Rajesh Kumar",
+    coordinator: "Vasanth Balan",
+    phone: "+91 70920 88003",
     venue: "Kabaddi Ground",
     time: "2:00 PM",
     rules: [
+      "Teams should report at least 30 minutes before the commencement of the match",
+      "Player must produce the college identity card at the time of registration and will be returned only after the tournament. Without Identity card, the players will not be permitted to participate.",
+      "No one else including alumni students will be permitted into our campus. Team with Physical Director or any accompanying staff member must carry the college identity card.",
+      "Coaches will be allowed only with proper authorization letter from the Principal.",
+      "Teams should keep their valuables locked in their bag/suitcase. College will not take responsibility for any loss.",
       "Each team should have 7 players on the field at all times.",
       "A raider must touch opponents and return to their half without being tackled; they must hold their breath while raiding.",
       "Points are awarded for each opponent touched during a raid and for each successful tackle by the defending team.",
@@ -61,9 +74,15 @@ const sportsData = [
     image: footballImage,
     gender: "male",
     coordinator: "Mr. Suresh Nair",
+    phone: "+91 63790 40788",
     venue: "Football Field",
     time: "4:00 PM",
     rules: [
+      "Teams should report at least 30 minutes before the commencement of the match",
+      "Player must produce the college identity card at the time of registration and will be returned only after the tournament. Without Identity card, the players will not be permitted to participate.",
+      "No one else including alumni students will be permitted into our campus. Team with Physical Director or any accompanying staff member must carry the college identity card.",
+      "Coaches will be allowed only with proper authorization letter from the Principal.",
+      "Teams should keep their valuables locked in their bag/suitcase. College will not take responsibility for any loss.",
       "Each team must have 11 players, including a goalkeeper.",
       "Games are played in two halves of 45 minutes each, with a halftime break of 15 minutes.",
       "Players must be aware of the offside rule; an attacking player is offside if they are closer to the opponent's goal line than both the ball and the second-last opponent when the ball is played to them.",
@@ -76,10 +95,16 @@ const sportsData = [
     description: "Spike your way to victory in the volleyball tournament!",
     image: volleyBallImage,
     gender: "both",
-    coordinator: "Ms. Anjali Reddy",
+    coordinator: "Deepak",
+    phone: "+91 97865 30029",
     venue: "Volleyball Court",
     time: "11:00 AM",
     rules: [
+      "Teams should report at least 30 minutes before the commencement of the match",
+      "Player must produce the college identity card at the time of registration and will be returned only after the tournament. Without Identity card, the players will not be permitted to participate.",
+      "No one else including alumni students will be permitted into our campus. Team with Physical Director or any accompanying staff member must carry the college identity card.",
+      "Coaches will be allowed only with proper authorization letter from the Principal.",
+      "Teams should keep their valuables locked in their bag/suitcase. College will not take responsibility for any loss.",
       "Each team consists of six players on the court at any time.",
       "Matches will use rally scoring; points are scored on every serve, regardless of which team served.",
       "Teams must rotate positions after winning the serve from the opposing team.",
@@ -93,10 +118,16 @@ const sportsData = [
       "Step up to the crease and smash those boundaries in our Cricket Championship!",
     image: cricketImage,
     gender: "male",
-    coordinator: "Mr. Rohan Patel",
+    coordinator: "Mohan",
+    phone: "+91 82202 93437",
     venue: "Cricket Ground",
     time: "9:00 AM",
     rules: [
+      "Teams should report at least 30 minutes before the commencement of the match",
+      "Player must produce the college identity card at the time of registration and will be returned only after the tournament. Without Identity card, the players will not be permitted to participate.",
+      "No one else including alumni students will be permitted into our campus. Team with Physical Director or any accompanying staff member must carry the college identity card.",
+      "Coaches will be allowed only with proper authorization letter from the Principal.",
+      "Teams should keep their valuables locked in their bag/suitcase. College will not take responsibility for any loss.",
       "Each team consists of 11 players, with specific roles (batsmen, bowlers, fielders).",
       "The match format may vary (e.g., T20, ODI), but typically consists of two innings per side.",
       "Bowlers may not bowl more than one-fifth of the total overs in limited-overs formats.",
@@ -109,10 +140,16 @@ const sportsData = [
     description: "Experience the unique sport of Ball Badminton!",
     image: volleyBallImage,
     gender: "male",
-    coordinator: "Mr. Vijay Kumar",
+    coordinator: "Sudharsan",
+    phone: "+91 63790 40788",
     venue: "Badminton Court",
     time: "3:00 PM",
     rules: [
+      "Teams should report at least 30 minutes before the commencement of the match",
+      "Player must produce the college identity card at the time of registration and will be returned only after the tournament. Without Identity card, the players will not be permitted to participate.",
+      "No one else including alumni students will be permitted into our campus. Team with Physical Director or any accompanying staff member must carry the college identity card.",
+      "Coaches will be allowed only with proper authorization letter from the Principal.",
+      "Teams should keep their valuables locked in their bag/suitcase. College will not take responsibility for any loss.",
       "Each team consists of six players on the court at any time.",
       "Matches will use rally scoring; points are scored on every serve, regardless of which team served.",
       "Teams must rotate positions after winning the serve from the opposing team.",
@@ -127,30 +164,20 @@ const sportsData = [
     image: volleyBallImage,
     gender: "female",
     coordinator: "Ms. Priya Sharma",
+    phone: "+91 97865 30029",
     venue: "Throwball Court",
     time: "12:00 PM",
     rules: [
+      "Teams should report at least 30 minutes before the commencement of the match",
+      "Player must produce the college identity card at the time of registration and will be returned only after the tournament. Without Identity card, the players will not be permitted to participate.",
+      "No one else including alumni students will be permitted into our campus. Team with Physical Director or any accompanying staff member must carry the college identity card.",
+      "Coaches will be allowed only with proper authorization letter from the Principal.",
+      "Teams should keep their valuables locked in their bag/suitcase. College will not take responsibility for any loss.",
       "Each team should have 6 players on the court during play.",
       "Matches are played in sets; a team wins a set by being the first to reach 25 points with at least a 2-point lead.",
       "The server must throw the ball from behind the service line and cannot step over it until after releasing the ball.",
       "Players cannot catch or hold the ball; it must be thrown to teammates or over the net directly.",
       "Teams are allowed one timeout per set, lasting up to one minute.",
-    ],
-  },
-  {
-    title: "Solo Singing",
-    description: "Showcase your vocal talent in Solo Singing!",
-    image: soloSingingImage,
-    gender: "both",
-    coordinator: "Ms. Nivethitha",
-    venue: "LBS Hall",
-    time: "9:30 AM",
-    rules: [
-      "Each participant's performance should not exceed 3 minutes.",
-      "Participants must bring their own instruments or instrumental music on a pen drive for accompaniment.",
-      "Performances will be judged based on vocal quality, selection of raga, composition, and overall impression.",
-      "Only top six contestants from preliminary rounds will advance to the final round based on judges' scores.",
-      "Participants should maintain decorum during performances; any disruptive behavior may lead to disqualification.",
     ],
   },
 ];
@@ -166,6 +193,7 @@ const SportsInfo = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.2 });
 
+  // Dynamically find sport data based on the URL params
   useEffect(() => {
     const foundSport = sportsData.find(
       (sport) => sport.title.toLowerCase().replace(/\s+/g, "-") === sportTitle
@@ -188,7 +216,7 @@ const SportsInfo = () => {
   }
 
   return (
-    <div  className="mt-16">
+    <div className="mt-16">
       <Animation2 />
       <motion.div
         ref={ref}
@@ -215,20 +243,29 @@ const SportsInfo = () => {
             <p className="text-gray-700 font-medium flex items-center gap-2">
               <Users className="w-5 h-5 text-blue-500" />
               <span>
-                Faculty Coordinator:{" "}
+                {/* Faculty Coordinator:{" "} */}
                 <span className="text-gray-900">{sport.coordinator}</span>
+              </span>
+            </p>
+            <p className="text-gray-700 font-medium flex items-center gap-2">
+              <Phone className="w-5 h-5 text-green-500" />
+              <span>
+                {/* Phone:  */}
+                <span className="text-gray-900">{sport.phone}</span>
               </span>
             </p>
             <p className="text-gray-700 font-medium flex items-center gap-2">
               <MapPin className="w-5 h-5 text-green-500" />
               <span>
-                Venue: <span className="text-gray-900">{sport.venue}</span>
+                {/* Venue:  */}
+                <span className="text-gray-900">{sport.venue}</span>
               </span>
             </p>
             <p className="text-gray-700 font-medium flex items-center gap-2">
               <Clock className="w-5 h-5 text-purple-500" />
               <span>
-                Time: <span className="text-gray-900">{sport.time}</span>
+                {/* Time:  */}
+                <span className="text-gray-900">{sport.time}</span>
               </span>
             </p>
             <h3 className="text-xl font-semibold text-gray-800 flex items-center gap-2">
@@ -240,10 +277,14 @@ const SportsInfo = () => {
                 <li key={index}>{rule}</li>
               ))}
             </ul>
-            <Button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg mx-auto block w-40 flex items-center justify-center gap-2">
-              <Calendar className="w-5 h-5" />
-              Register
-            </Button>
+            <a
+              href="#"
+              className="inline-block dm-sans hover:scale-105 bg-sky-400 hover:bg-sky-400 hover:text-black  focus-visible:ring ring-sky-300 text-white text-sm md:text-base font-semibold text-center rounded-full outline-none transition duration-100 px-12 py-3"
+            >
+              <span className="justify-content flex">
+                Register Now <Rocket />
+              </span>
+            </a>
           </div>
         </div>
       </motion.div>
