@@ -5,7 +5,17 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Wifi, Music, Code, Award, Smile, Calendar } from "lucide-react";
+import {
+  Wifi,
+  Music,
+  Code,
+  Award,
+  Smile,
+  Calendar,
+  WholeWord,
+  Earth,
+  CircuitBoard,
+} from "lucide-react";
 import React from "react";
 import guest1 from "../../../assets/test/guest1.png";
 
@@ -57,7 +67,7 @@ function DhurvaFest() {
                 </CardContent>
                 <CardFooter className="bg-gray-50 p-6 text-center justify-center">
                   <Button className="bg-sky-400 hover:bg-sky-400 text-white hover:text-black work-sans  transition-all py-2 px-6 rounded-lg text-lg">
-                    Explore More
+                    Explore More <Earth />
                   </Button>
                 </CardFooter>
               </Card>
@@ -78,7 +88,7 @@ function DhurvaFest() {
                 </CardContent>
                 <CardFooter className="bg-gray-50 p-6 text-center justify-center">
                   <Button className="bg-green-300 hover:bg-green-300 text-white hover:text-black work-sans  transition-all py-2 px-6 rounded-lg text-lg">
-                    Explore More
+                    Explore More <CircuitBoard />
                   </Button>
                 </CardFooter>
               </Card>

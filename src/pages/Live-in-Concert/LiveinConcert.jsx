@@ -10,23 +10,11 @@ import Musicalconcert from '@/components/page-components/Musicalconcert';
 import '../../assets/fonts/madimi.css';
 const LiveinConcert = () => {
   return (
-    <div className='mt-20'>
-  
+    <div className="mt-20">
       <ConcertEvent />
-      <EventBanner
-        venue="Karpagam College of Engineering"
-        date="12th to 13th MAR 2024 09:00 AM"
-        title="DHRUVA – A National Level Techno-Management – Cultural Fest"
-        subtitle="Let's Join With Us!"
-        description="Will be conducted every year during the month of MARCH."
-        buttonText="BOOK NOW"
-        bgColor="#ffffff"
-        textColor="black"
-        highlightColor="#FFD700"
-      />
-      <Musicalconcert/>
-      
-    </div> 
+     
+      <Musicalconcert />
+    </div>
   );
 }
 

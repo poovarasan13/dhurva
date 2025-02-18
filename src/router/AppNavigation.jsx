@@ -20,6 +20,7 @@ function AppNavigation() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
+        <Route path="/dhurva" element={<HomePage />}></Route>
         <Route path="/culturalFest" element={<CulturalFestPage />} />
         <Route path="/technicalFest/*" element={<TechnicalFest />}></Route>
         <Route path="/departmentInfo" element={<EventPage />}></Route>

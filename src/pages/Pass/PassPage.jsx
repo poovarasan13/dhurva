@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import ElitePassList from "@/components/page-components/ElitePassList";
 import Navbar from "@/components/page-components/Navbar";
 import PassCard from "@/components/page-components/PassCard";
@@ -8,8 +9,31 @@ import AnimatedCard from "@/components/page-components/AnimatedCard";
 
 const PassPage = () => {
   return (
-    <div>
-      <AnimatedCard />
+    <div className="  min-h-screen">
+      <motion.div
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="text-center sm:mt-24  mt-20"
+      >
+        <h1 className="text-5xl font-semibold tracking-wide">
+          Exclusive Passes
+        </h1>
+        <p className="text-gray-400 text-lg mt-2">
+          Unlock premium content with our exclusive memberships
+        </p>
+      </motion.div>
+
+      <div className="flex flex-col items-center  mt-2  px-6  mb-6">
+        <div className="flex flex-wrap justify-center gap-12 mt-20 px-6 relative z-10">
+          <AnimatedCard />
+          <AnimatedCard />
+          <AnimatedCard />
+          <AnimatedCard />
+        </div>
+      </div>
+
+      {/* Footer */}
     </div>
   );
 };
