@@ -4,11 +4,14 @@ import DhurvaFest from "./section/DhurvaFest";
 import Banners from "@/components/page-components/Banners";
 import ProPassList from "./section/ProPassList";
 import Gallery from "./section/Gallery";
+import VideoParallax from "./section/VideoParallax";
 
 function HomePage() {
   return (
     <div>
+      <VideoParallax />
       <HeroSection />
+
       <Gallery />
       <DhurvaFest />
       <ProPassList />

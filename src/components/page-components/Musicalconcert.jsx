@@ -1,18 +1,29 @@
-import React from "react";
-import { motion } from "framer-motion";
-import "../../assets/fonts/dmsans.css";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import { Rocket } from "lucide-react";
+import "../../assets/fonts/dmsans.css";
+
 const MusicalConcert = () => {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start({ opacity: 1, y: 0, transition: { duration: 1 } });
+  }, [controls]);
+
   return (
-    <div className=" min-h-screen bg-white py-6 sm:py-8 lg:py-12">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={controls}
+      className="min-h-screen bg-white py-6 sm:py-8 lg:py-12"
+    >
       <div className="max-w-screen-2xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
-       
           <motion.div
             className="relative overflow-hidden rounded-2xl flex justify-center items-center"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.05 }}
           >
             <img
               src="https://www.kcedhruva.in/assets/melody-evening/dhurva_2k23_priyanka_n_k.jpg"
@@ -31,6 +42,7 @@ const MusicalConcert = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
+              whileHover={{ scale: 1.1 }}
             >
               Musical Concert
             </motion.h2>
@@ -79,10 +91,11 @@ const MusicalConcert = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.2 }}
+              whileHover={{ scale: 1.1 }}
             >
               <a
                 href="#"
-                className="inline-block dm-sans hover:scale-105 bg-sky-400 hover:bg-sky-400 hover:text-black  focus-visible:ring ring-sky-300 text-white text-sm md:text-base font-semibold text-center rounded-full outline-none transition duration-100 px-12 py-3"
+                className="inline-block dm-sans hover:scale-105 bg-sky-400 hover:bg-sky-400 hover:text-black focus-visible:ring ring-sky-300 text-white text-sm md:text-base font-semibold text-center rounded-full outline-none transition duration-100 px-12 py-3"
               >
                 <span className="justify-content flex">
                   Register Now <Rocket />
@@ -92,7 +105,7 @@ const MusicalConcert = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

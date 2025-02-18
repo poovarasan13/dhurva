@@ -1,35 +1,108 @@
-import React from "react";
-import "../../assets/style/FlipCard.css";
-import { Check } from "lucide-react";
+import { motion } from "framer-motion";
 
 const FlipCard = () => {
   return (
-    <div className="flip-card" style={{ width: "250px", height: "320px" }}>
-      <div className="flip-card-inner">
-        <div className="flip-card-front">
-          <p className="title">Pro Pass</p>
-          <p>What's inside</p>
-        </div>
-        <div className="flip-card-back">
-          <p className="title">Pro Pass</p>
-          <p>Rs : 300</p>
-          <ul className="mt-4 space-y-2 text-sm text-gray-300">
-            <li className="flex items-center gap-2">
-              <Check className="text-green-400" />
-              All Benefits of Pro Pass
-            </li>
-            <li className="flex items-center gap-2">
-              <Check className="text-green-400" />
-              Personalized Event Kit
-            </li>
-            <li className="flex items-center gap-2">
-              <Check className="text-green-400" />
-              Exclusive VIP Lounge Access
-            </li>
-          </ul>
-        </div>
+    <motion.div
+      whileHover="hover"
+      transition={{
+        duration: 1,
+        ease: "backInOut",
+      }}
+      variants={{
+        hover: {
+          scale: 1.05,
+        },
+      }}
+      className="relative w-full max-w-sm sm:w-80 h-96 shrink-0 overflow-hidden rounded-xl bg-sky-400 p-6 sm:p-8 mx-auto"
+    >
+      <div className="relative z-10 text-white">
+        <span className="mb-3 block w-fit rounded-full bg-white text-black px-3 py-0.5 text-sm font-light  font-bold">
+          Pro
+        </span>
+        <motion.span
+          initial={{ scale: 0.85 }}
+          variants={{
+            hover: {
+              scale: 1,
+            },
+          }}
+          transition={{
+            duration: 1,
+            ease: "backInOut",
+          }}
+          className="my-2 block origin-top-left font-mono text-4xl sm:text-6xl font-black leading-[1.2]"
+        >
+          $299/
+          <br />
+          Month
+        </motion.span>
+        <p className="text-sm sm:text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rem.
+        </p>
       </div>
-    </div>
+      <button className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white">
+        Get it now
+      </button>
+      <Background />
+    </motion.div>
+  );
+};
+
+const Background = () => {
+  return (
+    <motion.svg
+      width="100%"
+      height="100%"
+      viewBox="0 0 320 384"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="absolute inset-0 z-0"
+      variants={{
+        hover: {
+          scale: 1.5,
+        },
+      }}
+      transition={{
+        duration: 1,
+        ease: "backInOut",
+      }}
+    >
+      <motion.circle
+        variants={{
+          hover: {
+            scaleY: 0.5,
+            y: -25,
+          },
+        }}
+        transition={{
+          duration: 1,
+          ease: "backInOut",
+          delay: 0.2,
+        }}
+        cx="160.5"
+        cy="114.5"
+        r="101.5"
+        fill="#262626"
+      />
+      <motion.ellipse
+        variants={{
+          hover: {
+            scaleY: 2.25,
+            y: -25,
+          },
+        }}
+        transition={{
+          duration: 1,
+          ease: "backInOut",
+          delay: 0.2,
+        }}
+        cx="160.5"
+        cy="265.5"
+        rx="101.5"
+        ry="43.5"
+        fill="#262626"
+      />
+    </motion.svg>
   );
 };
 

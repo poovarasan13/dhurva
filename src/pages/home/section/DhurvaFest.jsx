@@ -17,11 +17,13 @@ import {
   CircuitBoard,
 } from "lucide-react";
 import React from "react";
-import guest1 from "../../../assets/test/guest1.png";
+
 
 import "../../../assets/fonts/dmsans.css";
 import "../../../assets/fonts/opensans.css";
 import "../../../assets/fonts/allfonts.css";
+import { Carousel } from "@/components/ui/carousel";
+import CarosualCard from "./CarosualCard";
 
 function DhurvaFest() {
   return (
@@ -38,7 +40,7 @@ function DhurvaFest() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center p-8">
-            <img src={guest1} className="rounded-2xl " />
+            <CarosualCard />
           </div>
 
           <div className="space-y-8">
