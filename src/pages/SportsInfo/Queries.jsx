@@ -18,9 +18,6 @@ const Queries = () => {
               key={index}
               className="flex flex-col items-center text-center p-4 border border-gray-200 rounded-lg bg-gradient-to-r from-gray-100 to-gray-50 shadow-md transition-all duration-300 hover:shadow-lg"
             >
-              {/* <div className="w-16 h-16 flex items-center justify-center rounded-full bg-blue-500 text-white text-xl font-bold shadow-lg">
-                {coordinator.name.charAt(0)}
-              </div> */}
               <h5 className="mt-3 text-lg font-semibold">{coordinator.name}</h5>
               <p className="text-gray-700 text-sm">
                 Phone:{" "}

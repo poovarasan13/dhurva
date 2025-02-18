@@ -12,12 +12,11 @@ const Navbar = () => {
     setIsOpen(!isOpen);
     document.body.style.overflow = isOpen ? "auto" : "hidden";
   };
-
   return (
     <nav className="bg-black shadow-md font-sans fixed top-0 left-0 w-full z-50 ">
       <div className="container mx-auto flex items-center justify-between p-4">
         <a href="#" className="text-xl font-bold">
-          <img src={logo} alt="Dhurva Logo" className=" w-20 " />
+          <img src={logo} alt="Dhurva Logo" className="w-20 md:w-[120px] " />
         </a>
 
         <ul className="hidden md:flex flex-grow justify-center space-x-8">

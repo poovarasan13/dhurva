@@ -6,18 +6,17 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import React from "react";
-import one from "../../../assets/test/1.png";
-import two from "../../../assets/test/2.png";
-import three from "../../../assets/test/3.png";
-import four from "../../../assets/test/4.png";
-import five from "../../../assets/test/5.png";
-import six from "../../../assets/test/vue.png";
+import kce25 from "../../../assets/images/kce25.jpg";
 import "../../../assets/fonts/allfonts.css";
 import "../../../assets/fonts/dmsans.css";
 import { Button } from "@/components/ui/button";
 import { Rocket } from "lucide-react";
+import dhruva from '../../../assets/images/dhurva-logo.png'
 
-const images = [one, two, three, four, five, six];
+const images = [
+  dhruva,
+  kce25
+];
 
 function HeroSection() {
   const plugin = React.useRef(
