@@ -11,7 +11,6 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-// import video from "../../../assets/Video/video.mp4";
 import {
   Mail,
   Phone,
@@ -169,7 +168,7 @@ export default function FooterSection() {
                   href="tel:8807169302"
                   className="text-sm text-gray-400 hover:text-sky-500 flex items-center gap-2"
                 >
-                  <p className="px-6">+91 6379283008</p>
+                  <p className="px-6">+91 88071 69302</p>
                 </a>
                 <a
                   href="tel:9965240405"

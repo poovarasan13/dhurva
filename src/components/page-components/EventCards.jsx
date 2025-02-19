@@ -14,8 +14,8 @@ function EventCards({ events }) {
     });
   };
   return (
-    <div className="flex justify-center dm-sans  p-4">
-      <Card className="w-[320px] sm:w-[350px] bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
+    <div className="flex justify-center dm-sans   overflow-hidden p-4">
+      <Card className=" w-[400px] bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
         <CardContent className="p-4">
           <img
             src={events.eventThumbnail}

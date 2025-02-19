@@ -9,13 +9,13 @@ const AnimatedCard = () => {
   return (
     <div className="relative  flex justify-center  ">
       <div className="card  relative z-10">
-        <div className="bg p-6 rounded-lg hover:bg-orange-300  shadow-lg">
+        <div className="bg p-6 rounded-lg hover:bg-orange-200 hover:text-black  shadow-lg">
           <h3 className="text-center text-3xl    font-semibold dm-sans text-black">
             Pro Pass
           </h3>
           <p className="text-2xl text-center font-medium ">Rs 200</p>
 
-          <ul className="mt-4 space-y-3 text-md text-black hover:text-white">
+          <ul className="mt-4 space-y-3 text-md text-black ">
             <li className="flex items-center gap-2 ">
               <Check className="text-orange-500" />
               All Benefits of Pro Pass

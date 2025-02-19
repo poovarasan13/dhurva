@@ -12,12 +12,13 @@ import {
   FaMale,
   FaFemale,
 } from "react-icons/fa";
+import SportsAssests from "@/assets/images/Sports/SportsAssests";
 import { Button } from "@/components/ui/button";
 
 import { Card, CardContent } from "@/components/ui/card";
 import Queries from "../SportsInfo/Queries";
+import Ball from "../../assets/images/sports/ball1.png";
 // import { useEffect } from "react";
-import SportsAssests from "@/assets/images/sports/SportAssets.js";
 
 const sportsData = [
   {
@@ -93,7 +94,7 @@ const coordinatorData = {
   name: "P. Dhibesh Kumar",
   email: "dpekce@kce.ac.in",
   phone: "+91 97865 30029",
-  description: "FASTER, HIGHER, STRONGER, TOGETHER.",
+  description: "Faster, Higher, Stronger, Together.",
   eventName: "Karpagam All India Inter College ChampionShip",
   eventType:
     "HandBall, VolleyBall, Kabbadi, Cricket, BallBadminton, Throwball,Football",
@@ -134,7 +135,12 @@ const CoordinatorCard = () => {
             <div className="flex items-center space-x-2 w-full ">
               <Phone className="text-red-500" />
               <div className="text-sm sm:text-sm md:text-md dm-sans text-gray-800 w-full sm:w-1/2 md:w-2/3">
-                {coordinatorData.phone}
+                <a
+                  href={`tel:$ {coordinatorData.phone}`}
+                  className="text-black hover:text-blue-800 "
+                >
+                  {coordinatorData.phone}
+                </a>
               </div>
             </div>
           </div>

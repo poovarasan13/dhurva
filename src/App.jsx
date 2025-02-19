@@ -32,7 +32,7 @@ function App() {
         </div>
       ) : (
         <>
-          <MaskedCursor />
+          {/* <MaskedCursor /> */}
           <AppNavigation />
         </>
       )}

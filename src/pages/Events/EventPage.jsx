@@ -18,7 +18,7 @@ function EventPage() {
   const departmentData = location.state.events;
   // console.log(departmentData.events);
   return (
-    <div className="pt-20 lg:pt-30    dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <div className="pt-20 lg:pt-30   dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       {/* <Navbar /> */}
 
       <motion.div
@@ -49,7 +49,7 @@ function EventPage() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
       ></motion.div>
-      <div className="flex justify-center mb-4">
+      <div className=" flex justify-center mb-4">
         <CoordinatorCard deptDetails={departmentData} />
       </div>
     </div>

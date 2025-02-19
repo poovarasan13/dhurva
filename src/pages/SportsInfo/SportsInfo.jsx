@@ -4,7 +4,6 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Button } from "@/components/ui/button";
 import { Rocket } from "lucide-react";
-import SportsAssests from "@/assets/images/sports/SportAssets";
 import {
   Calendar,
   Clock,
@@ -15,7 +14,7 @@ import {
   Phone,
   AlertCircle,
 } from "lucide-react";
-// import SportsAssests from "@/assets/images/Sports/SportsAssests";
+import SportsAssests from "@/assets/images/sports/SportAssets";
 import Animation2 from "@/assets/Animation/Animation2";
 
 const sportsData = [
@@ -249,7 +248,13 @@ const SportsInfo = () => {
               <Phone className="w-5 h-5 text-green-500" />
               <span>
                 {/* Phone:  */}
-                <span className="text-gray-900">{sport.phone}</span>
+                <a
+                  href={`tel:$ {sport.phone}`}
+                  className="text-black hover:text-blue-800 "
+                >
+                  {sport.phone}
+                </a>
+                {/* <span className="text-gray-900">{sport.phone}</span> */}
               </span>
             </p>
             <p className="text-gray-700 font-medium flex items-center gap-2">
