@@ -1,6 +1,13 @@
 import React from "react";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
-import { Calendar, Cpu, Laptop, LaptopMinimal, Settings } from "lucide-react";
+import {
+  Calendar,
+  Cpu,
+  Laptop,
+  LaptopMinimal,
+  Rocket,
+  Settings,
+} from "lucide-react";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import "../../assets/fonts/dmserif.css";
@@ -37,7 +44,7 @@ function DepartmentCard({ events }) {
             {[
               {
                 icon: Settings,
-                text: `${events.workshop} Workshops` ,
+                text: `${events.workshop} Workshops`,
                 bg: "bg-blue-100 dark:bg-blue-900",
                 iconColor: "text-blue-600 dark:text-blue-300",
               },
@@ -70,12 +77,12 @@ function DepartmentCard({ events }) {
           </div>
         </CardContent>
 
-        <CardFooter className="p-4 sm:p-6">
+        <CardFooter className="flex justify-center sm:p-6">
           <Button
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md group-hover:bg-white group-hover:text-black"
+            className="  bg-sky-400 w-40  dm-sans  text-white text-lg   rounded-full transition-all duration-300 shadow-sm hover:shadow-md group-hover:bg-white group-hover:text-black"
             onClick={handeNavigation}
           >
-            Visit
+            visit <Rocket />
           </Button>
         </CardFooter>
       </Card>
