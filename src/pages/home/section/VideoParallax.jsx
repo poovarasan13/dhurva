@@ -15,7 +15,7 @@ const VideoParallax = () => {
     <div className="relative sm:mt-16 md:mt-20 w-full h-[900px] md:h-[700px] overflow-hidden flex items-center justify-center">
       <video
         className="absolute top-0 left-0 w-full h-[900px] md:h-[700px] object-cover"
-        src="https://res.cloudinary.com/dzpkbej9y/video/upload/v1739965580/video_byosi3.mp4"
+        src="https://res.cloudinary.com/dzpkbej9y/video/upload/v1739970180/video-1_plvuxl.mp4 "
         autoPlay
         loop
         muted
