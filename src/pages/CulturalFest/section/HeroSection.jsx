@@ -4,7 +4,15 @@ import { Button } from "@/components/ui/button";
 import dhurvaAbout from "../../../assets/images/about-images.jpg";
 import "../../../assets/fonts/dmserif.css";
 import "../../../assets/fonts/sourcesans.css";
+import { useNavigate } from "react-router-dom";
 function HeroSection() {
+  const navigate = useNavigate();
+  const handleOnStage = () => {
+    navigate("/onstage");
+  };
+  const handleOffStage = () => {
+    navigate("/offstage");
+  };
   return (
     <div>
       <div className="container mx-auto px-4 lg:px-16 py-12 mt-20">
@@ -19,10 +27,14 @@ function HeroSection() {
               performances, theatre showcases, and art exhibitions.
             </p>
             <div className="flex justify-center md:justify-start gap-4">
-              <Button className="p-6 border-b-gray-200 border-b-4 border-2">
+              <Button
+                onClick={handleOnStage}
+                className="p-6 border-b-gray-200 border-b-4 border-2"
+              >
                 On Stage
               </Button>
               <Button
+                onClick={handleOffStage}
                 variant="outline"
                 className="p-6 border-2  border-black "
               >

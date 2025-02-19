@@ -25,14 +25,16 @@ function EventShowOff({ events }) {
         )}
       </div>
 
-      <h3 className="text-3xl font-sans text-center text-black">Hackathons</h3>
+      <h3 className="text-3xl font-sans text-center text-black">
+        Technical Events
+      </h3>
       <div className="flex flex-wrap justify-center gap-6 p-6">
         {technical.length > 0 ? (
           technical.map((event, index) => (
             <EventCards key={index} events={event} />
           ))
         ) : (
-          <p className="text-gray-500">No hackathons available</p>
+          <p className="text-gray-500">No Technical Events available</p>
         )}
       </div>
 

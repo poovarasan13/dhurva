@@ -13,6 +13,30 @@ const cse = {
   events: [
     {
       posterUrl: "",
+      eventName: "Workshop on Industrial Internet of Things",
+      eventType: "Workshop",
+      eventSubType: "WorkShop",
+      eventTime: "2:00 PM to 4:00 PM",
+      eventDescription:
+        "The Industrial IoT (IIoT) Workshop explores the integration of IoT in industrial automation, focusing on real-time monitoring, smart manufacturing, and data-driven decision-making. Participants will learn about IIoT architecture, communication protocols (MQTT, OPC-UA), edge computing, and cybersecurity. Hands-on sessions will include implementing IIoT solutions using sensors and microcontrollers like Raspberry Pi/Arduino. By the end, attendees will understand how IIoT enhances efficiency, reduces costs, and improves industrial operations.",
+      eventRules: [],
+      eventVenue: "C - block / Oracle lab",
+      eventRounds: [],
+      eventPrize: [],
+      eventStaffCoordinator: {
+        name: "Prof. C. Vidya Prabha AP / CSE",
+      },
+      studentCoordinator: [
+        {
+          name: "Mr. Jaivant III CS B",
+        },
+        {
+          name: "Ms. Monica II CS C",
+        },
+      ],
+    },
+    {
+      posterUrl: "",
       eventThumbnail: "",
       eventName: "Workshop on AI and Machine Learning",
       eventType: "WorkShop",
@@ -234,7 +258,7 @@ const cse = {
       posterUrl: "",
       eventName: "Poster Design",
       eventType: "Non-Technical",
-      eventSubType: "Non-Technical",
+      eventSubType: "NonTechnical",
       eventTime: "2:00 PM",
       eventDescription: "",
       eventRules: ["2 members / team"],
@@ -263,7 +287,7 @@ const cse = {
       posterUrl: "",
       eventName: "Tech Debate",
       eventType: "Non-Technical",
-      eventSubType: "Non-Technical",
+      eventSubType: "NonTechnical",
       eventTime: "3:00 PM",
       eventDescription: "",
       eventRules: ["4 members/team"],

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { Check } from "lucide-react";
 
 const FlipCard = () => {
+  const offers = ["hello", " brossssss", "roayal passs"];
   return (
     <motion.div
       whileHover="hover"
@@ -32,16 +34,22 @@ const FlipCard = () => {
           }}
           className="my-2 block origin-top-left font-mono text-4xl sm:text-6xl font-black leading-[1.2]"
         >
-          $299/
+          Rs 300
           <br />
-          Month
         </motion.span>
         <p className="text-sm sm:text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rem.
+          {offers.map((rules, index) => (
+            <>
+              <li key={index} className="flex ">
+                <Check className="text-green-500" />
+                <span className="text-lg">{rules}</span>
+              </li>
+            </>
+          ))}
         </p>
       </div>
-      <button className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white">
-        Get it now
+      <button className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 hover:text-white hover:bg-black border-white bg-white py-2 text-center font-mono font-black uppercase text-neutral-800 backdrop-blur transition-colors hover:bg-white/30 hover:text-white">
+        Get Pass Now
       </button>
       <Background />
     </motion.div>

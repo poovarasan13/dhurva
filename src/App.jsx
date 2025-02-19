@@ -1,35 +1,41 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useEffect, useState } from "react";
 import "./App.css";
-
-import HomePage from "./pages/home/HomePage";
-import EventPage from "./pages/Events/EventPage";
-import EventShowPage from "./pages/EventDisplay/EventShowPage";
-import CulturalFest from "./pages/CulturalFest/CulturalFestPage";
-import CulturalFestPage from "./pages/CulturalFest/CulturalFestPage";
-import DepartmentShowOff from "./pages/Technical-Fest/DepartmentShowOff";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import "./assets/fonts/dmserif.css";
+import star from "./assets/images/dhruvastar.png"; // Import the image
+// import "../../assets/fonts/dmsans.css";
+import "./assets/fonts/dmsans.css";
 import AppNavigation from "./router/AppNavigation";
-import Banners from "./components/page-components/Banners";
 import MaskedCursor from "./components/page-components/MaskedCursor";
-import LiveinConcert from "./pages/Live-in-Concert/LiveinConcert";
-import FlipCard from "./components/page-components/FlipCard";
-
 function App() {
-  // const [count, setCount] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    Aos.init();
+  });
+  useEffect(() => {
+    // Show the rotating image for 2 seconds
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer); // Cleanup timeout on unmount
+  }, []);
 
   return (
     <>
-      {/* <HomePage /> */}
-      {/* <DepartmentShowOff /> */}
-      {/* <EventShowPage /> */}
-      {/* <EventPage /> */}
-      {/* <CulturalFestPage /> */}
-      {/* <LiveinConcert/> */}
-      <MaskedCursor />
-      <AppNavigation  />
-      {/* <FlipCard /> */}
-      {/* <Banners /> */}
+      {isLoading ? (
+        <div className="center-container">
+          <a href="https://vitejs.dev" target="_blank">
+            <img src={star} className="logo rotating" alt="Star logo" />
+          </a>
+        </div>
+      ) : (
+        <>
+          <MaskedCursor />
+          <AppNavigation />
+        </>
+      )}
     </>
   );
 }

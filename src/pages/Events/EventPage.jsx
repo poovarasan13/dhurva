@@ -8,12 +8,15 @@ import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/dmsans.css";
 import data from "../../data/Cse.js";
 import CoordinatorCard from "@/components/page-components/CoordinatorCard";
+import { useLocation } from "react-router-dom";
 
 function EventPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  console.log(data);
+  const location = useLocation();
+  const departmentData = location.state.events;
+  // console.log(departmentData.events);
   return (
     <div className="pt-20 lg:pt-30    dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       {/* <Navbar /> */}
@@ -25,10 +28,10 @@ function EventPage() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h1 className="text-3xl sm:text-6xl font-extrabold tracking-tight dm-serif bg-gradient-to-r text-black  bg-clip-text">
-          {data.departmentName}
+          {departmentData.departmentName}
         </h1>
         <p className="mt-4 dm-sans  text-lg text-gray-600 dark:text-gray-300 max-w-container mx-auto leading-relaxed">
-          {data.departmentDescription}
+          {departmentData.departmentDescription}
         </p>
       </motion.div>
 
@@ -38,7 +41,7 @@ function EventPage() {
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <EventShowOff events={data.events} />
+        <EventShowOff events={departmentData.events} />
       </motion.div>
 
       <motion.div
@@ -47,7 +50,7 @@ function EventPage() {
         transition={{ duration: 1, delay: 0.5 }}
       ></motion.div>
       <div className="flex justify-center mb-4">
-        <CoordinatorCard deptDetails={data} />
+        <CoordinatorCard deptDetails={departmentData} />
       </div>
     </div>
   );

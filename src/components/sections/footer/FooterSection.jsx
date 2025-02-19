@@ -11,31 +11,38 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
+// import video from "../../../assets/Video/video.mp4";
 import {
   Mail,
   Phone,
   Map,
-  // Instagram,
   FacebookIcon,
-  Facebook,
-  Instagram,
   InstagramIcon,
   YoutubeIcon,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  FaceIcon,
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
-} from "@radix-ui/react-icons";
+import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { NavLink } from "react-router-dom";
 
 export default function FooterSection() {
   return (
-    <footer className="w-full bg-black text-white">
-      <div className="mx-auto max-w-container px-4 py-8">
-        <Footer className="bg-black">
-          <FooterContent className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <footer className="relative w-full bg-black text-white overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute top-0 left-0 w-full h-full object-cover opacity-20"
+      >
+        <source
+          src="https://res.cloudinary.com/dzpkbej9y/video/upload/v1739965580/video_byosi3.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <div className="relative mx-auto max-w-container px-4 py-8">
+        <Footer className="bg-black bg-opacity-90">
+          <FooterContent className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 items-center">
             <FooterColumn className="flex flex-col items-center sm:items-start">
               <div className="mb-4">
                 <img
@@ -59,11 +66,8 @@ export default function FooterSection() {
                     </h4>
                     <p className="text-sm">
                       Karpagam College of Engineering is delighted to present
-                      the 8th edition of DHRUVA, a national-level
-                      techno-management-cultural fest on 15th and 16th March
-                      2024. Mark your calendars and join us for an unforgettable
-                      celebration of talent, creativity, and innovation at
-                      Dhruva 2024.
+                      the 9th edition of DHRUVA, a national-level fest on 13th ,
+                      14th and 15th March 2025.
                     </p>
                   </div>
                 </HoverCardContent>
@@ -95,103 +99,116 @@ export default function FooterSection() {
                 </a>
               </div>
             </FooterColumn>
+
             <FooterColumn>
               <h3 className="text-md font-semibold mb-4 text-white">
                 Social Media
               </h3>
               <div className="space-y-2">
-                <NavLink
-                  href="https://www.instagram.com/wekceians/"
-                  className="text-sm text-gray-400 hover:text-pink-400 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
+                <a
+                  href="https://www.instagram.com/wekceians?igsh=dWc3MWE4bzVtcWF2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-400 hover:text-pink-400 flex items-center gap-2"
+                >
+                  <InstagramLogoIcon className="w-4 h-4" /> Wekceians
+                </a>
+                <a
+                  href="https://www.instagram.com/kcedhruva?igsh=cmV3ZjloMW9oeDRs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-400 hover:text-pink-400 flex items-center gap-2"
                 >
                   <InstagramLogoIcon className="w-4 h-4" />
-                  Instagram
-                </NavLink>
-                <a
-                  href="https://www.facebook.com/wekceians/"
-                  className="text-sm text-gray-400 hover:text-blue-700 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
-                >
-                  <FacebookIcon className="w-4 h-4" />
-                  Facebook
+                  Dhruva
                 </a>
                 <a
-                  href="https://www.linkedin.com/school/wekceians/posts/?feedView=all"
-                  className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
+                  href="https://www.facebook.com/share/1ERFLsRYj7/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-400 hover:text-blue-700 flex items-center gap-2"
                 >
-                  <LinkedInLogoIcon className="w-4 h-4" />
-                  LinkedIn
+                  <FacebookIcon className="w-4 h-4" /> Facebook
                 </a>
                 <a
-                  href=""
-                  className="text-sm text-gray-400 hover:text-red-600 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
+                  href="https://www.linkedin.com/school/wekceians/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-400 hover:text-sky-500 flex items-center gap-2"
                 >
-                  <YoutubeIcon className="w-4 h-4" />
-                  YouTube
+                  <LinkedInLogoIcon className="w-4 h-4" /> LinkedIn
+                </a>
+                <a
+                  href="https://youtube.com/@wekceians?si=2UClrWxuRShi8Xoy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-400 hover:text-red-600 flex items-center gap-2"
+                >
+                  <YoutubeIcon className="w-4 h-4" /> YouTube
                 </a>
               </div>
             </FooterColumn>
 
-            {/* Contact Information */}
             <FooterColumn>
               <h3 className="text-md font-semibold mb-4 text-white">Contact</h3>
               <div className="space-y-2">
                 <a
                   href="mailto:dhruva@kce.ac.in"
-                  className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
+                  className="text-sm text-gray-400 hover:text-sky-500 flex items-center gap-2"
                 >
-                  <Mail className="w-4 h-4" />
-                  dhruva@kce.ac.in
+                  <Mail className="w-4 h-4" /> dhruva@kce.ac.in
                 </a>
                 <a
-                  href="tel:6385908383"
-                  className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
+                  href="tel:6385291261"
+                  className="text-sm text-gray-400 hover:text-sky-500 flex items-center gap-2"
                 >
                   <Phone className="w-4 h-4" />
-                  6385908383 / 6385908383
+                  +91 63852 91261
                 </a>
                 <a
-                  href="https://maps.google.com"
+                  href="tel:8807169302"
+                  className="text-sm text-gray-400 hover:text-sky-500 flex items-center gap-2"
+                >
+                  <p className="px-6">+91 88071 69302</p>
+                </a>
+                <a
+                  href="tel:9965240405"
+                  className="text-sm text-gray-400 hover:text-sky-500 flex items-center gap-2"
+                >
+                  <p className="px-6">+91 99652 40405</p>
+                </a>
+                <a
+                  href="tel:8438439374"
+                  className="text-sm text-gray-400 hover:text-sky-500 flex items-center gap-2"
+                >
+                  <p className="px-6">+91 84384 39374</p>
+                </a>
+                <a
+                  href="https://www.google.com/maps/place/Karpagam+College+of+Engineering/@10.880101,77.022368,15z/data=!4m6!3m5!1s0x3ba84ffc9b3ea755:0xda7508a90583d22f!8m2!3d10.8801009!4d77.0223684!16s%2Fm%2F03m6r9n?hl=en&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 flex items-center gap-2"
+                  className="text-sm text-gray-400 hover:text-sky-500 flex items-center gap-2"
                 >
-                  <Map className="w-10 h-10" />
-                  Myleripalayam Village, OththakkalMandapam Post, Coimbatore -
-                  641 032
+                  <Map className="w-4 h-4" /> Coimbatore - 641 032
                 </a>
               </div>
             </FooterColumn>
 
-            <FooterColumn className="col-span-1 sm:col-span-2 md:col-span-1">
+            {/* Map Section in Single Row */}
+            <div className="w-full h-64 border rounded-lg shadow-lg overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.0986519474127!2d77.01979347480649!3d10.880100889275035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba84ffc9b3ea755%3A0xda7508a90583d22f!2sKarpagam%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1739673858861!5m2!1sen!2sin"
                 allowFullScreen
-                className="max-w-max h-48 sm:h-64 md:h-48 border rounded-lg shadow-lg"
+                className="w-full h-full"
                 title="Google Maps Embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
-            </FooterColumn>
+            </div>
           </FooterContent>
 
-          <FooterBottom className="mt-8 border-t border-gray-800 pt-6">
-            <div className="text-gray-400 text-sm text-center sm:text-left">
-              © 2025 Karpagam College Of Engineering | KCE - IT
-            </div>
-            <div className="flex items-center justify-center sm:justify-end gap-4 mt-4 sm:mt-0">
-              <a
-                href="/"
-                className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="/"
-                className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300"
-              >
-                Terms of Service
-              </a>
-            </div>
+          <FooterBottom className="mt-8 border-t border-gray-800 pt-6 text-center text-gray-400">
+            © 2025 Karpagam College Of Engineering | Core Team - My Campus Clubs
           </FooterBottom>
         </Footer>
       </div>
