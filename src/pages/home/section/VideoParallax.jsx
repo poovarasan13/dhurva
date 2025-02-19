@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import videoBg from "../../../assets/video/home.mp4";
+// import videoBg from "../../../assets/video/home.mp4";
 import "../../../assets/fonts/dmsans.css";
 
 const VideoParallax = () => {
