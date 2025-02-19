@@ -15,7 +15,7 @@ const VideoParallax = () => {
     <div className="relative sm:mt-16 md:mt-20 w-full h-[900px] md:h-[700px] overflow-hidden flex items-center justify-center">
       <video
         className="absolute top-0 left-0 w-full h-[900px] md:h-[700px] object-cover"
-        src={videoBg}
+        src="https://res.cloudinary.com/dzpkbej9y/video/upload/v1739965580/video_byosi3.mp4"
         autoPlay
         loop
         muted
@@ -27,7 +27,10 @@ const VideoParallax = () => {
 
       <div className="relative md:mt-[400px] mt-[600px] z-10 text-center text-white px-6 md:px-12">
         <h1 className="text-2xl md:text-6xl font-bold dm-sans">
-          Experience the <span className="text-orange-600">Kce's <span className="text-sky-800">Dhruva</span></span>
+          Experience the{" "}
+          <span className="text-orange-600">
+            Kce's <span className="text-sky-800">Dhruva</span>
+          </span>
         </h1>
         <p className="text-sm md:text-lg mt-2">
           Immerse yourself in the next generation of innovation.
