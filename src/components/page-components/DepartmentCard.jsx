@@ -29,7 +29,7 @@ function DepartmentCard({ events }) {
         <CardHeader className="p-4 sm:p-6 ">
           <div className="flex items-center justify-between">
             <h2 className="text-lg sm:text-2xl font-bold text-gray-800 dark:text-black group-hover:text-black dm-serif transition-all duration-300">
-              {events.shortName}
+              {events.departmentName}
             </h2>
             <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-full group-hover:bg-white transition-all duration-300">
               <Laptop className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 dark:text-blue-300 transition-all duration-300" />

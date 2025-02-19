@@ -12,12 +12,10 @@ import {
   FaMale,
   FaFemale,
 } from "react-icons/fa";
-import SportsAssests from "@/assets/images/Sports/SportsAssests";
 import { Button } from "@/components/ui/button";
-
+import SportsAssests from "@/assets/images/sports/SportAssets";
 import { Card, CardContent } from "@/components/ui/card";
 import Queries from "../SportsInfo/Queries";
-import Ball from "../../assets/images/sports/ball1.png";
 // import { useEffect } from "react";
 
 const sportsData = [
