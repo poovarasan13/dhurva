@@ -7,14 +7,18 @@ import { NavLink, useNavigate } from "react-router-dom";
 function EventCards({ events }) {
   const navigate = useNavigate();
   const handleNavigate = () => {
-    navigate("/eventInfo");
+    navigate("/eventInfo", {
+      state: {
+        events,
+      },
+    });
   };
   return (
     <div className="flex justify-center dm-sans  p-4">
       <Card className="w-[320px] sm:w-[350px] bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
         <CardContent className="p-4">
           <img
-            src={events.posterLink}
+            src={events.eventThumbnail}
             alt="Event Poster"
             className="w-full h-40 object-cover rounded-lg shadow-sm"
           />
@@ -23,11 +27,11 @@ function EventCards({ events }) {
               {events.eventName}
             </h3>
             <p className="text-sm text-gray-600 font-semibold dark:text-gray-300 mt-1">
-              {events.eventSubName}
+              {events.eventType}
             </p>
             <p className="text-sm font-medium text-gray-700 dark:text-gray-400 mt-1 font-semibold">
-              ⏰ Time:{" "}
-              <span className="font-bold text-black">{events.time}</span>
+              ⏰ Time:
+              <span className=" text-gray-800"> {events.eventTime}</span>
             </p>
           </div>
         </CardContent>

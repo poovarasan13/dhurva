@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import "../../assets/fonts/arapey.css";
 import Navbar from "@/components/page-components/Navbar";
@@ -6,10 +6,16 @@ import FooterSection from "@/components/sections/footer/FooterSection";
 import EventShowOff from "./EventShowOff";
 import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/dmsans.css";
+import data from "../../data/Cse.js";
+import CoordinatorCard from "@/components/page-components/CoordinatorCard";
 
 function EventPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  console.log(data);
   return (
-    <div className="pt-20 lg:pt-30   bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <div className="pt-20 lg:pt-30    dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       {/* <Navbar /> */}
 
       <motion.div
@@ -19,20 +25,10 @@ function EventPage() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h1 className="text-3xl sm:text-6xl font-extrabold tracking-tight dm-serif bg-gradient-to-r text-black  bg-clip-text">
-          Computer Science And Engineering{" "}
+          {data.departmentName}
         </h1>
-        <p className="mt-4 dm-sans  text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-          The Department of EC is excited to announce its upcoming lineup of
-          events! Join us for{" "}
-          <span className="font-bold text-black hover:text-red-600">
-            9 technical events
-          </span>
-          and{" "}
-          <span className="font-bold text-black hover:text-blue-700">
-            6 workshops
-          </span>{" "}
-          filled with knowledge and innovation. Get ready to learn, compete, and
-          grow!
+        <p className="mt-4 dm-sans  text-lg text-gray-600 dark:text-gray-300 max-w-container mx-auto leading-relaxed">
+          {data.departmentDescription}
         </p>
       </motion.div>
 
@@ -42,16 +38,17 @@ function EventPage() {
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <EventShowOff />
+        <EventShowOff events={data.events} />
       </motion.div>
 
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-      >
-        {/* <FooterSection /> */}
-      </motion.div>
+      ></motion.div>
+      <div className="flex justify-center mb-4">
+        <CoordinatorCard deptDetails={data} />
+      </div>
     </div>
   );
 }

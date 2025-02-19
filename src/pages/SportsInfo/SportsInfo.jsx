@@ -4,6 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Button } from "@/components/ui/button";
 import { Rocket } from "lucide-react";
+import SportsAssests from "@/assets/images/sports/SportAssets";
 import {
   Calendar,
   Clock,
@@ -14,19 +15,14 @@ import {
   Phone,
   AlertCircle,
 } from "lucide-react";
-
-import volleyBallImage from "../../assets/test/cricket.png";
-import kabaddiImage from "../../assets/test/cricket.png";
-import cricketImage from "../../assets/test/cricket.png";
-import footballImage from "../../assets/test/cricket.png";
-import soloSingingImage from "../../assets/test/cricket.png";
+// import SportsAssests from "@/assets/images/Sports/SportsAssests";
 import Animation2 from "@/assets/Animation/Animation2";
 
 const sportsData = [
   {
     title: "Handball",
     description: "Experience the fast-paced action of handball!",
-    image: volleyBallImage,
+    image: SportsAssests.Handball,
     gender: "male",
     coordinator: "VivekPrasanna SivaSamy",
     phone: "+91 93422 83487",
@@ -48,7 +44,7 @@ const sportsData = [
   {
     title: "Kabaddi",
     description: "Get ready for intense raiding and defending in Kabaddi!",
-    image: kabaddiImage,
+    image: SportsAssests.Kabbadi,
     gender: "male",
     coordinator: "Vasanth Balan",
     phone: "+91 70920 88003",
@@ -71,7 +67,7 @@ const sportsData = [
     title: "Football",
     description:
       "Dribble, pass, and score in our exciting football tournament!",
-    image: footballImage,
+    image: SportsAssests.Football,
     gender: "male",
     coordinator: "Mr. Suresh Nair",
     phone: "+91 63790 40788",
@@ -93,7 +89,7 @@ const sportsData = [
   {
     title: "Volleyball",
     description: "Spike your way to victory in the volleyball tournament!",
-    image: volleyBallImage,
+    image: SportsAssests.Volleyball,
     gender: "both",
     coordinator: "Deepak",
     phone: "+91 97865 30029",
@@ -116,7 +112,7 @@ const sportsData = [
     title: "Cricket",
     description:
       "Step up to the crease and smash those boundaries in our Cricket Championship!",
-    image: cricketImage,
+    image: SportsAssests.Cricket,
     gender: "male",
     coordinator: "Mohan",
     phone: "+91 82202 93437",
@@ -138,7 +134,7 @@ const sportsData = [
   {
     title: "Ball Badminton",
     description: "Experience the unique sport of Ball Badminton!",
-    image: volleyBallImage,
+    image: SportsAssests.BallBadminton,
     gender: "male",
     coordinator: "Sudharsan",
     phone: "+91 63790 40788",
@@ -161,7 +157,7 @@ const sportsData = [
     title: "Throwball",
     description:
       "Calling all! Join our Throwball tournament and showcase your skills.",
-    image: volleyBallImage,
+    image: SportsAssests.Throwball,
     gender: "female",
     coordinator: "Ms. Priya Sharma",
     phone: "+91 97865 30029",
@@ -188,12 +184,14 @@ const containerVariants = {
 };
 
 const SportsInfo = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { sportTitle } = useParams();
   const [sport, setSport] = useState(null);
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.2 });
 
-  // Dynamically find sport data based on the URL params
   useEffect(() => {
     const foundSport = sportsData.find(
       (sport) => sport.title.toLowerCase().replace(/\s+/g, "-") === sportTitle
@@ -217,7 +215,7 @@ const SportsInfo = () => {
 
   return (
     <div className="mt-16">
-      <Animation2 />
+      {/* <Animation2 /> */}
       <motion.div
         ref={ref}
         variants={containerVariants}
@@ -225,7 +223,7 @@ const SportsInfo = () => {
         animate={controls}
         className="bg-white text-black py-12 px-4 md:px-12 lg:px-24"
       >
-        <h1 className="text-4xl font-bold text-gray-800 text-center flex items-center gap-2">
+        <h1 className="text-2xl md:text-4xl  font-bold text-gray-800 text-center flex items-center gap-2">
           <Trophy className="w-8 h-8 text-yellow-500" />
           {sport.title}
         </h1>

@@ -10,7 +10,11 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 function DepartmentCard({ events }) {
   const navigate = useNavigate();
-
+  const handeNavigation = () => {
+    navigate(`/eventInfo`, {
+      state: { events },
+    });
+  };
   return (
     <div className="group hover:scale-105 transition-transform duration-300 w-full sm:w-[380px] md:w-[400px] ">
       <Card className="w-full bg-white dark:from-gray-700 dark:to-gray-800 hover:bg-sky-300 shadow-md hover:shadow-lg rounded-lg overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-300 ">

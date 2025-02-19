@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
 import { NavLink } from "react-router-dom";
+import "../../assets/fonts/dmsans.css";
 import navData from "../../data/NavData";
 
 const Navbar = () => {
@@ -21,9 +22,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 border-b ${
-        isMobile ? "bg-black" : "backdrop-blur-lg bg-white/10"
-      } border-white/20 shadow-md transition-all duration-300`}
+      className={`fixed top-0 left-0 w-full z-50 border-b ${"bg-black"} border-white/20 shadow-md transition-all duration-300`}
     >
       <div className="container mx-auto flex items-center justify-between md:p-3">
         <a href="#" className="text-xl font-bold">
@@ -40,7 +39,8 @@ const Navbar = () => {
             <li key={index}>
               <NavLink
                 to={item.route}
-                className="text-black border-b-2 border-transparent hover:border-orange-400 transition-all duration-300"
+                className="dm-sans hover:scale-105 text-xl border-b-2 border-transparent transition-all duration-300
+             hover:border-orange-400 text-white"
               >
                 {item.name}
               </NavLink>
