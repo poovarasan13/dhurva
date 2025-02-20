@@ -15,5 +15,7 @@ const onstage = {
   rj: "https://res.cloudinary.com/dl2wibcfp/image/upload/v1740041007/mic_rjscrp.jpg",
   Variety:
     "https://res.cloudinary.com/dl2wibcfp/image/upload/v1740041530/standupcomedy_sahtrn.jpg",
+  ethnicWalk:
+    "https://res.cloudinary.com/doqhh6cqt/image/upload/v1740062645/EthnicWalk_oy9jug.png",
 };
 export default onstage;
