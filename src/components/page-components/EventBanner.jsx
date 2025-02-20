@@ -20,14 +20,9 @@ function EventBanner({
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
-  const scaleIn = {
-    hidden: { scale: 0.8, opacity: 0 },
-    visible: { scale: 1, opacity: 1, transition: { duration: 0.6 } },
-  };
-
   return (
     <div
-      className="relative z-30 py-12  text-center overflow-hidden"
+      className="relative z-30 py-12 text-center overflow-hidden"
       style={{ backgroundColor: bgColor }}
     >
       <div className="container mx-auto px-6 relative z-10">
@@ -38,7 +33,6 @@ function EventBanner({
           whileInView="visible"
           viewport={{ once: true }}
           className="uppercase text-xl font-semibold text-sky-400 tracking-wider mb-2"
-     
         >
           {subtitle}
         </motion.h2>
@@ -69,17 +63,14 @@ function EventBanner({
 
         {/* Button */}
         <motion.button
-        
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="font-extrabold hover:scale-105 py-3 px-12 hover:text-white bg-sky-400 dm-sans  rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 hover:scale-105 transition-transform"
-          style={{}}
+          className={`font-extrabold py-3 px-12 rounded-full transition-transform focus:outline-none focus:ring-2 focus:ring-offset-2 ${highlightColor} hover:bg-opacity-80`}
         >
-          <div className="flex">
+          <div className="flex items-center justify-center">
             {buttonText}{" "}
-            <span>
-              {" "}
+            <span className="ml-2">
               <Rocket />
             </span>
           </div>
@@ -93,7 +84,7 @@ function EventBanner({
           viewport={{ once: true }}
           className="mt-12 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8"
         >
-          <div className="flex items-center" style={{ color: textColor }}>
+          <div className={`flex items-center`} style={{ color: textColor }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -110,7 +101,7 @@ function EventBanner({
             <span className="text-lg">Venue: {venue}</span>
           </div>
 
-          <div className="flex items-center" style={{ color: textColor }}>
+          <div className={`flex items-center`} style={{ color: textColor }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
