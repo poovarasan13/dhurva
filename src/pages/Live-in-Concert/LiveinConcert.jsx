@@ -15,7 +15,6 @@ const LiveinConcert = () => {
   return (
     <div className="mt-20">
       <ConcertEvent />
-
       <Musicalconcert />
     </div>
   );

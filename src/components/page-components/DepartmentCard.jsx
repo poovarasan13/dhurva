@@ -7,12 +7,15 @@ import {
   Rocket,
   Settings,
 } from "lucide-react";
-import { Button } from "../ui/button";
+// import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/dmsans.css";
 import "../../assets/fonts/arapey.css";
 import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+
 
 function DepartmentCard({ events }) {
   const navigate = useNavigate();
@@ -91,12 +94,45 @@ function DepartmentCard({ events }) {
         </CardContent>
 
         <CardFooter className="flex justify-center mt-auto sm:p-6">
-          <Button
+          {/* <Button
             className="bg-sky-400 w-40 dm-sans text-white text-lg rounded-full transition-all duration-300 shadow-sm hover:shadow-md group-hover:bg-white group-hover:text-black"
             onClick={handeNavigation}
           >
             Explore <Rocket />
-          </Button>
+          </Button> */}
+
+
+
+
+          {/* Register Button */}
+          <div className="py-5 flex justify-center lg:justify-start"  >
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+            >
+              <motion.button
+                className="text-white josefin px-5   py-2 md:px-4 md:py-2 md:text-[15px] bg-blue-600 hover:bg-blue-700 shadow-lg flex gap-2 items-center rounded-full"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={handeNavigation}
+              >
+                <span className="flex items-center gap-2">
+                  Register
+                  <motion.div
+                    whileHover={{ y: -5, rotate: -15 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
+                  >
+                    {/* <Rocket size={18} /> */}
+                    <Rocket size={18} />
+                  </motion.div>
+                </span>
+              </motion.button>
+            </motion.div>
+          </div>
+
+
+          {/* <Button link="handleNavigation" text="Explore" /> */}
         </CardFooter>
       </Card>
     </div>

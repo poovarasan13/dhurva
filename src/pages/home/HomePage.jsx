@@ -14,7 +14,6 @@ function HomePage() {
     <div>
       <VideoParallax />
       <HeroSection />
-
       <Gallery />
       <DhurvaFest />
       {/* <ProPassList /> */}

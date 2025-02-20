@@ -26,9 +26,7 @@ function App() {
     <>
       {isLoading ? (
         <div className="center-container">
-          <a href="https://vitejs.dev" target="_blank">
             <img src={star} className="logo rotating" alt="Star logo" />
-          </a>
         </div>
       ) : (
         <>

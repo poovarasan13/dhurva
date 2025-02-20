@@ -8,8 +8,12 @@ import Autoplay from "embla-carousel-autoplay";
 import React from "react";
 import "../../../assets/fonts/allfonts.css";
 import "../../../assets/fonts/dmsans.css";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
+import Button from "@/components/page-components/Button";
 import { Rocket } from "lucide-react";
+import { motion } from "framer-motion";
+
+
 import HeroSection from "@/assets/images/HomePage/HeroSection";
 
 const images = Object.values(HeroSection);
@@ -45,11 +49,39 @@ function HeroSectionComponent() {
               <strong>March 13, 14, 15</strong>. Join us for an unforgettable
               experience!
             </p>
-            <div className="py-4 flex justify-center lg:justify-start">
+
+            {/* <div className="py-4 flex justify-center lg:justify-start">
               <Button className="text-white bg-blue-600 hover:bg-blue-700 shadow-lg transform hover:scale-105 transition-all duration-300 flex gap-2 items-center">
                 Register <Rocket size={18} />
               </Button>
+            </div> */}
+
+            {/* Register Button
+            <div className="py-5 flex justify-center lg:justify-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+              >
+                <motion.button
+                  className="text-white josefin px-5   py-2 md:px-4 md:py-2 md:text-[15px] bg-blue-600 hover:bg-blue-700 shadow-lg flex gap-2 items-center rounded-full"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <span className="flex items-center gap-2">
+                    Register
+                    <motion.div
+                      whileHover={{ y: -5, rotate: -15 }}
+                      transition={{ duration: 0.3, ease: "easeOut" }}
+                    >
+                      <Rocket size={18} />
+                    </motion.div>
+                  </span>
+                </motion.button>
+              </motion.div>
             </div>
+ */}
+          <Button link="#" text="Register" />
           </div>
           <div className="flex justify-center">
             <Carousel

@@ -150,7 +150,7 @@ const OnStageDetails = [
       "Garments and accessories used for competition should depict the ethnicity of the country, state or any other culture.",
       "Any form of indecency, vulgarity, obscenity will result in disqualification.",
     ],
-    image: "/assets/images/event7.jpg",
+    image: onstage.Walk,
     reverse: false,
   },
   {

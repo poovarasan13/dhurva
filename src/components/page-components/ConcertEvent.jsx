@@ -36,7 +36,7 @@ const ConcertEvent = () => {
         variants={headerVariants}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-4xl md:text-6xl dm-sans text-sky-400  font-extrabold">
+        <h1 className="text-4xl md:text-6xl dm-sans text-cp  font-extrabold">
           Mega Live In Concert
         </h1>
       </motion.header>
@@ -51,7 +51,7 @@ const ConcertEvent = () => {
         <div className="w-full px-4">
           <div className="flex flex-wrap items-center justify-between max-w-7xl mx-auto">
             <div className="w-full md:w-7/12 text-center md:text-left max-w-lg">
-              <h2 className="text-2xl text-sky-400 md:text-5xl font-bold dm-sans ">
+              <h2 className="text-2xl text-cp md:text-5xl font-bold dm-sans ">
                 Let's Rock!
               </h2>
               <p className="mt-4 text-lg md:text-xl font-bold  josefin">
@@ -86,7 +86,7 @@ const ConcertEvent = () => {
           transition={{ duration: 0.5 }}
         >
           <h3
-            className="text-2xl  md:text-5xl dm-sans font-bold  text-sky-400"
+            className="text-2xl  md:text-5xl dm-sans font-bold  text-cp"
            
           >
             Live-in Concert
@@ -129,7 +129,7 @@ const ConcertEvent = () => {
         >
           <h3
        
-            className="text-2xl text-sky-400  md:text-5xl dm-sans font-bold "
+            className="text-2xl text-cp  md:text-5xl dm-sans font-bold "
        
           >
             General Rules

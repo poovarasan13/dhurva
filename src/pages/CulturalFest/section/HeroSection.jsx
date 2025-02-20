@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Rocket } from "lucide-react";
 import "../../../assets/fonts/dmserif.css";
 import "../../../assets/fonts/sourcesans.css";
+import Button from "@/components/page-components/Button";
 
 function HeroSection() {
   const navigate = useNavigate();
@@ -41,7 +42,6 @@ function HeroSection() {
           heritage!
         </p>
       </motion.div>
-
       <div className="container  px-6 py-10 space-y-10">
         {/* OnStage Section */}
         <div className="flex md:ms-16 flex-col md:flex-row-reverse items-center gap-8  md:gap-8">
@@ -72,7 +72,11 @@ function HeroSection() {
               stories to life. From mesmerizing dance and music to theatrical
               masterpieces, OnStage is where the magic happens.
             </p>
-            <div className="pb-3 flex justify-center lg:justify-start">
+
+            
+          <Button link="/onstage" text="Explore" />
+
+            {/* <div className="pb-3 flex justify-center lg:justify-start">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -95,7 +99,7 @@ function HeroSection() {
                   </span>
                 </motion.button>
               </motion.div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
 
@@ -128,7 +132,8 @@ function HeroSection() {
               interactive sessions, and behind-the-scenes glimpses into the
               creative world. Connect, learn, and be inspired.
             </p>
-            <div className="pb-3 flex justify-center lg:justify-start">
+            <Button link="/offstage" text="Explore" />
+            {/* <div className="pb-3 flex justify-center lg:justify-start">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -151,7 +156,7 @@ function HeroSection() {
                   </span>
                 </motion.button>
               </motion.div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
