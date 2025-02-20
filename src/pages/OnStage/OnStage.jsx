@@ -26,7 +26,7 @@ const OnStage = () => {
     <div>
       <HeroPage {...document} />
       <ExploreEvents EventData={EventData} />
-      <EventsDisplay />
+      {/* <EventsDisplay />/ */}
     </div>
   );
 };

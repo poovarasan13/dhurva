@@ -36,7 +36,7 @@ const sportsData = [
     gender: "male",
   },
   {
-    title: "Football",
+    title: "Football (5's)",
     description:
       "Dribble, pass, and score in our exciting football tournament!",
     coordinator: "Aakash",

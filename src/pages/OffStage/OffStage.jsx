@@ -14,7 +14,7 @@ const OffStage = () => {
     <div>
       <HeroPage {...document} />
       <ExploreEvents EventData={OffStageDetails} />
-      <EventsDisplay />
+      {/* <EventsDisplay /> */}
     </div>
   );
 };

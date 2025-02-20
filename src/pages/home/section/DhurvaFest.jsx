@@ -23,8 +23,16 @@ import "../../../assets/fonts/opensans.css";
 import "../../../assets/fonts/allfonts.css";
 import { Carousel } from "@/components/ui/carousel";
 import CarosualCard from "./CarosualCard";
+import { useNavigate } from "react-router-dom";
 
 function DhurvaFest() {
+  const navigate = useNavigate();
+  const handleCulturalFest = () => {
+    navigate("/culturalFest");
+  };
+  const handleTechnicalFest = () => {
+    navigate("/technicalFest");
+  };
   return (
     <div className="py-16 px-6 sm:px-12 bg-gray-50">
       <div className="max-w-screen-xl mx-auto text-center">
@@ -68,7 +76,10 @@ function DhurvaFest() {
                   </p>
                 </CardContent>
                 <CardFooter className="bg-gray-50 p-6 my-auto text-center justify-center">
-                  <Button className="bg-green-300 hover:bg-green-300 text-white hover:text-black work-sans  transition-all py-2 px-6 rounded-full text-lg">
+                  <Button
+                    onClick={handleTechnicalFest}
+                    className="bg-green-300 hover:bg-green-300 text-white hover:text-black work-sans  transition-all py-2 px-6 rounded-full text-lg"
+                  >
                     Explore More <CircuitBoard />
                   </Button>
                 </CardFooter>
@@ -88,7 +99,10 @@ function DhurvaFest() {
                   </p>
                 </CardContent>
                 <CardFooter className="bg-gray-50  text-center justify-center">
-                  <Button className="bg-sky-400 rounded-full mt-12 hover:bg-sky-400 text-white hover:text-black work-sans  transition-all py-2 px-6  text-lg">
+                  <Button
+                    onClick={handleCulturalFest}
+                    className="bg-sky-400 rounded-full mt-12 hover:bg-sky-400 text-white hover:text-black work-sans  transition-all py-2 px-6  text-lg"
+                  >
                     Explore More <Earth />
                   </Button>
                 </CardFooter>
