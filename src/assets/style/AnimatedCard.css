@@ -1,0 +1,72 @@
+.card {
+  position: relative;
+  width: 260px;
+  height: 310px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 250px;
+  height: 300px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+/* Glowing and Moving Blob */
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: orange;
+  opacity: 1;
+  filter: blur(12px) drop-shadow(0 0 20px rgba(255, 165, 0, 0.9));
+  box-shadow: 0 0 40px 20px rgba(255, 165, 0, 1);
+  animation: blob-bounce 3s infinite ease-in-out, blob-glow 2s infinite alternate ease-in-out;
+}
+
+/* Smooth Glowing Effect */
+@keyframes blob-glow {
+  0% {
+    box-shadow: 0 0 20px 10px rgba(255, 165, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 60px 30px rgba(255, 165, 0, 1);
+  }
+}
+
+/* Fluid Blob Movement */
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-50%, -50%) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate3d(80px, -40px, 0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate3d(50px, 60px, 0);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate3d(-60px, 50px, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate3d(0, 0, 0);
+  }
+}

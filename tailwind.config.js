@@ -12,7 +12,6 @@ module.exports = {
   			xl: 'calc(var(--radius) + 2px)'
   		},
   		colors: {
-			PrimaryBlue: '#0866FF',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -59,10 +58,13 @@ module.exports = {
   			}
   		},
   		fontFamily: {
-			code: ['var(--font-mono)', 'Courier New', 'monospace'],
-			regular: ['var(--font-body)', 'Inter', 'sans-serif'],
-			jersey: ['Jersey 25 Regular', 'cursive'], // Added font
-		  },
+  			code: [
+  				'var(--font-mono)'
+  			],
+  			regular: [
+  				'var(--font-body)'
+  			]
+  		},
   		keyframes: {
   			'accordion-down': {
   				from: {

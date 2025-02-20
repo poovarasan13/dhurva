@@ -1,20 +1,42 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useEffect, useState } from "react";
 import "./App.css";
-
-import HomePage from "./pages/home/HomePage";
-import Pass from "./pages/Pass/Pass";
-import LiveinConcert from "./pages/Live-in-Concert/LiveinConcert";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import "./assets/fonts/dmserif.css";
+import star from "./assets/images/dhruvastar.png"; // Import the image
+// import "../../assets/fonts/dmsans.css";
+import "./assets/fonts/dmsans.css";
+import AppNavigation from "./router/AppNavigation";
+import MaskedCursor from "./components/page-components/MaskedCursor";
+import StudentCard from "./components/page-components/StudentCard";
 function App() {
-  // const [count, setCount] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    Aos.init();
+  });
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
-      {/* <HomePage /> */}
-      <LiveinConcert/>
-      {/* <Test/>  */}
+      {isLoading ? (
+        <div className="center-container">
+          <a href="https://vitejs.dev" target="_blank">
+            <img src={star} className="logo rotating" alt="Star logo" />
+          </a>
+        </div>
+      ) : (
+        <>
+          {/* <MaskedCursor /> */}
+          <AppNavigation />
+          {/* <StudentCard /> */}
+        </>
+      )}
     </>
   );
 }
