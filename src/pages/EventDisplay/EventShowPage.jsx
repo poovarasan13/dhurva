@@ -1,25 +1,41 @@
 import React, { useEffect } from "react";
-import { Calendar, MapPin, Clock, User, Rocket, UserPen } from "lucide-react";
+import {
+  Calendar,
+  MapPin,
+  Clock,
+  User,
+  Rocket,
+  UserPen,
+  Check,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/opensans.css";
 import "../../assets/fonts/sourcesans.css";
 import { useLocation, useNavigate } from "react-router-dom";
+import paper from "../../assets/test/paper.jpg";
 
 function EventShowPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const location = useLocation();
-  const events = location.state;
-  const data = events.events;
-  const navigate = useNavigate();
-  const eventRounds = data.eventRounds;
-  const eventPrize = data.eventPrize;
-  const eventRules = data.eventRules;
 
-  if (!data) {
-    return <div>No event data found. Please go back and try again.</div>;
+  const location = useLocation();
+  const events = location.state || {}; // Ensure events is always an object
+  const data = events.events || {}; // Ensure data is always an object
+  const navigate = useNavigate();
+
+  // Ensure these are arrays to prevent .length errors
+  const eventRounds = data.eventRounds || [];
+  const eventPrize = data.eventPrize || [];
+  const eventRules = data.eventRules || [];
+
+  if (!data || Object.keys(data).length === 0) {
+    return (
+      <div className="text-center text-gray-700">
+        No event data found. Please go back and try again.
+      </div>
+    );
   }
 
   const handleRegister = () => {
@@ -29,12 +45,11 @@ function EventShowPage() {
   return (
     <div className="mt-16 min-h-screen bg-gray-100 flex justify-center items-start p-6 md:p-8 w-full">
       <div className="w-full bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col">
-        {/* Image */}
-        <div className="relative w-full h-80 md:h-96 flex justify-center">
+        <div className="relative w-full h-80 flex justify-center">
           <img
-            src={data.posterUrl || "path/to/fallback/image.jpg"}
+            src={data.posterUrl || paper}
             alt="Event Poster"
-            className="w-full h-full object-cover rounded-xl block"
+            className="object-cover block"
           />
         </div>
 
@@ -62,7 +77,7 @@ function EventShowPage() {
           </div>
 
           {/* Event Description */}
-          <p className="mt-4 text-base md:text-lg sm:text-justify   text-gray-800 leading-relaxed text-center">
+          <p className="mt-4 text-base md:text-lg sm:text-justify text-gray-800 leading-relaxed text-center">
             {data.eventDescription}
           </p>
 
@@ -100,51 +115,30 @@ function EventShowPage() {
         </div>
 
         {/* Event Rules */}
-        <div className="p-6 lg:ms-7 text-gray-800 text-lg">
-          {/* eventRules */}
-          {eventRules.length != 0 ? (
+        <div className="p-4 lg:ms-7 text-gray-800 text-lg">
+          {eventRules.length !== 0 && (
             <>
-              <h4 className="font-semibold text-gold-400">Event Rules:</h4>
+              <h4 className="font-semibold text-yellow-400">Event Rules:</h4>
               <ul className="list-disc list-inside mt-2">
                 {eventRules.map((rule, idx) => (
-                  <li key={idx}>{rule}</li>
+                  <li key={idx} className="list-none flex">
+                    <Check className="text-green-500" />
+                    {rule}
+                  </li>
                 ))}
               </ul>
             </>
-          ) : (
-            <></>
           )}
-          {eventRounds.length != 0 ? (
+
+          {eventPrize.length !== 0 && (
             <>
-              <div className="mb-5">
-                <h4 className="font-semibold text-gold-400">Event Rounds:</h4>{" "}
-                <ul>
-                  {eventRounds.map((rounds, index) => (
-                    <li key={index}>
-                      <span>{rounds}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <p className="text-xl text-yellow-500">Prizes</p>
+              <ul>
+                {eventPrize.map((price, index) => (
+                  <li key={index}>{price}</li>
+                ))}
+              </ul>
             </>
-          ) : (
-            <></>
-          )}
-          {eventPrize.length > 0 ? (
-            <>
-              <p className="text-xl text-yellow-500"> Prices</p>
-              <p className="mt-2">
-                <ul>
-                  {eventPrize.map((price, index) => (
-                    <li key={index}>
-                      <span>{price}</span>
-                    </li>
-                  ))}
-                </ul>
-              </p>
-            </>
-          ) : (
-            <></>
           )}
         </div>
       </div>

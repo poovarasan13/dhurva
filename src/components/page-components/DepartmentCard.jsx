@@ -2,7 +2,6 @@ import React from "react";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 import {
   Calendar,
-  Cpu,
   Laptop,
   LaptopMinimal,
   Rocket,
@@ -13,11 +12,10 @@ import { Separator } from "../ui/separator";
 import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/dmsans.css";
 import "../../assets/fonts/arapey.css";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function DepartmentCard({ events }) {
   const navigate = useNavigate();
-  console.log(events);
 
   const handeNavigation = () => {
     navigate(`/departmentInfo`, {

@@ -1,34 +1,40 @@
+import TestCard from "@/components/page-components/TestCard";
+import department from "@/data/Departments";
 import React from "react";
 
 const Queries = () => {
   const coordinators = [
-    { name: "Mr.P.DhibeshKumar", phone: "+91 97865 30029" },
-    { name: "Mr.Sabarish", phone: "+91 93600 35659" },
+    {
+      departmentName: "Physical Education",
+      coordinatorName: "Mr.P.DhibeshKumar",
+      coordinatorContactPhone: "+91 97865 30029",
+    },
+    {
+      departmentName: "Physical Education",
+      coordinatorName: "Mr.Sabarish",
+      coordinatorContactPhone: "+91 93600 35659",
+    },
+    {
+      coordinatorName: "Rahul",
+      coordinatorContactPhone: "+91 8270802749",
+      departmentName: "Student Coordinator",
+    },
+    {
+      departmentName: "Student Coordinator",
+      coordinatorName: "Manikandan",
+      coordinatorContactPhone: "+91 8838452061",
+    },
   ];
 
   return (
-    <div className="flex justify-center items-center py-10">
-      <div className="w-full max-w-2xl bg-white bg-opacity-80 backdrop-blur-lg shadow-2xl rounded-lg p-6">
-        <h4 className="text-center text-xl font-bold text-gray-800 mb-5">
-          For InQueries & Registration
+    <div className="flex justify-center items-center px-4 py-10">
+      <div className="w-full max-w-lg sm:max-w-2xl bg-white bg-opacity-80 backdrop-blur-lg shadow-2xl rounded-lg p-4 sm:p-6">
+        <h4 className="text-center text-lg sm:text-xl font-bold text-gray-800 mb-4 sm:mb-5">
+          For Inquiries & Registration
         </h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {coordinators.map((coordinator, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center text-center p-4 border border-gray-200 rounded-lg bg-gradient-to-r from-gray-100 to-gray-50 shadow-md transition-all duration-300 hover:shadow-lg"
-            >
-              <h5 className="mt-3 text-lg font-semibold">{coordinator.name}</h5>
-              <p className="text-gray-700 text-sm">
-                Phone:{" "}
-                <a
-                  href={`tel:${coordinator.phone}`}
-                  className="text-blue-600 hover:text-blue-800 underline"
-                >
-                  {coordinator.phone}
-                </a>
-              </p>
-            </div>
+            <TestCard deptDetails={coordinator} key={index} />
           ))}
         </div>
       </div>

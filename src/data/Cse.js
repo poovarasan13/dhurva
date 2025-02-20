@@ -27,11 +27,13 @@ const cse = {
       eventStaffCoordinator: {
         name: "Prof. C. Vidya Prabha AP / CSE",
         contact: "",
+        
       },
       studentCoordinator: [
         {
           name: "Mr. Jaivant III CS B",
           contact: "",
+          gender: "male",
         },
         {
           name: "Ms. Monica II CS C",

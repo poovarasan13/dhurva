@@ -28,16 +28,16 @@ function HeroSection() {
           <div className="text-center lg:text-left lg:pr-10">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight work-sans">
               <span className="text-transparent  bg-clip-text bg-gradient-to-r font-extrabold from-green-500 to-green-700">
-                Create
+                Experience
               </span>{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 font-extrabold to-red-700">
-                Your
+                The
               </span>{" "}
               <span className="text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-blue-500 to-blue-700">
-                Own
+                KCE's
               </span>{" "}
               <span className="text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-orange-400 to-orange-600">
-                Destiny
+                Dhruva
               </span>
             </h1>
             <p className="mt-4 text-lg sm:text-xl text-justify leading-7 text-gray-900 dark:text-gray-100">
@@ -62,7 +62,7 @@ function HeroSection() {
                 transition={{ duration: 0.5, ease: "easeOut" }}
               >
                 <motion.button
-                  className="text-white josefin px-3 py-2 md:px-8 md:py-3 md:text-xl bg-blue-600 hover:bg-blue-700 shadow-lg flex gap-2 items-center rounded-full"
+                    className="text-white josefin px-3 py-2 md:px-8 md:py-3 md:text-xl bg-sky-400 hover:bg-sky-400 shadow-lg flex gap-2 items-center rounded-full"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >

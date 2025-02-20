@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between md:p-3 lg:">
         <NavLink to="/" className="text-xl font-bold">
           <img
-            src="https://res.cloudinary.com/dxovoao59/image/upload/v1739893532/dhruva-logo_rxqbda.png"
+            src="https://res.cloudinary.com/dzpkbej9y/image/upload/v1739981304/Dhruva_iulxia.png"
             alt="Dhurva Logo"
             className="w-20 md:w-[100px]"
           />
@@ -60,7 +60,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <Button variant="ghost" onClick={toggleMenu}>
-            <Menu className="w-7 h-7 text-white" />
+            <Menu className="w-12 h-12 text-white" />
           </Button>
         </div>
       </div>

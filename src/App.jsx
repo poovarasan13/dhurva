@@ -8,18 +8,18 @@ import star from "./assets/images/dhruvastar.png"; // Import the image
 import "./assets/fonts/dmsans.css";
 import AppNavigation from "./router/AppNavigation";
 import MaskedCursor from "./components/page-components/MaskedCursor";
+import StudentCard from "./components/page-components/StudentCard";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     Aos.init();
   });
   useEffect(() => {
-    // Show the rotating image for 2 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1500);
 
-    return () => clearTimeout(timer); // Cleanup timeout on unmount
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -34,6 +34,7 @@ function App() {
         <>
           {/* <MaskedCursor /> */}
           <AppNavigation />
+          {/* <StudentCard /> */}
         </>
       )}
     </>

@@ -68,7 +68,7 @@ function DhurvaFest() {
                   </p>
                 </CardContent>
                 <CardFooter className="bg-gray-50 p-6 my-auto text-center justify-center">
-                  <Button className="bg-green-300 hover:bg-green-300 text-white hover:text-black work-sans  transition-all py-2 px-6 rounded-lg text-lg">
+                  <Button className="bg-green-300 hover:bg-green-300 text-white hover:text-black work-sans  transition-all py-2 px-6 rounded-full text-lg">
                     Explore More <CircuitBoard />
                   </Button>
                 </CardFooter>
@@ -79,7 +79,7 @@ function DhurvaFest() {
                 </CardHeader>
                 <CardContent className="p-4 text-center bg-white">
                   <h3 className="text-xl font-bold text-gray-800 mb-4 dm-sans">
-                    Non-Technical Event
+                    Cultural Event
                   </h3>
                   <p className="text-gray-600 sm:mb-6 mb-3 text-justify carme-regular">
                     Experience vibrant culture through music, dance, theatre,
@@ -88,7 +88,7 @@ function DhurvaFest() {
                   </p>
                 </CardContent>
                 <CardFooter className="bg-gray-50  text-center justify-center">
-                  <Button className="bg-sky-400 mt-12 hover:bg-sky-400 text-white hover:text-black work-sans  transition-all py-2 px-6 rounded-lg text-lg">
+                  <Button className="bg-sky-400 rounded-full mt-12 hover:bg-sky-400 text-white hover:text-black work-sans  transition-all py-2 px-6  text-lg">
                     Explore More <Earth />
                   </Button>
                 </CardFooter>

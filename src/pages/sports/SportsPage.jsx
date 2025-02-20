@@ -16,7 +16,6 @@ import { Button } from "@/components/ui/button";
 import SportsAssests from "@/assets/images/sports/SportAssets";
 import { Card, CardContent } from "@/components/ui/card";
 import Queries from "../SportsInfo/Queries";
-// import { useEffect } from "react";
 
 const sportsData = [
   {
@@ -96,9 +95,11 @@ const coordinatorData = {
   eventName: "Karpagam All India Inter College ChampionShip",
   eventType:
     "HandBall, VolleyBall, Kabbadi, Cricket, BallBadminton, Throwball,Football",
-  eventTiming: "13.3.2025 - 15.3.2025",
+  eventTiming: "13.3.2025 - 14.3.2025",
   venue: "KCE GROUND",
 };
+
+
 import { User, Mail, Phone, FileText, Calendar, MapPin } from "lucide-react";
 
 const CoordinatorCard = () => {
@@ -109,7 +110,6 @@ const CoordinatorCard = () => {
           Overall Coordinator
         </h2>
 
-        {/* Coordinator Details */}
         <div>
           <div className="flex flex-wrap justify-between items-center mb-4">
             <div className="flex items-center space-x-2 w-full ">
@@ -152,8 +152,6 @@ const CoordinatorCard = () => {
             </div>
           </div>
         </div>
-
-        {/* Event Details */}
         <h3 className="text-2xl sm:text-xs md:text-xl dm-serif font-semibold mt-8 mb-4">
           Event Details
         </h3>

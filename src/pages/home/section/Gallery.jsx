@@ -78,7 +78,7 @@ const Gallery = () => {
           </ul>
           <div className="flex justify-center md:justify-start">
             <motion.button
-              className="bg-sky-400 hover:bg-sky-400 hover:text-black text-white  py-3 px-7 rounded-lg shadow-lg transition duration-300"
+              className="bg-sky-400 hover:bg-sky-400 rounded-full hover:text-black text-white  py-3 px-7 shadow-lg transition duration-300"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
