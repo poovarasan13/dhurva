@@ -1,6 +1,7 @@
 const cse = {
   id: 1,
-  departmentName: " Computer Science and Engineering",
+  departmentName: "Department of Computer Science and Engineering",
+  cardName: "Computer Science and Engineering",
   shortName: "CSE",
   technicalEventCount: 5,
   nonTechnicalEventCount: 3,
@@ -25,13 +26,16 @@ const cse = {
       eventPrize: [],
       eventStaffCoordinator: {
         name: "Prof. C. Vidya Prabha AP / CSE",
+        contact: "",
       },
       studentCoordinator: [
         {
           name: "Mr. Jaivant III CS B",
+          contact: "",
         },
         {
           name: "Ms. Monica II CS C",
+          contact: "",
         },
       ],
     },
@@ -39,18 +43,18 @@ const cse = {
       posterUrl: "",
       eventThumbnail: "",
       eventName: "Workshop on AI and Machine Learning",
-      eventType: "WorkShop",
+      eventType: "Workshop",
       eventSubType: "WorkShop",
       eventTime: "11 AM  to  1 PM",
       eventDescription:
         "The AI & ML Workshop provides an introduction to Artificial Intelligence and Machine Learning, covering key concepts, algorithms, and real-world applications. Participants will learn about supervised and unsupervised learning, deep learning basics, and hands-on implementation using Python libraries like Scikit-learn and TensorFlow. The workshop includes live coding sessions, a mini-project, and discussions with industry experts. By the end, attendees will gain practical knowledge and skills to build and evaluate AI models.",
-      eventRules: [""],
+      eventRules: [],
       eventVenue: "CSE block /  EMC lab",
 
-      eventRounds: [""],
-      eventPrice: [""],
+      eventRounds: [],
+      eventPrize: [],
       eventStaffCoordinator: {
-        name: "Prof..Sharmila   AP / CSE",
+        name: "Prof.Sharmila   AP / CSE",
         contact: "",
       },
 
@@ -73,14 +77,14 @@ const cse = {
       eventTime: "10:00 AM to 12:00 PM",
       eventDescription:
         "The Paper Presentation Event on Intelligent Systems in Computing and Communication provides a platform for researchers, students, and professionals to present innovative ideas and research findings in AI-driven computing and advanced communication technologies. Topics include machine learning, IoT, cybersecurity, cloud computing, and smart networking. Participants will showcase their research, discuss emerging trends, and exchange knowledge on intelligent systems shaping the future of technology.",
-      eventVenue: "Venue",
+      eventVenue: "",
       eventStaffCoordinator: {
         name: "Prof..Sharmila   AP / CSE",
         contact: "",
       },
-      eventRules: [""],
-      eventRounds: [""],
-      eventPrice: [""],
+      eventRules: [],
+      eventRounds: [],
+      eventPrize: [],
       studentCoordinator: [
         {
           name: " Ms.Sowndarya  III CS B",
@@ -112,8 +116,8 @@ const cse = {
         " report/documentation may be required for evaluation.",
       ],
       eventVenue: "C-block / Room No. : C- 203",
-      eventRounds: [""],
-      eventPrice: [
+      eventRounds: [],
+      eventPrize: [
         "The winner will receive a prize of Rs. 1000, while the runner will receive a prize of Rs.750.",
         "All the candidates will be given participation certificates.",
       ],
@@ -143,7 +147,7 @@ const cse = {
       eventRules: ["2 members/team"],
       eventVenue: "C-block / Room No: C 204",
       eventRounds: ["Round 1 : Sort listing.", "Round 2 : Final round."],
-      eventPrice: [
+      eventPrize: [
         "The winner will receive a prize of Rs. 1000, while the runner will receive a prize of Rs.750.",
         "All the candidates will be given participation certificates.",
       ],
@@ -172,7 +176,7 @@ const cse = {
       eventRules: ["2 members/team"],
       eventVenue: "C-block / Oracle Lab",
       eventRounds: ["Round 1 : Sort listing", "Round 2 : Final round."],
-      eventPrice: [
+      eventPrize: [
         "The winner will receive a prize of Rs. 1000, while the runner will receive a prize of Rs.750.",
         "All the candidates will be given participation certificates.",
       ],
@@ -201,7 +205,7 @@ const cse = {
       eventRules: ["2 members/team"],
       eventVenue: "E-block / Room No: E102",
       eventRounds: ["Round 1 : Sort listing.", "Round 2 : Final round."],
-      eventPrice: [
+      eventPrize: [
         "The winner will receive a prize of Rs. 1000, while the runner will receive a prize of Rs.750.",
         "All the candidates will be given participation certificates.",
       ],
@@ -235,7 +239,7 @@ const cse = {
       ],
       eventVenue: "E-block / Room No: E103",
       eventRounds: ["Round 1 : Sort listing.", "Round 2 : Final round."],
-      eventPrice: [
+      eventPrize: [
         "The winner will receive a prize of Rs. 1000, while the runner will receive a prize of Rs.750.",
         "All the candidates will be given participation certificates.",
       ],
@@ -263,8 +267,8 @@ const cse = {
       eventDescription: "",
       eventRules: ["2 members / team"],
       eventVenue: "C-Block/ AT Lab",
-      eventRounds: [""],
-      eventPrice: [
+      eventRounds: [],
+      eventPrize: [
         "The winner will receive a prize of Rs. 1000, while the runner will receive a prize of Rs.750.",
         "All the candidates will be given participation certificates.",
       ],
@@ -293,7 +297,7 @@ const cse = {
       eventRules: ["4 members/team"],
       eventVenue: "C-block / C -202",
       eventRounds: ["Round 1 : Sort listing."],
-      eventPrice: [
+      eventPrize: [
         "The winner will receive a prize of Rs. 1000, while the runner will receive a prize of Rs.750.",
         "All the candidates will be given participation certificates.",
       ],

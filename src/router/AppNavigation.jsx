@@ -9,6 +9,7 @@ import LiveinConcert from "@/pages/Live-in-Concert/LiveinConcert";
 import OffStagePage from "@/pages/OffStage/OffStagePage";
 import OnStagePage from "@/pages/OnStage/OnStagePage";
 import PassPage from "@/pages/Pass/PassPage";
+import RegistrationPage from "@/pages/Registration/RegistrationPage";
 import SportsPage from "@/pages/sports/SportsPage";
 import SportsInfo from "@/pages/SportsInfo/SportsInfo";
 import TechnicalFest from "@/pages/Technical-Fest/TechnicalFest";
@@ -33,6 +34,7 @@ function AppNavigation() {
         <Route path="/pass" element={<PassPage />}></Route>
         <Route path="/onstage" element={<OnStagePage />}></Route>
         <Route path="/offstage" element={<OffStagePage />}></Route>
+        <Route path="/registration" element={<RegistrationPage />}></Route>
       </Routes>
       <FooterSection />
     </div>

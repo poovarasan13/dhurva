@@ -4,7 +4,8 @@ const cd = {
   technicalEventCount: 3,
   nonTechnicalEventCount: 1,
   workshop: 1,
-  departmentName: "DEPARTMENT OF COMPUTER SCIENCE AND DESIGN",
+  departmentName: "Department Of Computer Science and Design",
+  cardName: "Computer Science and Design",
   departmentDescription:
     "The Department of Computer Science and Design is excited to announce its upcoming lineup of events for the upcoming academic year. We will be conducting 2 technical events, 1 non-technical event, and 1 workshops and 1 Hackathon that are sure to be informative and get hands-on experience with various tools and technologies that are widely used in the industry",
   coordinatorName: "M A Mohammed Ansar Ali / Assistant Professor ",
@@ -21,7 +22,7 @@ const cd = {
       eventSubType: "WorkShop",
       eventDescription:
         "In this one-day workshop on Cyber Security Essentials: Protecting Your Digital World, you will gain foundational knowledge and practical skills required to understand and implement effective cybersecurity measures. The goal is to empower individuals to protect their personal and organizational digital environments from cyber threats.",
-      eventRules: [""],
+      eventRules: [],
       eventVenue: "EMC2 Lab",
       eventStaffCoordinator: {
         name: "M A Mohammed Ansar Ali / AP",

@@ -6,6 +6,7 @@ const ete = {
   workshop: 2,
   departmentName:
     "Department of Electronics and Telecommunications Engineering",
+  cardName: "Electronics And Telecommunications Engineering",
   departmentDescription:
     "The Department of Electronics and Telecommunications Engineering is thrilled to announce an variety of events for our college fest dhruva 2025. Offering a blend of technical ingenuity and collaborative spirit, participants can immerse themselves in various events. We will be conducting 3 technical events, and 2 workshops that are sure to be informative and engaging for students and faculty.",
   coordinatorName: "Ms.E. Manoranjitham, AP/ET",

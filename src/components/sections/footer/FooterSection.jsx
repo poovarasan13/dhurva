@@ -96,6 +96,18 @@ export default function FooterSection() {
                 >
                   Pass
                 </a>
+                <a
+                  href="/onstage"
+                  className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
+                >
+                  onstage
+                </a>
+                <a
+                  href="/offstage"
+                  className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
+                >
+                  offstage
+                </a>
               </div>
             </FooterColumn>
 
@@ -119,7 +131,7 @@ export default function FooterSection() {
                   className="text-sm text-gray-400 hover:text-pink-400 flex items-center gap-2"
                 >
                   <InstagramLogoIcon className="w-4 h-4" />
-                  Dhruva
+                  kcedhruva
                 </a>
                 <a
                   href="https://www.facebook.com/share/1ERFLsRYj7/"
@@ -162,25 +174,25 @@ export default function FooterSection() {
                   className="text-sm text-gray-400 hover:text-sky-500 flex items-center gap-2"
                 >
                   <Phone className="w-4 h-4" />
-                  +91 63852 91261
+                  +91 6385291261
                 </a>
                 <a
-                  href="tel:8807169302"
+                  href="tel:6379283008"
                   className="text-sm text-gray-400 hover:text-sky-500 flex items-center gap-2"
                 >
-                  <p className="px-6">+91 88071 69302</p>
+                  <p className="px-6">+91 6379283008</p>
                 </a>
                 <a
                   href="tel:9965240405"
                   className="text-sm text-gray-400 hover:text-sky-500 flex items-center gap-2"
                 >
-                  <p className="px-6">+91 99652 40405</p>
+                  <p className="px-6">+91 9965240405</p>
                 </a>
                 <a
                   href="tel:8438439374"
                   className="text-sm text-gray-400 hover:text-sky-500 flex items-center gap-2"
                 >
-                  <p className="px-6">+91 84384 39374</p>
+                  <p className="px-6">+91 8438439374</p>
                 </a>
                 <a
                   href="https://www.google.com/maps/place/Karpagam+College+of+Engineering/@10.880101,77.022368,15z/data=!4m6!3m5!1s0x3ba84ffc9b3ea755:0xda7508a90583d22f!8m2!3d10.8801009!4d77.0223684!16s%2Fm%2F03m6r9n?hl=en&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D"

@@ -18,18 +18,22 @@ import { NavLink, useNavigate } from "react-router-dom";
 function DepartmentCard({ events }) {
   const navigate = useNavigate();
   console.log(events);
+
   const handeNavigation = () => {
     navigate(`/departmentInfo`, {
       state: { events },
     });
   };
+
   return (
-    <div className="group hover:scale-105 transition-transform duration-300 w-full sm:w-[380px] md:w-[400px] ">
-      <Card className="w-full bg-white dark:from-gray-700 dark:to-gray-800 hover:bg-sky-300 shadow-md hover:shadow-lg rounded-lg overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-300 ">
-        <CardHeader className="p-4 sm:p-6 ">
+    <div className="group hover:scale-105 transition-transform duration-300 w-full sm:w-[380px] md:w-[400px]">
+      <Card
+        className={`w-full bg-white dark:from-gray-700 dark:to-gray-800 hover:bg-sky-300 border-2 hover:border-black shadow-md hover:shadow-lg rounded-lg overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-300`}
+      >
+        <CardHeader className="p-4 sm:p-6">
           <div className="flex items-center justify-between">
-            <h2 className="text-lg sm:text-2xl font-bold text-gray-800 dark:text-black group-hover:text-black dm-serif transition-all duration-300">
-              {events.departmentName}
+            <h2 className="text-md sm:text-lg font-bold text-gray-800 dark:text-black group-hover:text-black dm-serif transition-all duration-300">
+              {events.cardName}
             </h2>
             <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-full group-hover:bg-white transition-all duration-300">
               <Laptop className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 dark:text-blue-300 transition-all duration-300" />
@@ -41,45 +45,56 @@ function DepartmentCard({ events }) {
 
         <CardContent className="p-4 sm:p-6 dm-sans text-sm sm:text-lg">
           <div className="space-y-3 sm:space-y-4">
-            {[
-              {
-                icon: Settings,
-                text: `${events.workshop} Workshops`,
-                bg: "bg-blue-100 dark:bg-blue-900",
-                iconColor: "text-blue-600 dark:text-blue-300",
-              },
-              {
-                icon: LaptopMinimal,
-                text: `${events.technicalEventCount} Technical Events`,
-                bg: "bg-purple-100 dark:bg-purple-900",
-                iconColor: "text-purple-600 dark:text-purple-300",
-              },
-              {
-                icon: Calendar,
-                text: `${events.nonTechnicalEventCount} Non- Technical Events`,
-                bg: "bg-orange-100 dark:bg-orange-900",
-                iconColor: "text-orange-600 dark:text-orange-300",
-              },
-            ].map(({ icon: Icon, text, bg, iconColor }, index) => (
-              <div key={index} className="flex items-center gap-3 sm:gap-4">
-                <div
-                  className={`${bg} p-2 rounded-full group-hover:bg-white transition-all duration-300`}
-                >
-                  <Icon
-                    className={`w-4 h-4 sm:w-5 sm:h-5 ${iconColor} transition-all duration-300`}
-                  />
-                </div>
-                <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
-                  {text}
-                </p>
-              </div>
-            ))}
+            <div className="flex items-center gap-3 sm:gap-4">
+              {events.workshop != 0 ? (
+                <>
+                  <div className="bg-blue-100 dark:bg-blue-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
+                    <Settings className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 dark:text-blue-300 transition-all duration-300" />
+                  </div>
+                  <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
+                    {events.workshop} Workshops
+                  </p>
+                </>
+              ) : (
+                <></>
+              )}
+            </div>
+            <div className="flex items-center gap-3 sm:gap-4">
+              {events.technicalEventCount != 0 ? (
+                <>
+                  {" "}
+                  <div className="bg-purple-100 dark:bg-purple-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
+                    <LaptopMinimal className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 dark:text-purple-300 transition-all duration-300" />
+                  </div>
+                  <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
+                    {events.technicalEventCount} Technical Events
+                  </p>
+                </>
+              ) : (
+                <></>
+              )}
+            </div>
+            <div className="flex items-center gap-3 sm:gap-4">
+              {events.nonTechnicalEventCount != 0 ? (
+                <>
+                  {" "}
+                  <div className="bg-orange-100 dark:bg-orange-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
+                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-orange-600 dark:text-orange-300 transition-all duration-300" />
+                  </div>
+                  <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
+                    {events.nonTechnicalEventCount} Non-Technical Events
+                  </p>
+                </>
+              ) : (
+                <></>
+              )}
+            </div>
           </div>
         </CardContent>
 
         <CardFooter className="flex justify-center sm:p-6">
           <Button
-            className="  bg-sky-400 w-40  dm-sans  text-white text-lg   rounded-full transition-all duration-300 shadow-sm hover:shadow-md group-hover:bg-white group-hover:text-black"
+            className="bg-sky-400 w-40 dm-sans text-white text-lg rounded-full transition-all duration-300 shadow-sm hover:shadow-md group-hover:bg-white group-hover:text-black"
             onClick={handeNavigation}
           >
             visit <Rocket />

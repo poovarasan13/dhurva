@@ -25,13 +25,13 @@ const Navbar = () => {
       className={`fixed top-0 left-0 w-full z-50 border-b ${"bg-black"} border-white/20 shadow-md transition-all duration-300`}
     >
       <div className="container mx-auto flex items-center justify-between md:p-3">
-        <a href="#" className="text-xl font-bold">
+        <NavLink to="/" className="text-xl font-bold">
           <img
             src="https://res.cloudinary.com/dxovoao59/image/upload/v1739893532/dhruva-logo_rxqbda.png"
             alt="Dhurva Logo"
             className="w-20 md:w-[100px]"
           />
-        </a>
+        </NavLink>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex flex-grow justify-center space-x-8">
@@ -47,6 +47,13 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <NavLink to="/" className="text-xl font-bold lg:visible">
+          <img
+            src="https://res.cloudinary.com/dzpkbej9y/image/upload/v1740026784/KCE-25_jzvhiu.jpg "
+            alt="Dhurva Logo"
+            className="w-20 md:w-[30px]"
+          />
+        </NavLink>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">

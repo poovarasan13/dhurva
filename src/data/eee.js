@@ -5,6 +5,7 @@ const eee = {
   nonTechnicalEventCount: 4,
   workshop: 4,
   departmentName: "Department of Electrical and Electronics Engineering",
+  cardName: "Electronics And Electrical Engineering",
   departmentDescription:
     "The Department of EEE is thrilled to unveil its event lineup for the upcoming academic year. We will be hosting 4 workshops, 2 technical events and 4 non-technical events, and designed to be informative and engaging for students, faculty, and industry professionals.",
   coordinatorName: "Mr.M.Muthukumaran / Assistant Professor",
@@ -23,7 +24,7 @@ const eee = {
       eventRules: [],
       eventVenue: "E-block / NI lab",
       eventRounds: [],
-      eventPrice: [],
+      eventPrize: [],
       eventStaffCoordinator: {
         name: "Dr. C. Sundar Ganesh, AP/EE",
         contact: "6379406590",
@@ -52,7 +53,7 @@ const eee = {
       eventRules: [],
       eventVenue: "E-block / NI lab",
       eventRounds: [],
-      eventPrice: [],
+      eventPrize: [],
       eventStaffCoordinator: [
         {
           name: "Mr. P. Palpandian, AP/EE",
@@ -87,7 +88,7 @@ const eee = {
       eventRules: [],
       eventVenue: "E-block / PSS Lab",
       eventRounds: [],
-      eventPrice: [],
+      eventPrize: [],
       eventStaffCoordinator: [
         {
           name: "Dr. M. Sivaramkrishnan, AP/EE",
@@ -121,7 +122,7 @@ const eee = {
       eventRules: [],
       eventVenue: "E-block / Room No: E - 101",
       eventRounds: [],
-      eventPrice: [],
+      eventPrize: [],
       eventStaffCoordinator: [
         {
           name: "Mrs. G. Adline Priya, AP/EE",
@@ -159,7 +160,7 @@ const eee = {
       eventRules: ["2 to 4 members/team"],
       eventVenue: "E-block / Room No: E102",
       eventRounds: ["Round 1: Short listing.", "Round 2: Final round."],
-      eventPrice: [
+      eventPrize: [
         "The winner will receive a prize of Rs. 1000, while the runner-up will receive a prize of Rs. 750.",
         "All the candidates will be given participation certificates.",
       ],
@@ -196,7 +197,7 @@ const eee = {
       eventRules: ["2 members/team"],
       eventVenue: "E-block / Room No: E101",
       eventRounds: ["Round 1: Shortlisting", "Round 2: Final Round"],
-      eventPrice: [
+      eventPrize: [
         "Winner will receive a prize of Rs. 1000.",
         "Runner-up will receive a prize of Rs. 750.",
         "All candidates will be given participation certificates.",
@@ -228,7 +229,7 @@ const eee = {
       eventRules: ["2 members/team"],
       eventVenue: "E-block / Room No: E102",
       eventRounds: ["Round 1: Shortlisting", "Round 2: Final Round"],
-      eventPrice: [
+      eventPrize: [
         "Winner will receive a prize of Rs. 1000.",
         "Runner-up will receive a prize of Rs. 750.",
         "All candidates will be given participation certificates.",
@@ -263,7 +264,7 @@ const eee = {
       ],
       eventVenue: "E-block / Room No: E103",
       eventRounds: ["Round 1: Shortlisting", "Round 2: Final Round"],
-      eventPrice: [
+      eventPrize: [
         "Winner will receive a prize of Rs. 1000.",
         "Runner-up will receive a prize of Rs. 750.",
         "All candidates will be given participation certificates.",
@@ -295,7 +296,7 @@ const eee = {
       eventRules: ["2 members/team"],
       eventVenue: "E-block / Room No: E201",
       eventRounds: ["Round 1: Shortlisting", "Round 2: Final Round"],
-      eventPrice: [
+      eventPrize: [
         "Winner will receive a prize of Rs. 1000.",
         "Runner-up will receive a prize of Rs. 750.",
         "All candidates will be given participation certificates.",
@@ -327,7 +328,7 @@ const eee = {
       eventRules: ["2 members/team"],
       eventVenue: "E-block / Room No: E201",
       eventRounds: ["Round 1: Shortlisting", "Round 2: Final Round"],
-      eventPrice: [
+      eventPrize: [
         "Winner will receive a prize of Rs. 1000.",
         "Runner-up will receive a prize of Rs. 750.",
         "All candidates will be given participation certificates.",

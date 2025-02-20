@@ -5,6 +5,8 @@ const cyber = {
   workshop: 2,
   nonTechnicalEventCount: 0,
   departmentName: "Department of CSE(CYBER SECURITY)",
+  cardName: "CSE (Cyber Security)",
+
   departmentDescription:
     "The Cyber Security Department is thrilled to present an exciting and knowledge-packed event designed to empower participants with cutting-edge skills in cybersecurity. This event features a Paper Presentation, Capture the Flag (CTF) Competition, Code Debugging Challenge, and an insightful Workshop on Safeguarding Digital Assets Against Phishing and Cyber 360: Mastering Digital Protection.With the increasing cyber threats in today’s digital world, it is crucial to stay informed and equipped with the latest security strategies. This event aims to foster innovation, problem-solving skills, and awareness among students.",
   coordinatorName: "Ms.V.Priyanka",
@@ -43,7 +45,7 @@ const cyber = {
       ],
       eventVenue: "D204",
       eventRounds: ["1"],
-      eventPrice: [
+      eventPrize: [
         "As per the norms all the candidates will be given participation certificates.",
       ],
       eventStaffCoordinator: {
@@ -79,7 +81,7 @@ const cyber = {
       ],
       eventVenue: "",
       eventRounds: ["2 or 3 Events"],
-      eventPrice: [],
+      eventPrize: [],
       eventStaffCoordinator: {
         name: "Mr. F. Jermina",
         contact: "",
@@ -118,7 +120,7 @@ const cyber = {
       ],
       eventVenue: "",
       eventRounds: ["2 or 3 Rounds"],
-      eventPrice: [],
+      eventPrize: [],
       eventStaffCoordinator: {
         name: "Mr. Ravindaran F",
         contact: "",
@@ -146,7 +148,7 @@ const cyber = {
       eventRules: ["Participation needs ID Card"],
       eventVenue: "EMC2 LAB",
       eventRounds: [],
-      eventPrice: ["Participation certificate"],
+      eventPrize: ["Participation certificate"],
       eventStaffCoordinator: {
         name: "Ms. M. Banu Priya, AP/CY",
         contact: "",
@@ -174,7 +176,7 @@ const cyber = {
       eventRules: ["Participation needs ID Card"],
       eventVenue: "EMC2 LAB",
       eventRounds: [],
-      eventPrice: ["Participation certificate"],
+      eventPrize: ["Participation certificate"],
       eventStaffCoordinator: {
         name: "Ms. M. Banu Priya, AP/CY",
         contact: "",

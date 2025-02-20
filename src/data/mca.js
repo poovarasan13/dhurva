@@ -3,6 +3,8 @@ const mca = {
   departmentName: "School of Computer Applications",
   shortName: "MCA",
   technicalEventCount: 3,
+  cardName: "School of Computer Applications",
+  colorCode: "#FF0000",
   workshop: 2,
   nonTechnicalEventCount: 0,
   departmentDescription:

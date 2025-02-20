@@ -9,6 +9,7 @@ import "../../assets/fonts/dmsans.css";
 import data from "../../data/Cse.js";
 import CoordinatorCard from "@/components/page-components/CoordinatorCard";
 import { useLocation } from "react-router-dom";
+import TestCard from "@/components/page-components/TestCard";
 
 function EventPage() {
   useEffect(() => {
@@ -50,7 +51,7 @@ function EventPage() {
         transition={{ duration: 1, delay: 0.5 }}
       ></motion.div>
       <div className=" flex justify-center mb-4">
-        <CoordinatorCard deptDetails={departmentData} />
+        <TestCard deptDetails={departmentData} />
       </div>
     </div>
   );

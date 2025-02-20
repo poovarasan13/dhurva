@@ -2,6 +2,7 @@ const mba = {
   id: 7,
   technicalEventCount: 1,
   departmentName: "School of Management Studies",
+  cardName: "School of Management Studies",
   nonTechnicalEventCount: 0,
   workshop: 0,
   shortName: "MBA",

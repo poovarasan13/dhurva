@@ -4,7 +4,8 @@ const mech = {
   technicalEventCount: 5,
   nonTechnicalEventCount: 0,
   workshop: 4,
-  departmentName: "DEPARTMENT OF MECHANICAL ENGINEERING",
+  departmentName: "Department Of Mechnical Engineering",
+  cardName: "Mechnical Engineering",
   departmentDescription: "",
   coordinatorName: "Mr S Chitharthan",
   coordinatorContactPhone: "9688604156",
@@ -19,10 +20,10 @@ const mech = {
       eventSubType: "WorkShop",
       eventDescription:
         "Hands on Training Workshop on “AUTOMATION AND 3D PRINTING”:This workshop targets UG and PG students of any discipline. The attendee of this workshop will be able to get an idea about the 3D PRINTING.",
-      eventRules: [""],
+      eventRules: [],
       eventVenue: "CAD LAB",
-      eventRounds: [""],
-      eventPrice: [""],
+      eventRounds: [],
+      eventPrize: [],
       eventStaffCoordinator: {
         name: "Mr K Arun Kumar",
         contact: "8526408302",
@@ -47,10 +48,10 @@ const mech = {
       eventTime: "10:00 AM to 01:00 PM.",
       eventDescription:
         "Hands on Training Workshop On “DISMANTLING AND ASSEMBLY OF MAHINDRA XUV300, TUV300”: This workshop targets UG and PG students of any discipline. The attendee of this workshop will be able to get an idea about the DISMANTLING AND ASSEMBLY OF MAHINDRA XUV300, TUV300 IC ENGINES.",
-      eventRules: [""],
+      eventRules: [],
       eventVenue: "FABRICATION Lab",
-      eventRounds: [""],
-      eventPrice: [""],
+      eventRounds: [],
+      eventPrize: [],
       eventStaffCoordinator: {
         name: "Mr S Chitharthan",
         contact: "+919688604156",
@@ -78,7 +79,7 @@ const mech = {
       eventRules: ["-"],
       eventVenue: "Automobile Chassis Laboratory",
       eventRounds: ["-"],
-      eventPrice: ["-"],
+      eventPrize: ["-"],
       eventStaffCoordinator: {
         name: "Dr. V.V. Arunsankar",
         contact: "+918056484147",
@@ -106,7 +107,7 @@ const mech = {
       eventRules: ["-"],
       eventVenue: "M202",
       eventRounds: ["-"],
-      eventPrice: ["-"],
+      eventPrize: ["-"],
       eventStaffCoordinator: {
         name: "Mr. V Kondusamy",
         contact: "+919715025437",
@@ -140,7 +141,7 @@ const mech = {
       ],
       eventVenue: "MECHATRONICS Lab",
       eventRounds: ["4"],
-      eventPrice: [
+      eventPrize: [
         "The winner will receive a prize of Rs. 1000, while the runner-up will receive a prize of Rs. 750.",
         "All the candidates will be given participation certificates.",
       ],
@@ -178,7 +179,7 @@ const mech = {
       ],
       eventVenue: "Thermal Lab",
       eventRounds: ["3"],
-      eventPrice: [
+      eventPrize: [
         "The winner will receive a prize of Rs. 1000, while the runner-up will receive a prize of Rs. 750.",
         "All the candidates will be given participation certificates.",
       ],
@@ -216,7 +217,7 @@ const mech = {
       ],
       eventVenue: "EPL Lab",
       eventRounds: ["3"],
-      eventPrice: [
+      eventPrize: [
         "The winner will receive a prize of Rs. 1000, while the runner-up will receive a prize of Rs. 750.",
         "All the candidates will be given participation certificates.",
       ],
@@ -252,7 +253,7 @@ const mech = {
       ],
       eventVenue: "M303",
       eventRounds: ["1"],
-      eventPrice: [
+      eventPrize: [
         "The winner will receive a prize of Rs. 1000, while the runner-up will receive a prize of Rs. 750.",
         "All the candidates will be given participation certificates.",
       ],
@@ -289,7 +290,7 @@ const mech = {
       ],
       eventVenue: "KCE - Basketball Ground",
       eventRounds: ["Round 1", "Round 2 (Final)"],
-      eventPrice: [
+      eventPrize: [
         "Winner will get a prize worth Rs. 1000, and the runner-up will get a prize worth Rs. 750.",
         "All candidates will receive participation certificates.",
       ],

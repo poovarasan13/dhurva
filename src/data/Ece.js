@@ -4,7 +4,8 @@ const ece = {
   technicalEventCount: 9,
   workshop: 6,
   nonTechnicalEventCount: 0,
-  departmentName: "DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING",
+  departmentName: "Department Of Electronics And Communication Engineering",
+  cardName: "Electronics And Communication Engineering",
   departmentDescription:
     "Dhruva 2025 technical festival organized by the Electronics and Communication Engineering department to showcase innovation, creativity, and technical excellence. It provides a platform for students to enhance their technical skills, compete in exciting challenges, and engage with industry experts. We will be hosting 6 workshops, 9 technical events and designed to be informative and engaging for students, faculty, and industry professionals.",
   coordinatorName: "Dr. G. Arun Francis AP/EC",

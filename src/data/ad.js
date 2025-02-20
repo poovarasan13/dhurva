@@ -5,6 +5,7 @@ const ad = {
   workshop: 1,
   nonTechnicalEventCount: 3,
   departmentName: "Department of Artificial Intelligence and Data Science",
+  cardName: "Artificial Intelligence and Data Science",
   departmentDescription:
     "The Department of Artificial Intelligence and Data Science is delighted to reveal its esteemed roster of events for the forthcoming academic year. Featuring 7 technical events, 3  non-technical events, and  enriching workshops, Whether you are a student, faculty member, or industry professional, our meticulously curated events are designed to inform, engage, and inspire.",
   coordinatorName: "Dr. C. N. Vanitha – Prof./AD",

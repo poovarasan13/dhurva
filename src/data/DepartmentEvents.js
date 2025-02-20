@@ -17,11 +17,11 @@ const events = [
         eventTime: "11 AM  to  1 PM",
         eventDescription:
           "The AI & ML Workshop provides an introduction to Artificial Intelligence and Machine Learning, covering key concepts, algorithms, and real-world applications. Participants will learn about supervised and unsupervised learning, deep learning basics, and hands-on implementation using Python libraries like Scikit-learn and TensorFlow. The workshop includes live coding sessions, a mini-project, and discussions with industry experts. By the end, attendees will gain practical knowledge and skills to build and evaluate AI models.",
-        eventRules: [""],
+        eventRules: [],
         eventVenue: "CSE block /  EMC lab",
 
         eventRounds: "",
-        eventPrice: "",
+        eventPrize: "",
         eventStaffCoordinator: {
           name: "Prof..Sharmila   AP / CSE",
           contact: "",
@@ -50,9 +50,9 @@ const events = [
           name: "Prof..Sharmila   AP / CSE",
           contact: "",
         },
-        eventRules: [""],
+        eventRules: [],
         eventRounds: "",
-        eventPrice: "",
+        eventPrize: "",
         studentCoordinator: [
           {
             name: " Ms.Sowndarya  III CS B",
@@ -73,11 +73,7 @@ const events = [
       "Our department is committed to fostering innovation, creativity, and excellence through dynamic and engaging events. From technical workshops and competitions to collaborative hackathons and research symposiums, we provide platforms for students to explore their potential, sharpen their skills, and showcase their talents. Our events are designed to inspire learning, teamwork, and problem-solving, equipping participants to tackle real-world challenges and drive future advancements in their fields.",
     coordinatorName: "Ms. K. Ananthi, AP / IT",
     coordinatorContactPhone: "7373142630",
-    coordinatorEmail:"ananthi.k@kce.ac.in",
-    events:[
-      {
-        
-      }
-    ]
+    coordinatorEmail: "ananthi.k@kce.ac.in",
+    events: [{}],
   },
 ];

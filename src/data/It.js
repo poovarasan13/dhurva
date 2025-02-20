@@ -1,6 +1,7 @@
 const it = {
   id: 2,
   departmentName: "Information Technology",
+  cardName: "Information Technology",
   shortName: "IT",
   technicalEventCount: 4,
   nonTechnicalEventCount: 3,
@@ -28,7 +29,7 @@ const it = {
       ],
       eventVenue: "C-Block",
       eventRounds: ["1"],
-      eventPrice: [
+      eventPrize: [
         "As per the norms all the candidates will be given participation certificates.",
       ],
       eventStaffCoordinator: {
@@ -62,7 +63,7 @@ const it = {
       ],
       eventVenue: "C-Block (C304)",
       eventRounds: ["Round 1", "Final Round"],
-      eventPrice: [
+      eventPrize: [
         "As per the norms all the candidates will be given participation certificates.",
       ],
       eventStaffCoordinator: {
@@ -97,7 +98,7 @@ const it = {
       ],
       eventVenue: "C-Block",
       eventRounds: ["Round 1 ", " Final Round"],
-      eventPrice: [
+      eventPrize: [
         "As per the norms all the candidates will be given participation certificates.",
       ],
       eventStaffCoordinator: {
@@ -126,7 +127,7 @@ const it = {
       eventRules: ["Participation needs ID Card"],
       eventVenue: "C Block",
       eventRounds: [1],
-      eventPrice: [
+      eventPrize: [
         "As per the norms all the candidates will be given participation certificates.",
       ],
       eventStaffCoordinator: {
@@ -158,7 +159,7 @@ const it = {
       ],
       eventVenue: "IT PROJECT LAB",
       eventRounds: ["Round 1", "Final Round"],
-      eventPrice: [
+      eventPrize: [
         "As per the norms all the candidates will be given participation certificates.",
       ],
       eventStaffCoordinator: {
@@ -191,7 +192,7 @@ const it = {
       ],
       eventVenue: "C 306",
       eventRounds: ["1"],
-      eventPrice: [
+      eventPrize: [
         "As per the norms all the candidates will be given participation certificates.",
       ],
       eventStaffCoordinator: {
@@ -225,7 +226,7 @@ const it = {
       ],
       eventVenue: "IT PROJECT LAB",
       eventRounds: ["Round 1: 4 Questions", "Round 2: 2 Questions"],
-      eventPrice: [
+      eventPrize: [
         "As per the norms all the candidates will be given participation certificates",
       ],
       eventStaffCoordinator: {
@@ -254,7 +255,7 @@ const it = {
       eventRules: ["Participation needs ID Card"],
       eventVenue: "C Block",
       eventRounds: ["1"],
-      eventPrice: [
+      eventPrize: [
         "As per the norms all the candidates will be given participation certificates.",
       ],
       eventStaffCoordinator: {
@@ -280,10 +281,10 @@ const it = {
       eventTime: "10.30 a.m",
       eventSubType: "workshop",
       eventDescription: "Workshop on Data Analytics with Python",
-      eventRules: [""],
+      eventRules: [],
       eventVenue: "MG Hall",
-      eventRounds: [""],
-      eventPrice: [
+      eventRounds: [],
+      eventPrize: [
         "As per the norms all the candidates will be given participation certificates.",
       ],
       eventStaffCoordinator: {
