@@ -1,3 +1,4 @@
+import offstage from "@/assets/images/OffStage/offstage";
 const OffStageDetails = [
   {
     eventName: "Rangoli",
@@ -16,7 +17,7 @@ const OffStageDetails = [
       "Use of phones, tablets or printouts as a preference will lead to immediate disqualification.",
       "Evaluation will be based on theme, colour combinations, creativity and clarity of rangoli",
     ],
-    image: "/assets/images/rangoli.jpg",
+    image: offstage.Rangoli,
     reverse: false,
   },
   {
@@ -36,7 +37,7 @@ const OffStageDetails = [
       "Use of phones, tablets or printouts as a preference will lead to immediate disqualification.",
       "Participants will be judged on the basis of creativity, innovation and design.",
     ],
-    image: "/assets/images/facepainting.jpg",
+    image: offstage.FacePainting,
     reverse: true,
   },
   {
@@ -55,7 +56,7 @@ const OffStageDetails = [
       "The Time limit will be 1 hour.",
       "Judging will be based on neatness and creativity.",
     ],
-    image: "/assets/images/mehandi.jpg",
+    image: offstage.Mehandi,
     reverse: false,
   },
   {
@@ -73,7 +74,7 @@ const OffStageDetails = [
       "Participants should act and present their own video to the audience.",
       "The videos will be displayed on screen at the event, and the winners will be chosen",
     ],
-    image: "/assets/images/reels.jpg",
+    image: offstage.Reels,
     reverse: true,
   },
   {
@@ -92,7 +93,7 @@ const OffStageDetails = [
       "Films in other languages are permitted but should have subtitles in English",
       "The short film must be original. No copyright issues should be claimed.",
     ],
-    image: "/assets/images/shortfilm.jpg",
+    image: offstage.ShortFilm,
     reverse: false,
   },
   {
@@ -114,7 +115,7 @@ const OffStageDetails = [
       "Digital images are evaluated on the basis of (I) IMPACT, (II) COMPOSITION. (III) TECHNICAL QUALITY, and (IV) SUITABILITY for the specific theme",
       "The additional instructions will be announced on the spot.",
     ],
-    image: "/assets/images/photography.jpg",
+    image: offstage.Photography,
     reverse: true,
   },
   {
@@ -136,7 +137,7 @@ const OffStageDetails = [
       "Participants are allowed to bring non-electric equipment (mixer, chopper, juicer, grater etc.,)",
       "Evaluation will be based on table cleanliness, presentation and taste of the food",
     ],
-    image: "/assets/images/firelesscooking.jpg",
+    image: offstage.FirelessCooking,
     reverse: false,
   },
   {
@@ -159,7 +160,7 @@ const OffStageDetails = [
       "No pre preparation of vegetables or fruits before competition is allowed",
       "Participants should not take the help of others to complete the task.",
     ],
-    image: "/assets/images/vegetablecarving.jpg",
+    image: offstage.VegetableCarving,
     reverse: true,
   },
   {
@@ -179,7 +180,7 @@ const OffStageDetails = [
       "Competitors using a model will have 30 minutes to complete one hand.",
       "Competitors working on themselves will receive 5 extra minutes.",
     ],
-    image: "/assets/images/nailart.jpg",
+    image: offstage.NailArt,
     reverse: false,
   },
   {
@@ -199,7 +200,7 @@ const OffStageDetails = [
       "Competitors will have 30 minutes to complete the craft.",
       "Final results will be decided by the allocated judges.",
     ],
-    image: "/assets/images/craftart.jpg",
+    image: offstage.CarftArt,
     reverse: true,
   },
 ];
