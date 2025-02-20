@@ -4,8 +4,8 @@ const ct = {
   technicalEventCount: 3,
   nonTechnicalEventCount: 1,
   workshop: 1,
+  departmentName: "Department Of Computer Science and Technology",
   cardName: "Computer Science and Technology",
-  departmentName: "Department of Computer Science and Technology",
   departmentDescription:
     "The Department of Computer Science and Technology is excited to announce its upcoming lineup of events for the upcoming academic year. We will be conducting 3 technical events, 1 non-technical events, and 1 workshops that are sure to be informative and engaging for students, faculty, and industry professionals alike.",
   coordinatorName: "N.Vijayakumar / Assistant Professor ",
@@ -16,7 +16,7 @@ const ct = {
       posterUrl: "",
       eventThumbnail: "",
       eventName: "Workshop on “BIG DATA ANALYSTICS IN INDUSTRIAL IOT”",
-      eventSubType: "WorkShop",
+      eventSubType: "workshop",
       eventType: "One day Workshop",
       eventTime: "10:00 AM to 2:00 PM",
       eventDescription:
@@ -57,11 +57,7 @@ const ct = {
         "Students can deliver their ideas, the results of their research activities, and innovations in the field of Computer Science and Technology, using a power point presentation.",
       eventRules: ["2 to 4 members/team"],
       eventVenue: "D-block Hall D302",
-      eventRounds: [
-        {
-          round: "One Round",
-        },
-      ],
+      eventRounds: ["1 ROUND"],
       eventPrize: [
         "Winner: Rs. 1500",
         "Runner: Rs. 1000",
@@ -99,11 +95,7 @@ const ct = {
         "The event brings together talented individuals and teams from diverse backgrounds to present their groundbreaking projects and compete for recognition, prizes, and the chance to make a lasting impact.",
       eventRules: [],
       eventVenue: "D-block Room No: D303",
-      eventRounds: [
-        {
-          round: "1 Round",
-        },
-      ],
+      eventRounds: ["1 Round"],
       eventPrize: ["Winner: Rs. 1000", "Runner: Rs. 750"],
       eventStaffCoordinator: {
         name: "Mr. N. Vijayakumar / AP",
@@ -135,17 +127,13 @@ const ct = {
       eventThumbnail: "",
       eventName: "CONNECTION PHOTO CHALLENGE EVENT",
       eventType: "NON Technical Event",
-      eventSubType: "NonTechnical",
+      eventSubType: "NON- Technical",
       eventTime: "2:00 PM to 4:00 PM",
       eventDescription:
         "Welcome to our Students a photography competition or activity where participants are tasked with capturing images that visually represent the theme of 'connection,' whether it be between people, nature, or even abstract concepts, often with specific prompts or guidelines to encourage creative interpretation and engagement with the subject matter.",
       eventRules: [],
       eventVenue: "D-block / Room No: D303",
-      eventRounds: [
-        {
-          round: "1 Round",
-        },
-      ],
+      eventRounds: ["1 Round"],
       eventPrize: [
         "Winner: Rs. 1500",
         "Runner: Rs. 1000",
@@ -183,11 +171,7 @@ const ct = {
         "Welcome to our Students can deliver their ideas, the results of their research activities, and innovations in the field of Computer science and Technology, using a power point presentation.",
       eventRules: [],
       eventVenue: "D-block / Room No: D-block Seminar Hall",
-      eventRounds: [
-        {
-          round: "1 Round",
-        },
-      ],
+      eventRounds: ["1 Round"],
       eventPrize: [
         "Winner: Rs. 1500",
         "Runner: Rs. 1000",

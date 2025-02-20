@@ -28,7 +28,7 @@ function DepartmentCard({ events }) {
   return (
     <div className="group hover:scale-105 transition-transform duration-300 w-full sm:w-[380px] md:w-[400px]">
       <Card
-        className={`w-full h-96 bg-white dark:from-gray-700 dark:to-gray-800 hover:bg-sky-300 border-2 hover:border-black shadow-md hover:shadow-lg rounded-lg overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-300`}
+        className={`w-full md:h-96 bg-white dark:from-gray-700 dark:to-gray-800 hover:bg-sky-300 border-2 hover:border-black shadow-md hover:shadow-lg rounded-lg overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-300`}
       >
         <CardHeader className="p-4 sm:p-6">
           <div className="flex items-center justify-between">

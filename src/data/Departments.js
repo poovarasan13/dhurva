@@ -1,6 +1,6 @@
 import cse from "../data/Cse.js";
 import it from "../data/It.js";
-import ct from "../data/CT.js";
+import ct from "../data/Ct.js";
 import ad from "../data/ad.js";
 import civil from "../data/Civil.js";
 import cd from "../data/Design.js";
@@ -26,7 +26,6 @@ const department = [
   ete,
   mba,
   mca,
-
 ];
 
 export default department;

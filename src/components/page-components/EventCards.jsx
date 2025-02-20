@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardFooter } from "../ui/card";
 import { Button } from "../ui/button";
-import { Rocket } from "lucide-react";
+import { Clock, Rocket } from "lucide-react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 function EventCards({ events }) {
@@ -14,9 +14,9 @@ function EventCards({ events }) {
     });
   };
   return (
-    <div className="flex justify-center dm-sans   overflow-hidden p-4">
-      <Card className=" w-[400px] bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
-        <CardContent className="p-4">
+    <div className="flex justify-center dm-sans   overflow-hidden ">
+      <Card className=" w-[450px] bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
+        <CardContent className="">
           <img
             src={events.eventThumbnail}
             alt="Event Poster"
@@ -29,9 +29,9 @@ function EventCards({ events }) {
             <p className="text-sm text-gray-600 font-semibold dark:text-gray-300 mt-1">
               {events.eventType}
             </p>
-            <p className="text-sm font-medium text-gray-700 dark:text-gray-400 mt-1 font-semibold">
-              ⏰ Time:
-              <span className=" text-gray-800"> {events.eventTime}</span>
+            <p className="text-sm flex justify-center gap-2 font-medium text-gray-700 dark:text-gray-400 mt-1 font-semibold">
+              <Clock className="text-xs" /> Time:
+              <span className=" text-gray-800">{" "} {events.eventTime}</span>
             </p>
           </div>
         </CardContent>
@@ -39,7 +39,7 @@ function EventCards({ events }) {
         <CardFooter className="p-4">
           <Button
             onClick={handleNavigate}
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg flex items-center justify-center gap-2 transition-all duration-300"
+            className="w-full bg-sky-400 hover:bg-sky-400 text-white font-semibold py-2 rounded-lg flex items-center justify-center gap-2 transition-all duration-300"
           >
             Visit
           </Button>
