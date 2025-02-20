@@ -1,15 +1,11 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import "../../assets/fonts/arapey.css";
-import Navbar from "@/components/page-components/Navbar";
-import FooterSection from "@/components/sections/footer/FooterSection";
 import EventShowOff from "./EventShowOff";
 import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/dmsans.css";
-import data from "../../data/Cse.js";
 import CoordinatorCard from "@/components/page-components/CoordinatorCard";
 import { useLocation } from "react-router-dom";
-import TestCard from "@/components/page-components/TestCard";
 
 function EventPage() {
   useEffect(() => {
@@ -17,7 +13,6 @@ function EventPage() {
   }, []);
   const location = useLocation();
   const departmentData = location.state.events;
-  // console.log(departmentData.events);
   return (
     <div className="pt-20 lg:pt-30   dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       {/* <Navbar /> */}
@@ -50,7 +45,7 @@ function EventPage() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
       ></motion.div>
-      <div className=" ">
+      <div className=" flex justify-center mb-6">
         <CoordinatorCard deptDetails={departmentData} />
       </div>
     </div>
