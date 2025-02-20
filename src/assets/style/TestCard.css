@@ -21,13 +21,11 @@
 
 .card-custom:hover::before {
   opacity: 1;
-  transform: skew(0);
   clip-path: circle(140.9% at 0 0);
 }
 
 .card-body-custom {
   position: relative;
-  transition: color 0.6s ease-in-out;
 }
 
 .card-custom:hover .card-body-custom {

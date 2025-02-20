@@ -50,8 +50,8 @@ function EventPage() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
       ></motion.div>
-      <div className=" flex justify-center mb-4">
-        <TestCard deptDetails={departmentData} />
+      <div className=" ">
+        <CoordinatorCard deptDetails={departmentData} />
       </div>
     </div>
   );
