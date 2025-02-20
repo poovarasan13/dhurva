@@ -14,7 +14,7 @@ function TechnicalFest() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h1 className="text-3xl sm:text-6xl font-extrabold tracking-tight dm-serif text-black">
-          Techinal Fest
+          Technical Fest
         </h1>
         <p className="mt-4 dm-sans text-center text-sm md:text-lg text-gray-800 dark:text-gray-300 max-w-5xl mx-auto leading-relaxed">
           Gear up for an exhilarating Technical Fest! Immerse yourself in the
