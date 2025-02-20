@@ -17,7 +17,7 @@ function HomePage() {
 
       <Gallery />
       <DhurvaFest />
-      <ProPassList />
+      {/* <ProPassList /> */}
       <Banners />
     </div>
   );

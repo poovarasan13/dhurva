@@ -8,7 +8,7 @@ const navData = [
     route: "/culturalFest",
   },
   {
-    name: "Sports",
+    name: "Sports Meet",
     route: "/sports",
   },
   {
