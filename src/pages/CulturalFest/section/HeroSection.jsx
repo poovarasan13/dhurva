@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Rocket } from "lucide-react";
 import "../../../assets/fonts/dmserif.css";
 import "../../../assets/fonts/sourcesans.css";
-
+import { motion } from "framer-motion";
 function HeroSection() {
   const navigate = useNavigate();
   const handleOnStage = () => {
