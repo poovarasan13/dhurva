@@ -6,14 +6,15 @@ import FooterSection from "@/components/sections/footer/FooterSection";
 import React, { useEffect } from "react";
 import ProPassList from "../home/section/ProPassList";
 import AnimatedCard from "@/components/page-components/AnimatedCard";
+import RegistrationPage from "../Registration/RegistrationPage";
 
 const PassPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="  min-h-screen">
-      <motion.div
+    <div className=" ">
+      {/* <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -34,7 +35,8 @@ const PassPage = () => {
           <AnimatedCard />
           <AnimatedCard />
         </div>
-      </div>
+      </div> */}
+      <RegistrationPage />
 
       {/* Footer */}
     </div>

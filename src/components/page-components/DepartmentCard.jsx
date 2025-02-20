@@ -28,7 +28,7 @@ function DepartmentCard({ events }) {
   return (
     <div className="group hover:scale-105 transition-transform duration-300 w-full sm:w-[380px] md:w-[400px]">
       <Card
-        className={`w-full bg-white dark:from-gray-700 dark:to-gray-800 hover:bg-sky-300 border-2 hover:border-black shadow-md hover:shadow-lg rounded-lg overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-300`}
+        className={`w-full h-96 bg-white dark:from-gray-700 dark:to-gray-800 hover:bg-sky-300 border-2 hover:border-black shadow-md hover:shadow-lg rounded-lg overflow-hidden border border-gray-100 dark:border-gray-700 transition-all duration-300`}
       >
         <CardHeader className="p-4 sm:p-6">
           <div className="flex items-center justify-between">
@@ -92,7 +92,7 @@ function DepartmentCard({ events }) {
           </div>
         </CardContent>
 
-        <CardFooter className="flex justify-center sm:p-6">
+        <CardFooter className="flex justify-center mt-auto sm:p-6">
           <Button
             className="bg-sky-400 w-40 dm-sans text-white text-lg rounded-full transition-all duration-300 shadow-sm hover:shadow-md group-hover:bg-white group-hover:text-black"
             onClick={handeNavigation}

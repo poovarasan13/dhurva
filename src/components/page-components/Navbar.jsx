@@ -47,13 +47,15 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <NavLink to="/" className="text-xl font-bold lg:visible">
-          <img
-            src="https://res.cloudinary.com/dzpkbej9y/image/upload/v1740026784/KCE-25_jzvhiu.jpg "
-            alt="Dhurva Logo"
-            className="w-20 md:w-[30px]"
-          />
-        </NavLink>
+        <div className="lg:visible invisible h-10 w-10">
+          <NavLink to="/" className="text-xl font-bold  ">
+            <img
+              src="https://res.cloudinary.com/dzpkbej9y/image/upload/v1740026784/KCE-25_jzvhiu.jpg "
+              alt="Dhurva Logo"
+              className="w-20 md:w-[30px]"
+            />
+          </NavLink>
+        </div>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">

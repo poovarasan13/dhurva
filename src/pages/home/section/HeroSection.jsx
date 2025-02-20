@@ -40,14 +40,19 @@ function HeroSection() {
                 Destiny
               </span>
             </h1>
-            <p className="mt-4 text-lg sm:text-xl leading-7 text-gray-900 dark:text-gray-100">
-              Karpagam College of Engineering presents the 8th edition of{" "}
-              <strong>DHRUVA</strong>, a national-level
-              techno-management-cultural fest on{" "}
-              <strong>March 13, 14, 15</strong>. Join us for an unforgettable
-              experience!
+            <p className="mt-4 text-lg sm:text-xl text-justify leading-7 text-gray-900 dark:text-gray-100">
+              Karpagam College of Engineering proudly presents the 9th edition
+              of{" "}
+              <span className="hover:text-sky-300 text-orange-400">
+                DHRUVA{" "}
+              </span>
+              a national-level techno-management-cultural fest happening on
+              <span className="hover:text-sky-300 text-orange-400">
+                {" "}March 13, 14, 15
+              </span>
+              . Join us for three days of innovation, learning, and celebration.
+              Don't miss this unforgettable experience!
             </p>
-
 
             {/* Register Button */}
             <div className="py-8 flex justify-center lg:justify-start">
@@ -72,7 +77,6 @@ function HeroSection() {
                   </span>
                 </motion.button>
               </motion.div>
-              
             </div>
           </div>
           <div className="flex justify-center">

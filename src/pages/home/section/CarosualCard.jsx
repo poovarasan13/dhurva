@@ -10,9 +10,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import guest1 from "../../../assets/test/guest1.png";
+// import guest2 from "../../../assets/"
 function CarosualCard() {
   const plugin = React.useRef(
-    Autoplay({ delay: 0.200, stopOnInteraction: true })
+    Autoplay({ delay: 1000, stopOnInteraction: true })
   );
 
   return (
