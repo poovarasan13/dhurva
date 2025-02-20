@@ -1,4 +1,3 @@
-import EventsDisplay from "./EventsDisplay";
 import ExploreEvents from "./ExploreEvents";
 import HeroPage from "./HeroPage";
 import OffStageDetails from "./OffStageDetails";
@@ -14,7 +13,6 @@ const OffStage = () => {
     <div>
       <HeroPage {...document} />
       <ExploreEvents EventData={OffStageDetails} />
-      {/* <EventsDisplay /> */}
     </div>
   );
 };

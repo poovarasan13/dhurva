@@ -9,7 +9,7 @@ const ExploreEvents = (props) => {
     if (eventCard) {
       const offsetTop = eventCard.offsetTop;
       window.scrollTo({
-        top: offsetTop + 480, // Adjust this value based on your header height or any top spacing
+        top: offsetTop + 480, 
         behavior: "smooth",
       });
     }

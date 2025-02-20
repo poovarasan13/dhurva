@@ -1,10 +1,8 @@
-// import {  default as heroImage2 } from '../../assets/images/about-images.jpg';
 import heroImage from "../../assets/images/HeroImage.png";
 import heroImage2 from "../../assets/images/HeroImage.png";
 const HeroPage = ({OffStage, title, tagline}) => {
   return (
     <div className="h-screen w-full bg-black overflow-hidden sticky ">
-      {/* Background with overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-1000"
         style={{
