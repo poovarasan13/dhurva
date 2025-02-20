@@ -16,8 +16,6 @@ function EventPage() {
   const departmentData = location.state.events;
   return (
     <div className="pt-20 lg:pt-30   dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-      {/* <Navbar /> */}
-
       <motion.div
         className="my-10 container mx-auto px-6 text-center"
         initial={{ opacity: 0, scale: 0.95 }}

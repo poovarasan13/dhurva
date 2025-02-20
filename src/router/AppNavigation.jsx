@@ -15,7 +15,6 @@ import SportsInfo from "@/pages/SportsInfo/SportsInfo";
 import TechnicalFest from "@/pages/Technical-Fest/TechnicalFest";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-// import "
 
 function AppNavigation() {
   return (

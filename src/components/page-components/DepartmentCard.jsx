@@ -97,7 +97,7 @@ function DepartmentCard({ events }) {
             className="bg-sky-400 w-40 dm-sans text-white text-lg rounded-full transition-all duration-300 shadow-sm hover:shadow-md group-hover:bg-white group-hover:text-black"
             onClick={handeNavigation}
           >
-            visit <Rocket />
+            Explore <Rocket />
           </Button>
         </CardFooter>
       </Card>

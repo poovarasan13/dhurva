@@ -18,7 +18,6 @@ import {
 } from "lucide-react";
 import React from "react";
 
-
 import "../../../assets/fonts/dmsans.css";
 import "../../../assets/fonts/opensans.css";
 import "../../../assets/fonts/allfonts.css";
@@ -54,27 +53,6 @@ function DhurvaFest() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card className="shadow-lg hover:shadow-xl transition-all rounded-xl overflow-hidden">
-                <CardHeader className="bg-sky-300 p-6 text-center">
-                  <Music className="h-12 w-12 text-white  mx-auto" />
-                </CardHeader>
-                <CardContent className="p-4 text-center bg-white">
-                  <h3 className="text-xl font-bold text-gray-800 mb-4 dm-sans">
-                    Non-Technical Event
-                  </h3>
-                  <p className="text-gray-600 sm:mb-6 mb-3  carme-regular ">
-                    Dive into the rich tapestry of culture with music concerts,
-                    dance performances, theatre showcases, and art exhibitions.
-                    Explore the creative side of innovation!
-                  </p>
-                </CardContent>
-                <CardFooter className="bg-gray-50 p-6 text-center justify-center">
-                  <Button className="bg-sky-400 hover:bg-sky-400 text-white hover:text-black work-sans  transition-all py-2 px-6 rounded-lg text-lg">
-                    Explore More <Earth />
-                  </Button>
-                </CardFooter>
-              </Card>
-
-              <Card className="shadow-lg hover:shadow-xl transition-all rounded-xl overflow-hidden">
                 <CardHeader className=" bg-green-300 p-6 text-center">
                   <Code className="h-12 w-12 text-white mx-auto" />
                 </CardHeader>
@@ -82,15 +60,36 @@ function DhurvaFest() {
                   <h3 className="text-xl font-bold text-gray-800 mb-4 dm-sans">
                     Technical Event
                   </h3>
-                  <p className="text-gray-600 sm:mb-6 mb-3  carme-regular">
-                    Experience the excitement of competitive tech events,
-                    hackathons, and more that test your creativity and technical
-                    prowess
+                  <p className="text-gray-600 sm:mb-6 mb-3 text-justify carme-regular">
+                    Take on thrilling tech events, hackathons, and challenges
+                    that test your creativity and skills. Innovate, collaborate,
+                    and compete!
+                    <span className="text-green-400"> March 14</span>.
                   </p>
                 </CardContent>
-                <CardFooter className="bg-gray-50 p-6 text-center justify-center">
+                <CardFooter className="bg-gray-50 p-6 my-auto text-center justify-center">
                   <Button className="bg-green-300 hover:bg-green-300 text-white hover:text-black work-sans  transition-all py-2 px-6 rounded-lg text-lg">
                     Explore More <CircuitBoard />
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card className="shadow-lg hover:shadow-xl transition-all rounded-xl overflow-hidden">
+                <CardHeader className="bg-sky-300 p-6 text-center">
+                  <Music className="h-12 w-12 text-white  mx-auto" />
+                </CardHeader>
+                <CardContent className="p-4 text-center bg-white">
+                  <h3 className="text-xl font-bold text-gray-800 mb-4 dm-sans">
+                    Non-Technical Event
+                  </h3>
+                  <p className="text-gray-600 sm:mb-6 mb-3 text-justify carme-regular">
+                    Experience vibrant culture through music, dance, theatre,
+                    and art. Celebrate creativity and innovation! Happening on{" "}
+                    <span className="text-sky-400"> March 15</span>.
+                  </p>
+                </CardContent>
+                <CardFooter className="bg-gray-50  text-center justify-center">
+                  <Button className="bg-sky-400 mt-12 hover:bg-sky-400 text-white hover:text-black work-sans  transition-all py-2 px-6 rounded-lg text-lg">
+                    Explore More <Earth />
                   </Button>
                 </CardFooter>
               </Card>

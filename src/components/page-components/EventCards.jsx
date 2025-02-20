@@ -14,7 +14,7 @@ function EventCards({ events }) {
     });
   };
   return (
-    <div className="flex justify-center dm-sans   overflow-hidden ">
+    <div className="flex hover:scale-105 duration-300 rounded-xl justify-center dm-sans   overflow-hidden ">
       <Card className=" w-[450px] bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
         <CardContent className="">
           <img
@@ -36,10 +36,10 @@ function EventCards({ events }) {
           </div>
         </CardContent>
 
-        <CardFooter className="p-4">
+        <CardFooter className="">
           <Button
             onClick={handleNavigate}
-            className="w-full bg-sky-400 hover:bg-sky-400 text-white font-semibold py-2 rounded-lg flex items-center justify-center gap-2 transition-all duration-300"
+            className=" mx-auto w-32 rounded-full bg-sky-400 hover:bg-sky-400 text-white font-semibold py-2  flex items-center justify-center gap-2 transition-all duration-300"
           >
             Visit
           </Button>

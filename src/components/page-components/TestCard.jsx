@@ -28,10 +28,20 @@ function TestCard({ deptDetails }) {
             </p>
             <div className="flex  gap-3 mt-6">
               <Button className="dm-sans rounded-full px-6 bg-sky-400 hover:bg-white hover:outline-sky-400 hover:outline-2 hover:border-2 hover:border-blue-[##4889F4] hover:text-sky-400">
-                <Phone /> call
+                <a
+                  href={`tel:${deptDetails.coordinatorContactPhone}`}
+                  className="flex gap-3"
+                >
+                  <Phone /> call
+                </a>
               </Button>
               <Button className="dm-sans rounded-full px-6 bg-sky-400 hover:bg-white hover:outline-sky-400 hover:outline-2 hover:border-2 hover:border-sky-[#4889F4] hover:text-sky-400">
-                <Mail /> email
+                <a
+                  className="flex gap-3"
+                  href={`mailto:${deptDetails.coordinatorEmail}`}
+                >
+                  <Mail /> email
+                </a>
               </Button>
             </div>
           </div>
