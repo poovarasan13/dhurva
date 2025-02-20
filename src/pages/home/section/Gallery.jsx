@@ -4,8 +4,10 @@ import { FaRegistered } from "react-icons/fa";
 import { RocketIcon } from "lucide-react";
 import "../../../assets/fonts/dmsans.css";
 import "../../../assets/fonts/opensans.css";
-
+import GridImages from "@/assets/images/HomePage/GridImages";
 const Gallery = () => {
+  const images = Object.values(GridImages); // Extract image URLs from the Gallery object
+
   return (
     <div className=" mx-auto px-5 py-10 lg:px-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -15,25 +17,25 @@ const Gallery = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          {[
-            "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
-            "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp",
-            "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp",
-            "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
-          ].map((src, index) => (
-            <motion.div
-              key={index}
-              className="w-full p-1 md:p-2"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-            >
-              <img
-                alt="gallery"
-                className="block w-full h-52 md:h-72 rounded-lg object-cover"
-                src={src}
-              />
-            </motion.div>
-          ))}
+          {images.slice(0, 4).map(
+            (
+              src,
+              index // Use the images array
+            ) => (
+              <motion.div
+                key={index}
+                className="w-full p-1 md:p-2"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
+                <img
+                  alt="gallery"
+                  className="block w-full h-52 md:h-72 rounded-lg object-cover"
+                  src={src}
+                />
+              </motion.div>
+            )
+          )}
         </motion.div>
 
         <motion.div
@@ -78,7 +80,7 @@ const Gallery = () => {
           </ul>
           <div className="flex justify-center md:justify-start">
             <motion.button
-              className="bg-sky-400 hover:bg-sky-400 rounded-full hover:text-black text-white  py-3 px-7 shadow-lg transition duration-300"
+              className="bg-sky-400 hover:bg-sky-400 hover:text-black text-white  py-3 px-7 rounded-lg shadow-lg transition duration-300"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >

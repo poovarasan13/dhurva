@@ -9,34 +9,37 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import guest1 from "../../../assets/test/guest1.png";
-// import guest2 from "../../../assets/"
+// import DhurvaFest from "@/utils/constant"; // Import the DhurvaFest object
+import DhurvaFest from "@/assets/images/HomePage/DhurvaFest";
+
 function CarosualCard() {
   const plugin = React.useRef(
-    Autoplay({ delay: 1000, stopOnInteraction: true })
+    Autoplay({ delay: 1000, stopOnInteraction: true }) // Delay is in milliseconds
   );
+
+  // Convert the DhurvaFest object into an array of image URLs
+  const imageUrls = Object.values(DhurvaFest);
 
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-max  md:w-96 "
+      className="w-max md:w-96"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
-        <CarouselItem>
-          <img src={guest1} className="  rounded-3xl" />
-        </CarouselItem>
-        <CarouselItem>
-          <img src={guest1} className="  rounded-3xl" />
-        </CarouselItem>
-        <CarouselItem>
-          <img src={guest1} className=" rounded-3xl" />
-        </CarouselItem>
-        <CarouselItem>
-          <img src={guest1} className="  rounded-3xl" />
-        </CarouselItem>
+        {imageUrls.map((imageUrl, index) => (
+          <CarouselItem key={index}>
+            <img
+              src={imageUrl}
+              className="rounded-3xl"
+              alt={`Slide ${index + 1}`}
+            />
+          </CarouselItem>
+        ))}
       </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
     </Carousel>
   );
 }

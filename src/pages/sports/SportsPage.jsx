@@ -39,7 +39,7 @@ const sportsData = [
     title: "Football",
     description:
       "Dribble, pass, and score in our exciting football tournament!",
-    coordinator: "",
+    coordinator: "Aakash",
     phone: "+91 6379040788",
     image: SportsAssests.Football,
     imageOnLeft: false,
@@ -98,7 +98,6 @@ const coordinatorData = {
   eventTiming: "13.3.2025 - 14.3.2025",
   venue: "KCE GROUND",
 };
-
 
 import { User, Mail, Phone, FileText, Calendar, MapPin } from "lucide-react";
 

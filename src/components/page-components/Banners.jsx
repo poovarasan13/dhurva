@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useRef } from "react";
 import {
   Carousel,
@@ -9,15 +7,11 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import Autoscroll from "embla-carousel-auto-scroll";
 
-import one from "../../assets/test/1.png";
-import two from "../../assets/test/2.png";
-import three from "../../assets/test/3.png";
-import four from "../../assets/test/4.png";
-import five from "../../assets/test/5.png";
-import six from "../../assets/test/vue.png";
 import "../../assets/fonts/dmserif.css";
-
-const images = [one, two, three, four, five, six];
+// import ClubAssets from "@/assets/images/ClubAssets";
+import ClubAssets from "@/assets/images/HomePage/ClubAssets";
+const images = Object.values(ClubAssets);
+// const images = [one,two];
 
 export default function Banners() {
   const autoscroll = useRef(
@@ -31,9 +25,9 @@ export default function Banners() {
 
   return (
     <div className="container mx-auto my-8 ">
-      <h4 className="text-center text-5xl my-4 dm-serif">Our Clubs</h4>
+      <h4 className="text-center text-5xl my-4 bebas">Our Clubs</h4>
       <div className="">
-        <div className="relative bg-white rounded-2xl">
+        <div className="relative bg-transparent rounded-2xl">
           <Carousel
             opts={{
               loop: true,
@@ -49,12 +43,12 @@ export default function Banners() {
                   key={index}
                   className="basis-1/3 xs:basis-1/3 sm:basis-1/4 md:basis-1/5 lg:basis-1/6 xl:basis-1/7"
                 >
-                  <div className="shadow-md rounded-2xl  flex items-center justify-center h-24 w-31 sm:h-28 sm:w-34 md:w-30 md:h-38 lg:h-36 xl:h-40">
+                  <div className="shadow-md rounded-2xl  flex items-center justify-center h-25 w-35 sm:h-28 sm:w-34 md:w-30 md:h-38 lg:h-36 xl:h-40">
                     <CardContent className="flex items-center justify-center p-2">
                       <img
                         src={src}
                         alt={`Slide ${index + 1}`}
-                        className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 object-contain"
+                        className="w-35 h-45 object-contain"
                       />
                     </CardContent>
                   </div>

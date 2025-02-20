@@ -1,3 +1,5 @@
+import onstage from "@/assets/images/OnStage/onstage";
+
 const OnStageDetails = [
   {
     eventName: "Solo Singing",
@@ -16,7 +18,7 @@ const OnStageDetails = [
       "The decision of the jury shall be final.",
       "Top six contestants will be selected to the final round.",
     ],
-    image: "/assets/images/event1.jpg",
+    image: onstage.SoloSinging,
     reverse: false,
   },
   {
@@ -37,7 +39,7 @@ const OnStageDetails = [
       "The decision of the jury shall be final with regard to the interpretation of the rules.",
       "Top six contestants will be selected to final round.",
     ],
-    image: "/assets/images/event2.jpg",
+    image: onstage.SoloDancing,
     reverse: true,
   },
   {
@@ -60,7 +62,7 @@ const OnStageDetails = [
       "The participating team will be responsible for removal of their sets / properties etc. immediately after the completion of their performance.",
       "Judgment will be based on the qualities like Tal, Technique, Rhythm, Abhinaya or Expression, Costumes, Footwork and general impression etc.",
     ],
-    image: "/assets/images/event3.jpg",
+    image: onstage.GroupDance,
     reverse: false,
   },
   {
@@ -81,7 +83,7 @@ const OnStageDetails = [
       "Maximum time allowed for the instrumental music is 10 minutes which include setting time. The setting time for a group shall not exceed 4 minutes.",
       "Judgment will be made on the qualities like, composition rhythm, coordination and general impression.",
     ],
-    image: "/assets/images/event4.jpg",
+    image: onstage.Instrumentals,
     reverse: true,
   },
   {
@@ -100,7 +102,7 @@ const OnStageDetails = [
       "Judgment will be made base don expression, Choreography, Energy, and Attire.",
       "The decision of the jury shall be final with regard to the interpretation of the rules.",
     ],
-    image: "/assets/images/event5.jpg",
+    image: onstage.AdaptTune,
     reverse: false,
   },
   {
@@ -128,7 +130,7 @@ const OnStageDetails = [
       "Necessary props must be arranged by the participants",
       "Act will be judged based on the script, facial expression, stage presence, co-ordination, voice modulation and overall performance.",
     ],
-    image: "/assets/images/event6.jpg",
+    image: onstage.mime,
     reverse: true,
   },
   {
@@ -167,7 +169,7 @@ const OnStageDetails = [
       "Time limit will be 6 minutes (3min for preparation and 3min for presentation)",
       "Participants will be judged on the basis of scripts, presentation, voice modulation, voice quality",
     ],
-    image: "/assets/images/event8.jpg",
+    image: onstage.rj,
     reverse: true,
   },
   {
@@ -191,7 +193,7 @@ const OnStageDetails = [
       "Only solo participants are allowed",
       "No participant may make any reference to individuals or religion and any dual meaning obscene content is strictly prohibited",
     ],
-    image: "/assets/images/event9.jpg",
+    image: onstage.Variety,
     reverse: false,
   },
 ];
