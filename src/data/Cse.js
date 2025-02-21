@@ -1,3 +1,4 @@
+import cardGif from "../assets/gif/cse-gif.gif";
 const cse = {
   id: 1,
   departmentName: "Department of Computer Science and Engineering",
@@ -5,6 +6,7 @@ const cse = {
   shortName: "CSE",
   technicalEventCount: 5,
   nonTechnicalEventCount: 3,
+  cardGif: cardGif,
   workshop: 2,
   departmentDescription:
     "Dhruva 2025 technical festival organized by the Computer Science and Engineering department to showcase innovation, creativity, and technical excellence. It provides a platform for students to enhance their technical skills, compete in exciting challenges, and engage with industry experts. We will be hosting 3 workshops, 5 technical events and 2 non-technical events, and designed to be informative and engaging for students, faculty, and industry professionals.",
@@ -27,7 +29,6 @@ const cse = {
       eventStaffCoordinator: {
         name: "Prof. C. Vidya Prabha AP / CSE",
         contact: "",
-        
       },
       studentCoordinator: [
         {

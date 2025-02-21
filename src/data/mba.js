@@ -1,3 +1,5 @@
+import cardGif from "../assets/gif/mba-gif.gif";
+
 const mba = {
   id: 7,
   technicalEventCount: 1,
@@ -5,6 +7,7 @@ const mba = {
   cardName: "School of Management Studies",
   nonTechnicalEventCount: 0,
   workshop: 0,
+  cardGif: cardGif,
   shortName: "MBA",
   departmentDescription:
     "The School of Management is set to host an exciting management and technical event, Marketing Minds. This dynamic competition challenges participants to reimagine and reinvent an existing product, transforming it with innovative features. Additionally, teams will craft a compelling digital advertisement to promote their revamped product and showcase their creativity on the official website.Marketing Minds-Innogenius-The Click Blitz-AdVantage",

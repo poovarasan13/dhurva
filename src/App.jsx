@@ -7,8 +7,7 @@ import star from "./assets/images/dhruvastar.png"; // Import the image
 // import "../../assets/fonts/dmsans.css";
 import "./assets/fonts/dmsans.css";
 import AppNavigation from "./router/AppNavigation";
-import MaskedCursor from "./components/page-components/MaskedCursor";
-import StudentCard from "./components/page-components/StudentCard";
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {

@@ -28,4 +28,5 @@ const department = [
   mca,
 ];
 
+
 export default department;

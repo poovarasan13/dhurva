@@ -1,9 +1,11 @@
+import cardGif from "../assets/gif/ete-gif.gif";
 const ete = {
   id: 9,
   shortName: "ETE",
   technicalEventCount: 3,
   nonTechnicalEventCount: 0,
   workshop: 2,
+  cardGif: cardGif,
   departmentName:
     "Department of Electronics and Telecommunications Engineering",
   cardName: "Electronics And Telecommunications Engineering",

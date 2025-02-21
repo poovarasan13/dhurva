@@ -1,8 +1,11 @@
+import cardGif from "../assets/gif/mca-gif.gif";
+
 const mca = {
   id: 8,
   departmentName: "School of Computer Applications",
   shortName: "MCA",
   technicalEventCount: 3,
+  cardGif: cardGif,
   cardName: "School of Computer Applications",
   colorCode: "#FF0000",
   workshop: 2,
