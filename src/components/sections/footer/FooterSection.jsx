@@ -100,13 +100,13 @@ export default function FooterSection() {
                   href="/onstage"
                   className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
                 >
-                  onstage
+                  On Stage
                 </a>
                 <a
                   href="/offstage"
                   className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
                 >
-                  offstage
+                  Off Stage
                 </a>
               </div>
             </FooterColumn>
