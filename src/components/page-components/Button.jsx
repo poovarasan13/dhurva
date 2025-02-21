@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Rocket } from "lucide-react";
-
+import '../../assets/fonts/dmsans.css';
 const Button = ({ link, text, color = "blue-600" }) => {
     return (
         <div className="py-5 flex justify-center lg:justify-start">
@@ -15,7 +15,7 @@ const Button = ({ link, text, color = "blue-600" }) => {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <span className="flex items-center gap-2">
+                        <span className="flex items-center dm-sans gap-2">
                             {text}
                             <motion.div
                                 whileHover={{ y: -5, rotate: -15 }}

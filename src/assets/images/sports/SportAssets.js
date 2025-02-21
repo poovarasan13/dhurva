@@ -1,6 +1,6 @@
 const SportsAssests = {
   BallBadminton:
-    "https://res.cloudinary.com/dk75r8sim/image/upload/v1739940409/ballbadminton_tszu54.avif",
+    "https://res.cloudinary.com/dl2wibcfp/image/upload/v1740110745/BallBatmition_x3angp.webp",
   Kabbadi:
     "https://res.cloudinary.com/dk75r8sim/image/upload/v1739937830/kabbadi_xbvvka.png",
   Football:

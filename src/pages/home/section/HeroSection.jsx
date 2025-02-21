@@ -30,16 +30,16 @@ function HeroSectionComponent() {
           <div className="text-center lg:text-left lg:pr-10">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight work-sans">
               <span className="text-transparent bg-clip-text bg-gradient-to-r font-extrabold from-green-500 to-green-700">
-                Create
+              Forge 
               </span>{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 font-extrabold to-red-700">
-                Your
+              Your 
               </span>{" "}
               <span className="text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-blue-500 to-blue-700">
-                Own
+              Future 
               </span>{" "}
               <span className="text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-orange-400 to-orange-600">
-                Destiny
+              at DHRUVA 2025!
               </span>
             </h1>
             <p className="mt-4 text-lg sm:text-xl leading-7 text-gray-900 dark:text-gray-100">
