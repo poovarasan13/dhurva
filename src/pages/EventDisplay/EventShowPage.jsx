@@ -5,7 +5,7 @@ import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/opensans.css";
 import "../../assets/fonts/sourcesans.css";
 import { useLocation, useNavigate } from "react-router-dom";
-import paper from "../../assets/test/paper.jpg";
+// import paper from "../../assets/test/paper.jpg";
 
 function EventShowPage() {
   useEffect(() => {
