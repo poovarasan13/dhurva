@@ -1,7 +1,5 @@
-import cardGif from "../assets/gif/mca.gif";
 
 const mca = {
-  cardGif: cardGif,
   id: 8,
   departmentName: "School of Computer Applications",
   shortName: "MCA",

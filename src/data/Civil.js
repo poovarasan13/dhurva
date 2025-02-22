@@ -1,7 +1,6 @@
-import cardGif from "../assets/gif/civil.webp";
 
 const civil = {
-  cardGif: cardGif,
+
   id: 12,
   shortName: "CE",
   technicalEventCount: 4,

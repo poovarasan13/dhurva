@@ -1,10 +1,9 @@
-import cardGif from "../assets/gif/cyber.gif";
 
 const cyber = {
   id: 3,
   shortName: "CYBER",
   technicalEventCount: 3,
-  cardGif: cardGif,
+
   workshop: 2,
   nonTechnicalEventCount: 0,
   departmentName: "Department of CSE(CYBER SECURITY)",

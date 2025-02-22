@@ -30,9 +30,7 @@ function App() {
         </div>
       ) : (
         <>
-          {/* <MaskedCursor /> */}
           <AppNavigation />
-          {/* <StudentCard /> */}
         </>
       )}
     </>

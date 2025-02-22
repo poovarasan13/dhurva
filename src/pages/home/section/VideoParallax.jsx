@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import videoBg from "../../../assets/video/home.mp4";
 import "../../../assets/fonts/dmsans.css";
-
 const VideoParallax = () => {
   const [offsetY, setOffsetY] = useState(0);
 
@@ -18,6 +16,7 @@ const VideoParallax = () => {
         src="https://res.cloudinary.com/dzpkbej9y/video/upload/v1740030183/websitevid-loww_pmyawj.mp4"
         autoPlay
         loop
+        poster="https://res.cloudinary.com/dzpkbej9y/image/upload/v1740237509/Home_slmynu.avif"
         muted
         playsInline
         style={{ transform: `translateY(${offsetY}px)` }}

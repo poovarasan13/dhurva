@@ -1,7 +1,5 @@
-import cardGif from "../assets/gif/sms.gif";
 const mba = {
   id: 7,
-  cardGif: cardGif,
   technicalEventCount: 1,
   departmentName: "School of Management Studies",
   cardName: "School of Management Studies",

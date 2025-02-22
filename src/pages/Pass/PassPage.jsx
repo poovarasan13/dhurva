@@ -16,15 +16,13 @@ const PassPage = () => {
   }, []);
   return (
     <div className=" dm-sans">
-      {/* <motion.div
+      <motion.div
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="text-center sm:mt-24  mt-20"
       >
-        <h1 className="text-5xl powergrok  tracking-wide">
-          Exclusive Passes
-        </h1>
+        <h1 className="text-5xl powergrok  tracking-wide">Exclusive Passes</h1>
         <p className="text-gray-800 text-lg mt-2">
           Unlock premium content with our exclusive memberships
         </p>
@@ -37,10 +35,8 @@ const PassPage = () => {
           <AnimatedCard />
           <AnimatedCard />
         </div>
-      </div> */}
-      <RegistrationPage />
-
-      {/* Footer */}
+      </div>
+      {/*<RegistrationPage />*/}
     </div>
   );
 };

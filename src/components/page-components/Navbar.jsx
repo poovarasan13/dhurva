@@ -33,7 +33,6 @@ const Navbar = () => {
           />
         </NavLink>
 
-        {/* Desktop Navigation */}
         <ul className="hidden md:flex flex-grow justify-center space-x-8">
           {navData.map((item, index) => (
             <li key={index}>

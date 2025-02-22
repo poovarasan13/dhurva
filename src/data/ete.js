@@ -1,6 +1,4 @@
-import cardGif from "../assets/gif/ete.webp";
 const ete = {
-  cardGif: cardGif,
   id: 9,
   shortName: "ETE",
   technicalEventCount: 3,
