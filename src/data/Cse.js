@@ -16,6 +16,7 @@ const cse = {
   events: [
     {
       posterUrl: "",
+      eventThumbnail: "",
       eventName: "Workshop on Industrial Internet of Things",
       eventType: "Workshop",
       eventSubType: "WorkShop",

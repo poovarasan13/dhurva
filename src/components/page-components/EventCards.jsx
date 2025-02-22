@@ -14,20 +14,19 @@ function EventCards({ events }) {
     });
   };
   return (
-    <div className="flex hover:scale-105 duration-300 rounded-xl justify-center dm-sans   overflow-hidden ">
-      <Card className=" w-[450px] bg-white dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
+    <div className="flex hover:scale-105 duration-300  rounded-xl justify-center dm-sans   overflow-hidden ">
+      <Card className=" w-[450px] bg-white   dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
         <CardContent className="">
-          {events.eventThumbnail !== "" ? (
-            <></>
-          ) : (
+          {events.posterUrl !== "" ? (
             <>
-              {" "}
               <img
                 src={events.eventThumbnail}
                 alt="Event Poster"
                 className="w-full h-40 object-cover rounded-lg shadow-sm"
               />
             </>
+          ) : (
+            <></>
           )}
           <div className="mt-4 text-center">
             <h3 className="text-lg font-semibold text-gray-800 dark:text-white">

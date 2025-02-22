@@ -1,13 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  Calendar,
-  MapPin,
-  Clock,
-  User,
-  Rocket,
-  UserPen,
-  Check,
-} from "lucide-react";
+import { MapPin, Clock, User, Rocket, UserPen, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/opensans.css";
@@ -21,11 +13,10 @@ function EventShowPage() {
   }, []);
 
   const location = useLocation();
-  const events = location.state || {}; // Ensure events is always an object
-  const data = events.events || {}; // Ensure data is always an object
+  const events = location.state || {};
+  const data = events.events || {};
   const navigate = useNavigate();
 
-  // Ensure these are arrays to prevent .length errors
   const eventRounds = data.eventRounds || [];
   const eventPrize = data.eventPrize || [];
   const eventRules = data.eventRules || [];
@@ -39,21 +30,24 @@ function EventShowPage() {
   }
 
   const handleRegister = () => {
-    navigate("/register", { state: { event: data } });
+    navigate("/registration", { state: { event: data } });
   };
 
   return (
     <div className="mt-16 min-h-screen bg-gray-100 flex justify-center items-start p-6 md:p-8 w-full">
       <div className="w-full bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col">
-        <div className="relative w-full h-80 flex justify-center">
-          <img
-            src={data.posterUrl || paper}
-            alt="Event Poster"
-            className="object-cover block"
-          />
-        </div>
+        {data.posterUrl != "" ? (
+          <div className="relative w-full h-80 flex justify-center">
+            <img
+              src={data.posterUrl}
+              alt="Event Poster"
+              className="object-cover block"
+            />
+          </div>
+        ) : (
+          <></>
+        )}
 
-        {/* Details Section */}
         <div className="p-6 md:p-12 flex flex-col justify-start items-center">
           {/* Title and Subtitle */}
           <div className="text-center">
@@ -70,18 +64,15 @@ function EventShowPage() {
             )}
           </div>
 
-          {/* Event Timing */}
           <div className="mt-4 flex items-center gap-2 text-base md:text-lg text-gray-700 font-medium">
             <Clock className="w-5 h-5 text-gray-500" />
             <span>{data.eventTime}</span>
           </div>
 
-          {/* Event Description */}
           <p className="mt-4 text-base md:text-lg sm:text-justify text-gray-800 leading-relaxed text-center">
             {data.eventDescription}
           </p>
 
-          {/* Event Details */}
           <div className="space-y-3 mt-4 text-base md:text-lg text-gray-800 w-full">
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-gray-500" />

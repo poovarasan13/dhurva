@@ -19,7 +19,7 @@ const ct = {
       posterUrl: "",
       eventThumbnail: "",
       eventName: "Workshop on “BIG DATA ANALYSTICS IN INDUSTRIAL IOT”",
-      eventSubType: "workshop",
+      eventSubType: "WorkShop",
       eventType: "One day Workshop",
       eventTime: "10:00 AM to 2:00 PM",
       eventDescription:

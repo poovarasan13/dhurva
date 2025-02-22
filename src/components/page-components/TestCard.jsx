@@ -27,7 +27,7 @@ function TestCard({ deptDetails }) {
         </div>
 
         {/* Buttons Section */}
-        <div className="flex flex-col sm:flex-row gap-3 mt-5 sm:mt-6">
+        <div className="flex flex-col sm:flex-row justify-center gap-3 mt-5 sm:mt-6">
           <Button className="dm-sans w-full sm:w-auto rounded-full px-5 sm:px-6 bg-sky-400 hover:bg-white hover:outline-sky-400 hover:outline-2 hover:border-2 hover:border-sky-400 hover:text-sky-400">
             <a
               href={`tel:${deptDetails.coordinatorContactPhone}`}
