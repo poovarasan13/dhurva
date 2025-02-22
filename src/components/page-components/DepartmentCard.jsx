@@ -44,7 +44,7 @@ function DepartmentCard({ events }) {
 
   return (
     <div className="relative group hover:scale-105 transition-transform duration-300 w-full max-w-sm sm:max-w-md mx-auto">
-      {/* Glowing Background Effect */}
+     
       <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-blue-500 rounded-lg opacity-0 group-hover:opacity-20 blur-md transition-opacity duration-500"></div>
 
       {/* Card */}
@@ -59,7 +59,7 @@ function DepartmentCard({ events }) {
               {events.cardName}
             </h2>
             <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-full group-hover:bg-white transition-all duration-300">
-              <Laptop className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 dark:text-blue-300 transition-all duration-300 group-hover:rotate-12" />
+              <Laptop className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 dark:text-blue-300 transition-all duration-300 group-hover:rotate-180" />
             </div>
           </div>
         </CardHeader>
@@ -73,7 +73,7 @@ function DepartmentCard({ events }) {
               events.workshop === 1 ? "Workshop" : "Workshops",
               <Settings />,
               "bg-blue-100 dark:bg-blue-900",
-              "text-blue-600 dark:text-blue-300"
+              "text-blue-600 dark:text-blue-300 "
             )}
             {renderEventCount(
               events.technicalEventCount,
