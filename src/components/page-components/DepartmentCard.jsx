@@ -22,20 +22,22 @@ function DepartmentCard({ events }) {
 
   return (
     <div className="relative group hover:scale-105 transition-transform duration-500 w-full sm:w-[380px] md:w-[400px]">
-      <img
-        src={events.cardGif}
-        alt="Background Animation"
-        className="absolute inset-0 w-full h-full object-cover rounded-lg opacity-100 transition-opacity duration-500 group-hover:opacity-20"
-      />
+      {/* Glowing Background Effect */}
+      <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-blue-500 rounded-lg opacity-0 group-hover:opacity-20 blur-md transition-opacity duration-500"></div>
 
-      <Card className="relative z-10 w-full md:h-96  dark:bg-gray-800/80 border-2 border-gray-100 dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg transition-all duration-500 group-hover:bg-sky-400">
+      {/* Card */}
+      <Card className="relative z-10 w-full md:h-96 dark:bg-gray-800/80 border-2 border-gray-100 dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg transition-all duration-500 group-hover:bg-sky-400 overflow-hidden">
+        {/* Floating Icon Animation */}
+        <div className="absolute -top-10 -right-10 w-20 h-20 bg-sky-400 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
+        <div className="absolute -bottom-10 -left-10 w-20 h-20 bg-blue-400 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
+
         <CardHeader className="p-4 sm:p-6">
           <div className="flex items-center justify-between">
-            <h2 className="text-md sm:text-xl powergrok text-black hover:bg-transparent backdrop-brightness-95 bg-gray-50 bg-opacity-20 dark:text-white group-hover:text-black transition-all duration-300">
+            <h2 className="text-md sm:text-xl powergrok text-black dark:text-white group-hover:text-black transition-all duration-300">
               {events.cardName}
             </h2>
             <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-full group-hover:bg-white transition-all duration-300">
-              <Laptop className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 dark:text-blue-300 transition-all duration-300" />
+              <Laptop className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 dark:text-blue-300 transition-all duration-300 group-hover:rotate-12" />
             </div>
           </div>
         </CardHeader>
@@ -44,45 +46,90 @@ function DepartmentCard({ events }) {
 
         <CardContent className="p-4 sm:p-6 dm-sans text-sm sm:text-lg">
           <div className="space-y-3 sm:space-y-4">
-            {events.workshop > 0 && (
-              <div className="flex items-center gap-3 sm:gap-4">
-                <div className="bg-blue-100 dark:bg-blue-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
-                  <Settings className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 dark:text-blue-300 transition-all duration-300" />
-                </div>
-                <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
-                  {events.workshop} Workshops
-                </p>
-              </div>
-            )}
-            {events.technicalEventCount > 0 && (
-              <div className="flex items-center gap-3 sm:gap-4">
-                <div className="bg-purple-100 dark:bg-purple-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
-                  <LaptopMinimal className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 dark:text-purple-300 transition-all duration-300" />
-                </div>
-                <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
-                  {events.technicalEventCount} Technical Events
-                </p>
-              </div>
-            )}
-            {events.nonTechnicalEventCount > 0 && (
-              <div className="flex items-center gap-3 sm:gap-4">
-                <div className="bg-orange-100 dark:bg-orange-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
-                  <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-orange-600 dark:text-orange-300 transition-all duration-300" />
-                </div>
-                <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
-                  {events.nonTechnicalEventCount} Non-Technical Events
-                </p>
-              </div>
-            )}
+            {events.workshop > 0 &&
+              (events.workshop == 1 ? (
+                <>
+                  {" "}
+                  <div className="flex items-center gap-3 sm:gap-4">
+                    <div className="bg-blue-100 dark:bg-blue-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
+                      <Settings className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 dark:text-blue-300 transition-all duration-300 group-hover:rotate-12" />
+                    </div>
+                    <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
+                      {events.workshop} Workshop
+                    </p>
+                  </div>{" "}
+                </>
+              ) : (
+                <>
+                  <div className="flex items-center gap-3 sm:gap-4">
+                    <div className="bg-blue-100 dark:bg-blue-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
+                      <Settings className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 dark:text-blue-300 transition-all duration-300 group-hover:rotate-12" />
+                    </div>
+                    <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
+                      {events.workshop} Workshops
+                    </p>
+                  </div>
+                </>
+              ))}
+            {events.technicalEventCount > 0 &&
+              (events.technicalEventCount == 1 ? (
+                <>
+                  <div className="flex items-center gap-3 sm:gap-4">
+                    <div className="bg-purple-100 dark:bg-purple-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
+                      <LaptopMinimal className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 dark:text-purple-300 transition-all duration-300 group-hover:rotate-12" />
+                    </div>
+                    <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
+                      {events.technicalEventCount} Technical Event
+                    </p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  {" "}
+                  <div className="flex items-center gap-3 sm:gap-4">
+                    <div className="bg-purple-100 dark:bg-purple-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
+                      <LaptopMinimal className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 dark:text-purple-300 transition-all duration-300 group-hover:rotate-12" />
+                    </div>
+                    <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
+                      {events.technicalEventCount} Technical Events
+                    </p>
+                  </div>
+                </>
+              ))}
+            {events.nonTechnicalEventCount > 0 &&
+              (events.nonTechnicalEventCount == 1 ? (
+                <>
+                  <div className="flex items-center gap-3 sm:gap-4">
+                    <div className="bg-orange-100 dark:bg-orange-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
+                      <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-orange-600 dark:text-orange-300 transition-all duration-300 group-hover:rotate-12" />
+                    </div>
+                    <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
+                      {events.nonTechnicalEventCount} Non-Technical Event
+                    </p>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="flex items-center gap-3 sm:gap-4">
+                    <div className="bg-orange-100 dark:bg-orange-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
+                      <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-orange-600 dark:text-orange-300 transition-all duration-300 group-hover:rotate-12" />
+                    </div>
+                    <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
+                      {events.nonTechnicalEventCount} Non-Technical Events
+                    </p>
+                  </div>
+                </>
+              ))}
           </div>
         </CardContent>
 
         <CardFooter className="flex justify-center mt-auto sm:p-6">
           <Button
-            className="bg-sky-400 w-40 dm-sans text-white text-lg rounded-full transition-all duration-500 shadow-md hover:shadow-xl group-hover:bg-white group-hover:text-black"
+            className="bg-sky-400 w-40 dm-sans text-white text-lg rounded-full transition-all duration-500 shadow-md hover:shadow-xl group-hover:bg-white group-hover:text-black hover:scale-105"
             onClick={handleNavigation}
           >
-            Explore <Rocket />
+            Explore{" "}
+            <Rocket className="group-hover:rotate-45 transition-transform duration-300" />
           </Button>
         </CardFooter>
       </Card>

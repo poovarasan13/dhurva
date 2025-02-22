@@ -28,7 +28,7 @@ function TestCard({ deptDetails }) {
 
         {/* Buttons Section */}
         <div className="flex flex-col sm:flex-row gap-3 mt-5 sm:mt-6">
-          <Button className="dm-sans w-full sm:w-auto rounded-full px-5 sm:px-6 bg-sky-400 hover:bg-white hover:outline-sky-400 hover:outline-2 hover:border-2 hover:border-[#4889F4] hover:text-sky-400">
+          <Button className="dm-sans w-full sm:w-auto rounded-full px-5 sm:px-6 bg-sky-400 hover:bg-white hover:outline-sky-400 hover:outline-2 hover:border-2 hover:border-sky-400 hover:text-sky-400">
             <a
               href={`tel:${deptDetails.coordinatorContactPhone}`}
               className="flex items-center gap-2"
@@ -37,7 +37,7 @@ function TestCard({ deptDetails }) {
             </a>
           </Button>
           {deptDetails.coordinatorEmail && (
-            <Button className="dm-sans w-full sm:w-auto rounded-full px-5 sm:px-6 bg-sky-400 hover:bg-white hover:outline-sky-400 hover:outline-2 hover:border-2 hover:border-[#4889F4] hover:text-sky-400">
+            <Button className="dm-sans w-full sm:w-auto rounded-full px-5 sm:px-6 bg-sky-400 hover:bg-white hover:outline-sky-400 hover:outline-2 hover:border-2 hover:border-sky-400 hover:text-sky-400">
               <a
                 href={`mailto:${deptDetails.coordinatorEmail}`}
                 className="flex items-center gap-2"
