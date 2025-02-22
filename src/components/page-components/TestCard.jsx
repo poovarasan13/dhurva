@@ -15,10 +15,10 @@ function TestCard({ deptDetails }) {
         transition={{ duration: 0.4, ease: "easeOut" }}
         whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
         whileTap={{ scale: 0.95, transition: { duration: 0.2 } }}
-        className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg overflow-hidden shadow-lg bg-white p-5 sm:p-6"
+        className="w-full  sm:max-w-sm md:max-w-md rounded-lg overflow-hidden shadow-lg bg-white p-5 sm:p-6"
       >
         <div className="text-center">
-          <h5 className="font-bold text-lg sm:text-xl mb-2 text-gray-900 dm-serif">
+          <h5 className="font-bold text-lg powergrok sm:text-xl mb-2 text-gray-900 dm-serif">
             {deptDetails.departmentName}
           </h5>
           <p className="text-gray-700 text-sm sm:text-base">
