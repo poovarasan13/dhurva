@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { Rocket } from "lucide-react";
 import "../../assets/fonts/dmsans.css";
+import Button from "./Button";
 
 const MusicalConcert = () => {
   const controls = useAnimation();
@@ -26,9 +27,9 @@ const MusicalConcert = () => {
             whileHover={{ scale: 1.05 }}
           >
             <img
-              src="https://www.kcedhruva.in/assets/melody-evening/dhurva_2k23_priyanka_n_k.jpg"
+              src="https://res.cloudinary.com/dzpkbej9y/image/upload/v1739942589/Priyanka_gmlqsf.avif"
               alt="Musical Concert"
-              className="w-full max-w-md h-auto object-cover object-center flex-1"
+              className="w-full max-w-md h-auto object-cover rounded-3xl   object-center flex-1"
             />
           </motion.div>
           <motion.div
@@ -38,7 +39,7 @@ const MusicalConcert = () => {
             transition={{ duration: 0.5 }}
           >
             <motion.h2
-              className="text-sky-400 text-2xl sm:text-3xl font-bold mb-4 md:mb-6"
+              className="text-cp text-2xl dm-sans md:text-5xl font-bold mb-4 md:mb-6"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -87,7 +88,7 @@ const MusicalConcert = () => {
               Get ready to groove to the beats of our dynamic DJ at the concert.
             </motion.p>
 
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.2 }}
@@ -101,7 +102,9 @@ const MusicalConcert = () => {
                   Register Now <Rocket />
                 </span>
               </a>
-            </motion.div>
+            </motion.div> */}
+
+            <Button link="#" text="Register" />
           </motion.div>
         </div>
       </div>

@@ -1,12 +1,9 @@
-import cardGif from "../assets/gif/csd-gif.gif";
-
 const cd = {
   id: 11,
   shortName: "CD",
   technicalEventCount: 3,
   nonTechnicalEventCount: 1,
   workshop: 1,
-  cardGif: cardGif,
   departmentName: "Department Of Computer Science and Design",
   cardName: "Computer Science and Design",
   departmentDescription:

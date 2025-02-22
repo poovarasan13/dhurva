@@ -5,6 +5,7 @@ import { RocketIcon } from "lucide-react";
 import "../../../assets/fonts/dmsans.css";
 import "../../../assets/fonts/opensans.css";
 import GridImages from "@/assets/images/HomePage/GridImages";
+import Button from "@/components/page-components/Button";
 const Gallery = () => {
   const images = Object.values(GridImages); // Extract image URLs from the Gallery object
 
@@ -78,6 +79,9 @@ const Gallery = () => {
               </motion.li>
             ))}
           </ul>
+
+          {/* 
+
           <div className="flex justify-center md:justify-start">
             <motion.button
               className="bg-sky-400 hover:bg-sky-400 hover:text-black text-white  py-3 px-7 rounded-lg shadow-lg transition duration-300"
@@ -90,7 +94,12 @@ const Gallery = () => {
                 Register Now <RocketIcon />
               </span>
             </motion.button>
-          </div>
+          </div> */}
+
+
+
+          <Button link="#" text="Register" />
+
         </motion.div>
       </div>
     </div>

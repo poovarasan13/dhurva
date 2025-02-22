@@ -14,8 +14,7 @@ const onstage = {
   mime: "https://res.cloudinary.com/dl2wibcfp/image/upload/v1740035291/Mime_rwi8up.avif",
   rj: "https://res.cloudinary.com/dl2wibcfp/image/upload/v1740041007/mic_rjscrp.jpg",
   Variety:
-    "https://res.cloudinary.com/dl2wibcfp/image/upload/v1740041530/standupcomedy_sahtrn.jpg",
-  ethnicWalk:
-    "https://res.cloudinary.com/doqhh6cqt/image/upload/v1740062645/EthnicWalk_oy9jug.png",
+  "https://res.cloudinary.com/dl2wibcfp/image/upload/v1740041530/standupcomedy_sahtrn.jpg",
+  Walk : "https://res.cloudinary.com/doqhh6cqt/image/upload/v1740062645/EthnicWalk_oy9jug.png",
 };
 export default onstage;

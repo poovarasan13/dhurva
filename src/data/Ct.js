@@ -1,12 +1,9 @@
-import cardGif from "../assets/gif/cst-gif.gif";
-
 const ct = {
   id: 13,
   shortName: "CT",
   technicalEventCount: 3,
   nonTechnicalEventCount: 1,
   workshop: 1,
-  cardGif: cardGif,
   departmentName: "Department Of Computer Science and Technology",
   cardName: "Computer Science and Technology",
   departmentDescription:
@@ -19,7 +16,7 @@ const ct = {
       posterUrl: "",
       eventThumbnail: "",
       eventName: "Workshop on “BIG DATA ANALYSTICS IN INDUSTRIAL IOT”",
-      eventSubType: "WorkShop",
+      eventSubType: "workshop",
       eventType: "One day Workshop",
       eventTime: "10:00 AM to 2:00 PM",
       eventDescription:

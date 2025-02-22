@@ -1,10 +1,7 @@
-import cardGif from "../assets/gif/mech-gif1.webp";
-
 const mech = {
   id: 5,
   shortName: "MECH",
   technicalEventCount: 5,
-  cardGif: cardGif,
   nonTechnicalEventCount: 0,
   workshop: 4,
   departmentName: "Department Of Mechnical Engineering",

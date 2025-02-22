@@ -1,14 +1,11 @@
-import cardGif from "../assets/gif/civil-gif.webp";
-
 const civil = {
   id: 12,
   shortName: "CE",
-  cardGif: cardGif,
   technicalEventCount: 4,
   nonTechnicalEventCount: 1,
   workshop: 2,
   departmentName: "Department of Civil Engineering",
-  cardName: "Civil Engineering",
+  cardName : "Civil Engineering",
   departmentDescription:
     "Civil Engineering Department is excited to present a series of engaging events for the upcoming mega fest “Dhruva 2025”. Mega fest is designed to showcase the creative and technical expertise of students through Paper Fusion, “Quiz Nexus” “CADD Matrix”, “Sparkstorm - Ideathon” and “Workshops” - providing a platform for students to demonstrate their knowledge and passion for the field while fostering a spirit of collaboration and innovation with experienced faculties.",
   coordinatorName: "Mr. K. Shantha Kumar, AP/CE ",

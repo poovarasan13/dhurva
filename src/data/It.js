@@ -1,5 +1,3 @@
-import cardGif from "../assets/gif/it-gif.gif";
-
 const it = {
   id: 2,
   departmentName: "Information Technology",
@@ -8,7 +6,6 @@ const it = {
   technicalEventCount: 4,
   nonTechnicalEventCount: 3,
   workshop: 2,
-  cardGif: cardGif,
 
   departmentDescription:
     "Our department is committed to fostering innovation, creativity, and excellence through dynamic and engaging events. From technical workshops and competitions to collaborative hackathons and research symposiums, we provide platforms for students to explore their potential, sharpen their skills, and showcase their talents. Our events are designed to inspire learning, teamwork, and problem-solving, equipping participants to tackle real-world challenges and drive future advancements in their fields.",

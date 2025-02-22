@@ -1,11 +1,8 @@
-import cardGif from "../assets/gif/ece-gif.gif";
-
 const ece = {
   id: 6,
   shortName: "ECE",
   technicalEventCount: 9,
   workshop: 6,
-  cardGif: cardGif,
   nonTechnicalEventCount: 0,
   departmentName: "Department Of Electronics And Communication Engineering",
   cardName: "Electronics And Communication Engineering",

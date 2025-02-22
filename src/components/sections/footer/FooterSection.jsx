@@ -79,31 +79,31 @@ export default function FooterSection() {
               </h3>
               <div className="space-y-2">
                 <a
-                  href="/culturalFest"
+                  href="culturalFest"
                   className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
                 >
                   Cultural Fest
                 </a>
                 <a
-                  href="/technicalFest"
+                  href="technicalFest"
                   className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
                 >
                   Technical Fest
                 </a>
                 <a
-                  href="/pass"
+                  href="pass"
                   className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
                 >
                   Pass
                 </a>
                 <a
-                  href="/onstage"
+                  href="onstage"
                   className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
                 >
                   On Stage
                 </a>
                 <a
-                  href="/offstage"
+                  href="offstage"
                   className="text-sm text-gray-400 hover:text-sky-500 hover:underline underline-offset-4 transition-all duration-300 block"
                 >
                   Off Stage

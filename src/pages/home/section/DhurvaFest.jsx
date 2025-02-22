@@ -17,15 +17,16 @@ import {
   CircuitBoard,
 } from "lucide-react";
 import React from "react";
+import { useNavigate } from "react-router-dom"; 
 
 import "../../../assets/fonts/dmsans.css";
 import "../../../assets/fonts/opensans.css";
 import "../../../assets/fonts/allfonts.css";
 import { Carousel } from "@/components/ui/carousel";
 import CarosualCard from "./CarosualCard";
-import { useNavigate } from "react-router-dom";
 
 function DhurvaFest() {
+
   const navigate = useNavigate();
   const handleCulturalFest = () => {
     navigate("/culturalFest");
@@ -33,6 +34,7 @@ function DhurvaFest() {
   const handleTechnicalFest = () => {
     navigate("/technicalFest");
   };
+
   return (
     <div className="py-16 px-6 sm:px-12 bg-gray-50">
       <div className="max-w-screen-xl mx-auto text-center">
@@ -66,7 +68,7 @@ function DhurvaFest() {
                 </CardHeader>
                 <CardContent className="p-4 text-center bg-white">
                   <h3 className="text-xl font-bold text-gray-800 mb-4 dm-sans">
-                    Technical Event
+                    Technical Fest
                   </h3>
                   <p className="text-gray-600 sm:mb-6 mb-3 text-justify carme-regular">
                     Take on thrilling tech events, hackathons, and challenges
@@ -76,10 +78,7 @@ function DhurvaFest() {
                   </p>
                 </CardContent>
                 <CardFooter className="bg-gray-50 p-6 my-auto text-center justify-center">
-                  <Button
-                    onClick={handleTechnicalFest}
-                    className="bg-green-300 hover:bg-green-300 text-white hover:text-black work-sans  transition-all py-2 px-6 rounded-full text-lg"
-                  >
+                  <Button onClick={handleTechnicalFest} className="bg-green-300 hover:bg-green-300 text-white hover:text-black work-sans  transition-all py-2 px-6 rounded-full text-lg">
                     Explore More <CircuitBoard />
                   </Button>
                 </CardFooter>
@@ -90,7 +89,7 @@ function DhurvaFest() {
                 </CardHeader>
                 <CardContent className="p-4 text-center bg-white">
                   <h3 className="text-xl font-bold text-gray-800 mb-4 dm-sans">
-                    Cultural Event
+                    Cultural Fest
                   </h3>
                   <p className="text-gray-600 sm:mb-6 mb-3 text-justify carme-regular">
                     Experience vibrant culture through music, dance, theatre,
@@ -99,10 +98,7 @@ function DhurvaFest() {
                   </p>
                 </CardContent>
                 <CardFooter className="bg-gray-50  text-center justify-center">
-                  <Button
-                    onClick={handleCulturalFest}
-                    className="bg-sky-400 rounded-full mt-12 hover:bg-sky-400 text-white hover:text-black work-sans  transition-all py-2 px-6  text-lg"
-                  >
+                  <Button onClick={handleCulturalFest} className="bg-sky-400 rounded-full mt-12 hover:bg-sky-400 text-white hover:text-black work-sans  transition-all py-2 px-6  text-lg">
                     Explore More <Earth />
                   </Button>
                 </CardFooter>

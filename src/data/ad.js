@@ -1,12 +1,9 @@
-import cardGif from "../assets/gif/ai-gif.gif";
-
 const ad = {
   id: 9,
   shortName: "AD",
   technicalEventCount: 6,
   workshop: 1,
   nonTechnicalEventCount: 3,
-  cardGif: cardGif,
   departmentName: "Department of Artificial Intelligence and Data Science",
   cardName: "Artificial Intelligence and Data Science",
   departmentDescription:

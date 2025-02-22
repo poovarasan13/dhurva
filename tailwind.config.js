@@ -12,6 +12,7 @@ module.exports = {
   			xl: 'calc(var(--radius) + 2px)'
   		},
   		colors: {
+			cp : '#2664eb',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

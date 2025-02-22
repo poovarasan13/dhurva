@@ -17,16 +17,16 @@ const OnStage = () => {
     { id: 4, title: "Instrumentals", image: onstage.Instrumentals },
     { id: 5, title: "Adapt Tune", image: onstage.AdaptTune },
     { id: 6, title: "Skit Mime", image: onstage.mime },
-    { id: 7, title: "Vj/Rj  Hunt", image: onstage.rj },
-    { id: 8, title: "Variety Event", image: onstage.Variety },
-    { id: 9, title: "Ethnic Walk", image: onstage.ethnicWalk },
+    { id: 7, title: "Ethnic Walk", image: onstage.Walk },
+    { id: 8, title: "Vj/Rj  Hunt", image: onstage.rj },
+    { id: 9, title: "Variety Event", image: onstage.Variety },
   ];
 
   return (
     <div>
       <HeroPage {...document} />
       <ExploreEvents EventData={EventData} />
-      {/* <EventsDisplay />/ */}
+      {/* <EventsDisplay /> */}
     </div>
   );
 };

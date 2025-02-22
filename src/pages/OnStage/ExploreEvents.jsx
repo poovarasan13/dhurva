@@ -16,7 +16,7 @@ const ExploreEvents = (props) => {
   };
 
   return (
-    <div className="bg-gray-900 min-h-screen mb-5 p-8 sticky">
+    <div className="bg-gray-900 min-h-screen  p-8 sticky">
       <div className="max-w-7xl mb-8 mx-auto">
         <h1
           className="text-white text-4xl font-bold mb-8 dm-sans"
