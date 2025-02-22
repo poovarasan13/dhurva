@@ -1,5 +1,7 @@
+import cardGif from "../assets/gif/it.webp";
 const it = {
   id: 2,
+  cardGif: cardGif,
   departmentName: "Information Technology",
   cardName: "Information Technology",
   shortName: "IT",

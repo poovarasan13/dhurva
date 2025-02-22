@@ -1,5 +1,7 @@
+import cardGif from "../assets/gif/csd.gif";
 const cd = {
   id: 11,
+  cardGif: cardGif,
   shortName: "CD",
   technicalEventCount: 3,
   nonTechnicalEventCount: 1,

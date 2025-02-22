@@ -114,7 +114,6 @@ function EventShowPage() {
             </div>
           </div>
 
-          {/* Register Button */}
           <Button
             className="mt-6 flex dm-sans items-center justify-center gap-3 bg-sky-500 text-white px-6 py-3 text-lg rounded-full shadow-lg hover:bg-sky-600 transition-all duration-300"
             onClick={handleRegister}
@@ -123,7 +122,6 @@ function EventShowPage() {
           </Button>
         </div>
 
-        {/* Event Rules */}
         <div className="p-4 dm-sans lg:ms-7 text-gray-800 text-lg">
           {eventRules.length !== 0 && (
             <>

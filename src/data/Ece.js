@@ -1,5 +1,8 @@
+import cardGif from "../assets/gif/ece.gif";
+
 const ece = {
   id: 6,
+  cardGif: cardGif,
   shortName: "ECE",
   technicalEventCount: 9,
   workshop: 6,

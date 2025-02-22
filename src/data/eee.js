@@ -1,5 +1,7 @@
+import cardGif from "../assets/gif/eee.webp";
 const eee = {
   id: 4,
+  cardGif: cardGif,
   shortName: "EEE",
   technicalEventCount: 2,
   nonTechnicalEventCount: 4,

@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone } from "lucide-react";
 import { Button } from "../ui/button";
-import "../../assets/style/TestCard.css";
 import "../../assets/fonts/dmsans.css";
 import "../../assets/fonts/dmserif.css";
 

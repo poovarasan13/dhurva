@@ -1,5 +1,7 @@
+import cardGif from "../assets/gif/cse.gif";
 const cse = {
   id: 1,
+  cardGif: cardGif,
   departmentName: "Department of Computer Science and Engineering",
   cardName: "Computer Science and Engineering",
   shortName: "CSE",

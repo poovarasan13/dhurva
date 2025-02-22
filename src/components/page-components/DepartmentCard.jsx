@@ -11,6 +11,7 @@ import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { useNavigate } from "react-router-dom";
 import "../../assets/fonts/powergrotesk.css";
+// import backgroundGif from "../../assets/gif/card-background.webp"; // Import the GIF
 
 function DepartmentCard({ events }) {
   const navigate = useNavigate();
@@ -44,18 +45,18 @@ function DepartmentCard({ events }) {
 
   return (
     <div className="relative group hover:scale-105 transition-transform duration-300 w-full max-w-sm sm:max-w-md mx-auto">
-     
-      <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-blue-500 rounded-lg opacity-0 group-hover:opacity-20 blur-md transition-opacity duration-500"></div>
+      {/* Glowing Background Effect */}
+      <div className="absolute inset-0 bg-gradient-to-r  from-sky-400 to-blue-500 rounded-lg opacity-0 group-hover:opacity-20 blur-md transition-opacity duration-500"></div>
 
       {/* Card */}
-      <Card className="relative z-10 w-full h-full dark:bg-gray-800/80 border-2 border-gray-100 dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg transition-all duration-500 group-hover:bg-sky-400 overflow-hidden">
+      <Card className="relative z-10 w-full h-full dark:bg-gray-800/80 border-2 border-gray-100/85  dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg transition-all duration-500 group-hover:bg-sky-400 overflow-hidden">
         {/* Floating Icon Animation */}
         <div className="absolute -top-10 -right-10 w-20 h-20 bg-sky-400 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
         <div className="absolute -bottom-10 -left-10 w-20 h-20 bg-blue-400 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
 
         <CardHeader className="p-4 sm:p-6">
           <div className="flex items-center justify-between">
-            <h2 className="text-md sm:text-xl powergrok text-black dark:text-white group-hover:text-black transition-all duration-300">
+            <h2 className="text-md sm:text-xl powergrok text-black dark:text-white transition-all duration-300">
               {events.cardName}
             </h2>
             <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-full group-hover:bg-white transition-all duration-300">
@@ -73,7 +74,7 @@ function DepartmentCard({ events }) {
               events.workshop === 1 ? "Workshop" : "Workshops",
               <Settings />,
               "bg-blue-100 dark:bg-blue-900",
-              "text-blue-600 dark:text-blue-300 "
+              "text-blue-600 dark:text-blue-300"
             )}
             {renderEventCount(
               events.technicalEventCount,

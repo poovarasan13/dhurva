@@ -1,4 +1,6 @@
+import cardGif from "../assets/gif/aids.gif";
 const ad = {
+  cardGif: cardGif,
   id: 9,
   shortName: "AD",
   technicalEventCount: 6,

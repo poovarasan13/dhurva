@@ -1,4 +1,7 @@
+import cardGif from "../assets/gif/mech.gif";
+
 const mech = {
+  cardGif: cardGif,
   id: 5,
   shortName: "MECH",
   technicalEventCount: 5,
