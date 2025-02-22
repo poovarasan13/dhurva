@@ -68,7 +68,7 @@ function DhurvaFest() {
                 </CardHeader>
                 <CardContent className="p-4 text-center bg-white">
                   <h3 className="text-xl font-bold text-gray-800 mb-4 dm-sans">
-                    Technical Event
+                    Technical Fest
                   </h3>
                   <p className="text-gray-600 sm:mb-6 mb-3 text-justify carme-regular">
                     Take on thrilling tech events, hackathons, and challenges
@@ -89,7 +89,7 @@ function DhurvaFest() {
                 </CardHeader>
                 <CardContent className="p-4 text-center bg-white">
                   <h3 className="text-xl font-bold text-gray-800 mb-4 dm-sans">
-                    Cultural Event
+                    Cultural Fest
                   </h3>
                   <p className="text-gray-600 sm:mb-6 mb-3 text-justify carme-regular">
                     Experience vibrant culture through music, dance, theatre,

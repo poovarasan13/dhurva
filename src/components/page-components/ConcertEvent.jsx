@@ -19,8 +19,8 @@ const ConcertEvent = () => {
     <div className="bg-white text-black min-h-screen">
       {/* Event Banner Section */}
       <EventBanner
-        venue="KCE, Chennai"
-        date="March 13, 2025"
+        venue="KCE, Coimbatore"
+        date="14th and 15th of March, 2025"
         title="Mega Live In Concert"
         subtitle="KCE Dhruva Events"
         description="Join us as we bring together vivid minds, visionaries, and budding talents from all parts of the country to showcase their skills and passion in a vibrant environment."
