@@ -10,6 +10,7 @@ import {
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { useNavigate } from "react-router-dom";
+import "../../assets/fonts/powergrotesk.css";
 
 function DepartmentCard({ events }) {
   const navigate = useNavigate();
@@ -20,13 +21,34 @@ function DepartmentCard({ events }) {
     });
   };
 
+  // Utility function to render event counts
+  const renderEventCount = (count, label, icon, bgColor, textColor) => {
+    if (count > 0) {
+      return (
+        <div className="flex items-center gap-3 sm:gap-4">
+          <div
+            className={`p-2 rounded-full group-hover:bg-white transition-all duration-300 ${bgColor}`}
+          >
+            {React.cloneElement(icon, {
+              className: `w-4 h-4 sm:w-5 sm:h-5 ${textColor} transition-all duration-300 group-hover:rotate-12`,
+            })}
+          </div>
+          <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
+            {count} {label}
+          </p>
+        </div>
+      );
+    }
+    return null;
+  };
+
   return (
-    <div className="relative group hover:scale-105 transition-transform duration-500 w-full sm:w-[380px] md:w-[400px]">
+    <div className="relative group hover:scale-105 transition-transform duration-300 w-full max-w-sm sm:max-w-md mx-auto">
       {/* Glowing Background Effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-blue-500 rounded-lg opacity-0 group-hover:opacity-20 blur-md transition-opacity duration-500"></div>
 
       {/* Card */}
-      <Card className="relative z-10 w-full md:h-96 dark:bg-gray-800/80 border-2 border-gray-100 dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg transition-all duration-500 group-hover:bg-sky-400 overflow-hidden">
+      <Card className="relative z-10 w-full h-full dark:bg-gray-800/80 border-2 border-gray-100 dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg transition-all duration-500 group-hover:bg-sky-400 overflow-hidden">
         {/* Floating Icon Animation */}
         <div className="absolute -top-10 -right-10 w-20 h-20 bg-sky-400 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
         <div className="absolute -bottom-10 -left-10 w-20 h-20 bg-blue-400 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
@@ -46,87 +68,39 @@ function DepartmentCard({ events }) {
 
         <CardContent className="p-4 sm:p-6 dm-sans text-sm sm:text-lg">
           <div className="space-y-3 sm:space-y-4">
-            {events.workshop > 0 &&
-              (events.workshop == 1 ? (
-                <>
-                  {" "}
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="bg-blue-100 dark:bg-blue-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
-                      <Settings className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 dark:text-blue-300 transition-all duration-300 group-hover:rotate-12" />
-                    </div>
-                    <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
-                      {events.workshop} Workshop
-                    </p>
-                  </div>{" "}
-                </>
-              ) : (
-                <>
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="bg-blue-100 dark:bg-blue-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
-                      <Settings className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 dark:text-blue-300 transition-all duration-300 group-hover:rotate-12" />
-                    </div>
-                    <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
-                      {events.workshop} Workshops
-                    </p>
-                  </div>
-                </>
-              ))}
-            {events.technicalEventCount > 0 &&
-              (events.technicalEventCount == 1 ? (
-                <>
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="bg-purple-100 dark:bg-purple-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
-                      <LaptopMinimal className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 dark:text-purple-300 transition-all duration-300 group-hover:rotate-12" />
-                    </div>
-                    <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
-                      {events.technicalEventCount} Technical Event
-                    </p>
-                  </div>
-                </>
-              ) : (
-                <>
-                  {" "}
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="bg-purple-100 dark:bg-purple-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
-                      <LaptopMinimal className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 dark:text-purple-300 transition-all duration-300 group-hover:rotate-12" />
-                    </div>
-                    <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
-                      {events.technicalEventCount} Technical Events
-                    </p>
-                  </div>
-                </>
-              ))}
-            {events.nonTechnicalEventCount > 0 &&
-              (events.nonTechnicalEventCount == 1 ? (
-                <>
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="bg-orange-100 dark:bg-orange-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
-                      <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-orange-600 dark:text-orange-300 transition-all duration-300 group-hover:rotate-12" />
-                    </div>
-                    <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
-                      {events.nonTechnicalEventCount} Non-Technical Event
-                    </p>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="bg-orange-100 dark:bg-orange-900 p-2 rounded-full group-hover:bg-white transition-all duration-300">
-                      <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-orange-600 dark:text-orange-300 transition-all duration-300 group-hover:rotate-12" />
-                    </div>
-                    <p className="text-gray-700 hover:font-extrabold dark:text-gray-300 group-hover:text-black transition-all duration-300">
-                      {events.nonTechnicalEventCount} Non-Technical Events
-                    </p>
-                  </div>
-                </>
-              ))}
+            {renderEventCount(
+              events.workshop,
+              events.workshop === 1 ? "Workshop" : "Workshops",
+              <Settings />,
+              "bg-blue-100 dark:bg-blue-900",
+              "text-blue-600 dark:text-blue-300"
+            )}
+            {renderEventCount(
+              events.technicalEventCount,
+              events.technicalEventCount === 1
+                ? "Technical Event"
+                : "Technical Events",
+              <LaptopMinimal />,
+              "bg-purple-100 dark:bg-purple-900",
+              "text-purple-600 dark:text-purple-300"
+            )}
+            {renderEventCount(
+              events.nonTechnicalEventCount,
+              events.nonTechnicalEventCount === 1
+                ? "Non-Technical Event"
+                : "Non-Technical Events",
+              <Calendar />,
+              "bg-orange-100 dark:bg-orange-900",
+              "text-orange-600 dark:text-orange-300"
+            )}
           </div>
         </CardContent>
 
-        <CardFooter className="flex justify-center mt-auto sm:p-6">
+        <CardFooter className="flex justify-center mt-auto p-4 sm:p-6">
           <Button
             className="bg-sky-400 w-40 dm-sans text-white text-lg rounded-full transition-all duration-500 shadow-md hover:shadow-xl group-hover:bg-white group-hover:text-black hover:scale-105"
             onClick={handleNavigation}
+            aria-label="Explore department"
           >
             Explore{" "}
             <Rocket className="group-hover:rotate-45 transition-transform duration-300" />

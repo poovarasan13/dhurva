@@ -3,7 +3,7 @@ import { Card, CardContent, CardFooter } from "../ui/card";
 import { Button } from "../ui/button";
 import { Binoculars, Clock, Rocket } from "lucide-react";
 import { NavLink, useNavigate } from "react-router-dom";
-
+import "../../assets/fonts/allfonts.css";
 function EventCards({ events }) {
   const navigate = useNavigate();
   const handleNavigate = () => {
@@ -17,7 +17,7 @@ function EventCards({ events }) {
     <div className="flex hover:scale-105 duration-300  rounded-xl justify-center dm-sans   overflow-hidden ">
       <Card className=" w-[450px] bg-white   dark:bg-gray-800 shadow-lg rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-xl">
         <CardContent className="">
-          {events.posterUrl !== "" ? (
+          {events.eventThumbnail !== "" ? (
             <>
               <img
                 src={events.eventThumbnail}

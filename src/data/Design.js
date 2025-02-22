@@ -125,6 +125,8 @@ const cd = {
       eventThumbnail: "",
       eventName: "Code Breakers: The Ultimate Hackathon Challenge",
       eventType: "Hackathon",
+      eventThumbnail: "",
+
       eventSubType: "Technical",
       eventTime: "10:00 AM to 1:00 PM",
       eventDescription:
@@ -169,6 +171,8 @@ const cd = {
       posterUrl: "",
       eventName: "Non-Technical - Free Fire Contest",
       eventType: "Non-Technical",
+      eventThumbnail: "",
+
       eventSubType: "NonTechnical",
       eventTime: "2:00 PM to 4:00 PM",
       eventDescription:

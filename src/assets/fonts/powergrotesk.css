@@ -1,0 +1,8 @@
+@font-face {
+  font-family: powerGrok;
+  src: url("./PowerGrotesk-Regular.ttf");
+}
+
+.powergrok {
+  font-family: powergrok;
+}

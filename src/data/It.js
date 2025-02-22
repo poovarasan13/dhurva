@@ -15,6 +15,8 @@ const it = {
   events: [
     {
       posterUrl: "",
+      eventThumbnail: "",
+
       eventName: "Word- Scramble",
       eventType: "Non- Technical Event Puzzle-solving",
       eventSubType: "NonTechnical",
@@ -48,6 +50,8 @@ const it = {
       ],
     },
     {
+      eventThumbnail: "",
+
       posterUrl: "",
       eventName: "Dumb-charades",
       eventSubType: "NonTechnical",
@@ -82,6 +86,8 @@ const it = {
       ],
     },
     {
+      eventThumbnail: "",
+
       posterUrl: "",
       eventName: "Connection",
       eventSubType: "NonTechnical",
@@ -117,6 +123,8 @@ const it = {
       ],
     },
     {
+      eventThumbnail: "",
+
       posterUrl: "",
       eventName: "CodeVerse - Coding Contest - Technical Event",
       eventType: "Technical Event – Coding",
@@ -146,6 +154,8 @@ const it = {
       ],
     },
     {
+      eventThumbnail: "",
+
       posterUrl: "",
       eventName: "CODE CHAMP - 25",
       eventSubType: "Technical",
@@ -178,6 +188,8 @@ const it = {
       ],
     },
     {
+      eventThumbnail: "",
+
       posterUrl: "",
       eventName: "Paper quest",
       eventSubType: "Technical",
@@ -211,6 +223,8 @@ const it = {
       ],
     },
     {
+      eventThumbnail: "",
+
       posterUrl: "",
       eventName: "Hackathon: Unleash Your Coding Potential",
       eventType: "Technical Event",
@@ -245,6 +259,8 @@ const it = {
       ],
     },
     {
+      eventThumbnail: "",
+
       posterUrl: "",
       eventName: "FutureTech Forum - AI and ML Hands-on session - Workshop",
       eventType: "Workshop - Technical",
@@ -274,6 +290,8 @@ const it = {
       ],
     },
     {
+      eventThumbnail: "",
+
       posterUrl: "",
       eventName: "Workshop",
       eventType: "Technical",
