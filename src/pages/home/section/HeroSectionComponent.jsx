@@ -48,7 +48,7 @@ function HeroSectionComponent() {
 
             {/* Register Button */}
             <div className="mt-6 flex justify-center lg:justify-start">
-              <Button link="#" text="Register" />
+              <Button link="/registration" text="Register" />
             </div>
           </div>
 
