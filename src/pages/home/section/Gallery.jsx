@@ -7,7 +7,7 @@ import "../../../assets/fonts/opensans.css";
 import GridImages from "@/assets/images/HomePage/GridImages";
 import Button from "@/components/page-components/Button";
 const Gallery = () => {
-  const images = Object.values(GridImages); // Extract image URLs from the Gallery object
+  const images = Object.values(GridImages);
 
   return (
     <div className=" mx-auto px-5 py-10 lg:px-20">
@@ -18,25 +18,20 @@ const Gallery = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          {images.slice(0, 4).map(
-            (
-              src,
-              index // Use the images array
-            ) => (
-              <motion.div
-                key={index}
-                className="w-full p-1 md:p-2"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-              >
-                <img
-                  alt="gallery"
-                  className="block w-full h-52 md:h-72 rounded-lg object-cover"
-                  src={src}
-                />
-              </motion.div>
-            )
-          )}
+          {images.slice(0, 4).map((src, index) => (
+            <motion.div
+              key={index}
+              className="w-full p-1 md:p-2"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <img
+                alt="gallery"
+                className="block w-full h-52 md:h-72 rounded-lg object-cover"
+                src={src}
+              />
+            </motion.div>
+          ))}
         </motion.div>
 
         <motion.div
@@ -96,10 +91,7 @@ const Gallery = () => {
             </motion.button>
           </div> */}
 
-
-
           <Button link="#" text="Register" />
-
         </motion.div>
       </div>
     </div>

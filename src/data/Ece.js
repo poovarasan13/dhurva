@@ -1,5 +1,7 @@
+
 const ece = {
   id: 6,
+ 
   shortName: "ECE",
   technicalEventCount: 9,
   workshop: 6,

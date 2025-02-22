@@ -1,5 +1,6 @@
 const cd = {
   id: 11,
+
   shortName: "CD",
   technicalEventCount: 3,
   nonTechnicalEventCount: 1,

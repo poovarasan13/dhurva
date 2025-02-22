@@ -1,11 +1,21 @@
 import React, { useEffect } from "react";
-import { MapPin, Clock, User, Rocket, UserPen, Check } from "lucide-react";
+import {
+  MapPin,
+  Clock,
+  User,
+  Rocket,
+  UserPen,
+  Check,
+  MoveRight,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/opensans.css";
 import "../../assets/fonts/sourcesans.css";
 import { useLocation, useNavigate } from "react-router-dom";
-import paper from "../../assets/test/paper.jpg";
+import TestCard from "@/components/page-components/TestCard";
+import CoordinatorCard from "@/components/page-components/CoordinatorCard";
+import backgroundGif from "../../assets/gif/card-background.webp";
 
 function EventShowPage() {
   useEffect(() => {
@@ -20,6 +30,7 @@ function EventShowPage() {
   const eventRounds = data.eventRounds || [];
   const eventPrize = data.eventPrize || [];
   const eventRules = data.eventRules || [];
+  const studentCoordinator = data.studentCoordinator || [];
 
   if (!data || Object.keys(data).length === 0) {
     return (
@@ -34,9 +45,17 @@ function EventShowPage() {
   };
 
   return (
-    <div className="mt-16 min-h-screen bg-gray-100 flex justify-center items-start p-6 md:p-8 w-full">
-      <div className="w-full bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col">
-        {data.posterUrl != "" ? (
+    <div
+      className="md:mt-20 mt-10 min-h-screen flex justify-center items-start p-6 md:p-8 w-full"
+      style={{
+        backgroundImage: `url(${backgroundGif})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="w-full max-w-7xl bg-white rounded-xl shadow-2xl overflow-hidden flex flex-col backdrop-blur-sm">
+        {data.posterUrl && (
           <div className="relative w-full h-80 flex justify-center">
             <img
               src={data.posterUrl}
@@ -44,14 +63,11 @@ function EventShowPage() {
               className="object-cover block"
             />
           </div>
-        ) : (
-          <></>
         )}
 
         <div className="p-6 md:p-12 flex flex-col justify-start items-center">
-          {/* Title and Subtitle */}
           <div className="text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-3xl md:text-4xl powergrok font-bold text-gray-900 leading-tight">
               {data.eventName}
             </h1>
             <h2 className="text-lg md:text-xl text-sky-500 mt-2">
@@ -69,34 +85,35 @@ function EventShowPage() {
             <span>{data.eventTime}</span>
           </div>
 
-          <p className="mt-4 text-base md:text-lg sm:text-justify text-gray-800 leading-relaxed text-center">
+          <p className="mt-4 text-base dm-sans md:text-lg sm:text-justify text-gray-800 leading-relaxed text-center">
             {data.eventDescription}
           </p>
 
           <div className="space-y-3 mt-4 text-base md:text-lg text-gray-800 w-full">
             <div className="flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-gray-500" />
+              <MapPin className="w-5 h-5 text-red-500" />
               <span>{data.eventVenue}</span>
             </div>
-            <div className="flex items-center gap-2">
-              <UserPen className="w-5 h-5 text-gray-500" />
+            <div className="flex justify-center">
               <span>
-                {data.eventStaffCoordinator?.name} -{" "}
-                {data.eventStaffCoordinator?.contact}
+                <CoordinatorCard
+                  role="Staff Coordinator"
+                  deptDetails={data.eventStaffCoordinator}
+                />
               </span>
             </div>
-            <div className="flex items-center gap-2">
-              <User className="w-5 h-5 text-gray-500" />
-              <span>
-                {data.studentCoordinator?.[0]?.name} -{" "}
-                {data.studentCoordinator?.[0]?.contact} &{" "}
-                {data.studentCoordinator?.[1]?.name} -{" "}
-                {data.studentCoordinator?.[1]?.contact}
-              </span>
+            <div className="flex flex-wrap justify-center gap-4">
+              {studentCoordinator.map((student, index) => (
+                <div key={index} className="">
+                  <CoordinatorCard
+                    role="Student Coordinator"
+                    deptDetails={student}
+                  />
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Register Button */}
           <Button
             className="mt-6 flex dm-sans items-center justify-center gap-3 bg-sky-500 text-white px-6 py-3 text-lg rounded-full shadow-lg hover:bg-sky-600 transition-all duration-300"
             onClick={handleRegister}
@@ -105,14 +122,13 @@ function EventShowPage() {
           </Button>
         </div>
 
-        {/* Event Rules */}
-        <div className="p-4 lg:ms-7 text-gray-800 text-lg">
+        <div className="p-4 dm-sans lg:ms-7 text-gray-800 text-lg">
           {eventRules.length !== 0 && (
             <>
-              <h4 className="font-semibold text-yellow-400">Event Rules:</h4>
+              <h4 className="text-yellow-400">Event Rules</h4>
               <ul className="list-disc list-inside mt-2">
                 {eventRules.map((rule, idx) => (
-                  <li key={idx} className="list-none flex">
+                  <li key={idx} className="list-none dm-sans flex">
                     <Check className="text-green-500" />
                     {rule}
                   </li>
@@ -126,7 +142,27 @@ function EventShowPage() {
               <p className="text-xl text-yellow-500">Prizes</p>
               <ul>
                 {eventPrize.map((price, index) => (
-                  <li key={index}>{price}</li>
+                  <div className="flex">
+                    <MoveRight className="text-green-600" />
+                    <li className="ms-1" key={index}>
+                      {price}
+                    </li>
+                  </div>
+                ))}
+              </ul>
+            </>
+          )}
+          {eventRounds.length !== 0 && (
+            <>
+              <p className="text-xl text-yellow-500">Rounds</p>
+              <ul>
+                {eventRounds.map((round, index) => (
+                  <div className="flex">
+                    <MoveRight className="text-green-600" />
+                    <li className="ms-1" key={index}>
+                      {round}
+                    </li>
+                  </div>
                 ))}
               </ul>
             </>

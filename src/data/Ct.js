@@ -1,6 +1,7 @@
 const ct = {
   id: 13,
   shortName: "CT",
+
   technicalEventCount: 3,
   nonTechnicalEventCount: 1,
   workshop: 1,
