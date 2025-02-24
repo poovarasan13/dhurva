@@ -1,15 +1,13 @@
 import React from "react";
 import "../../assets/fonts/dmsans.css";
+
 function RegistrationPage() {
   return (
-    <div>
-      <div className="h-max my-80  text-center">
-        <h4 className="text-7xl tracking-widest powergrok">
-          {" "}
-          <span className="text-orange-300">Announcement</span>{" "}
-          <span className="text-blue-300">Soon</span>
-        </h4>
-      </div>
+    <div className="flex items-center justify-center min-h-screen px-4 text-center">
+      <h4 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl tracking-widest font-bold">
+        <span className="text-orange-300 block sm:inline">Announcement</span>
+        <span className="text-blue-300 block sm:inline"> Soon</span>
+      </h4>
     </div>
   );
 }
