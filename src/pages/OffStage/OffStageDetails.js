@@ -3,10 +3,10 @@ const OffStageDetails = [
   {
     eventName: "Rangoli",
     facultyCoordinator:
-      "Ms. Shamadhani Begum (Department of Science and Humanities)",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Ms Srinisha AP/CE(My Campus Clubs)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "Girls hostel – E block road",
     time: "11:00 a.m.",
     description: [
@@ -23,10 +23,10 @@ const OffStageDetails = [
   {
     eventName: "Face Painting",
     facultyCoordinator:
-      "Ms. Sathya (Department of Artificial Intelligence and Data Science)",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Ms.Diviya AP/CD(My Campus Clubs)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "E-Block",
     time: "11:00 a.m.",
     description: [
@@ -43,10 +43,10 @@ const OffStageDetails = [
   {
     eventName: "Mehandi",
     facultyCoordinator:
-      "Ms. Sharmila (Department of Computer Science and Engineering)",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Dr.J .Rehaboth Nissi AP/ SH(My Campus Clubs)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "A-Block",
     time: "12:00 p.m.",
     description: [
@@ -62,10 +62,10 @@ const OffStageDetails = [
   {
     eventName: "Reels",
     facultyCoordinator:
-      "Mr. Sivaji Rao (Photo Club - Department Of Computer Science And Design)",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Mr. Sivaji Rao, AP/CSD(Photography Club)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "A-Block",
     time: "11:00 a.m.",
     description: [
@@ -80,10 +80,10 @@ const OffStageDetails = [
   {
     eventName: "Short Film",
     facultyCoordinator:
-      "Mr. Arunkumar (Riders Club - Department Of Mechanical Engineering)",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Ms. Gopika, AP/MBA(Nature and yoga club)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "A-Block",
     time: "11:00 a.m.",
     description: [
@@ -99,10 +99,10 @@ const OffStageDetails = [
   {
     eventName: "Photography",
     facultyCoordinator:
-      "Dr.V. Sharmila (Photography Club - Department of Science and Humanities)",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Dr. S. Vignesh, AP/CSE(Software Development Club)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "A-Block",
     time: "10:00 a.m. - 2:00p.m",
     description: [
@@ -120,10 +120,10 @@ const OffStageDetails = [
   },
   {
     eventName: "Fireless Cooking",
-    facultyCoordinator: "Dr. A. Kavitha (Department of Science and Humanities)",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+    facultyCoordinator: "Dr. A. Kavitha,AP/SHMy Campus Clubs)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "A-Block",
     time: "1:00 p.m.",
     description: [
@@ -143,10 +143,10 @@ const OffStageDetails = [
   {
     eventName: "Vegetable Carving",
     facultyCoordinator:
-      "Ms . Charumathi  ( Department of Science and Humanities)",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Ms. Vidhya Lakshmi, AP/EEE(My Campus Clubs)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "A – Block",
     time: "12 : 00 pm",
     description: [
@@ -166,10 +166,10 @@ const OffStageDetails = [
   {
     eventName: "Nail Art",
     facultyCoordinator:
-      "Ms. Vidhya Lakshmi ( Department Of Electrical and Electronics Engineering )",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Ms. Vidhya Lakshmi, AP/EEE(My Campus Clubs)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "A – Block",
     time: "12 PM",
     description: [
@@ -186,10 +186,10 @@ const OffStageDetails = [
   {
     eventName: "Craft Art",
     facultyCoordinator:
-      "Ms. Gopika ( Art and Craft Club -School of Business Administration )",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Ms. Kavithamani, AP/EEE(Arts and Crafts Club)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "A – Block",
     time: "12 PM",
     description: [

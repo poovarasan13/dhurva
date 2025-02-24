@@ -77,13 +77,9 @@ function EventBanner({
             <span className="ml-2">
               <Rocket />
             </span> */}
-        <Button link="#" text={buttonText} />
+        <Button link="/registration" text={buttonText} />
           </div>
         </motion.button>
-
-
-        
-
 
         {/* Venue and Date */}
         <motion.div

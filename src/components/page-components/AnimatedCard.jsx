@@ -9,7 +9,7 @@ const AnimatedCard = () => {
   return (
     <div className="relative  flex justify-center  ">
       <div className="card  relative z-10">
-        <div className="bg p-6 rounded-lg hover:bg-orange-200 hover:text-black  shadow-lg">
+        <div className="bg p-6 rounded-lg  hover:text-black  shadow-lg">
           <h3 className="text-center text-3xl    font-semibold dm-sans text-black">
             Pro Pass
           </h3>

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import HeroSection from "./section/HeroSection";
+import HeroSection from "./section/HeroSectionComponent";
 import DhurvaFest from "./section/DhurvaFest";
 import Banners from "@/components/page-components/Banners";
 import ProPassList from "./section/ProPassList";
@@ -16,7 +16,6 @@ function HomePage() {
       <HeroSection />
       <Gallery />
       <DhurvaFest />
-      {/* <ProPassList /> */}
       <Banners />
     </div>
   );

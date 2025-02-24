@@ -7,7 +7,7 @@ const civil = {
   departmentName: "Department of Civil Engineering",
   cardName : "Civil Engineering",
   departmentDescription:
-    "Civil Engineering Department is excited to present a series of engaging events for the upcoming mega fest “Dhruva 2025”. Mega fest is designed to showcase the creative and technical expertise of students through Paper Fusion, “Quiz Nexus” “CADD Matrix”, “Sparkstorm - Ideathon” and “Workshops” - providing a platform for students to demonstrate their knowledge and passion for the field while fostering a spirit of collaboration and innovation with experienced faculties.",
+    "Civil Engineering Department is excited to present a series of engaging events for the upcoming mega fest “Dhruva 2025”. Mega fest is designed to showcase the creative and technical expertise of students through \"Paper Fusion\", “Quiz Nexus”, “CADD Matrix”, “Sparkstorm - Ideathon” and “Workshops” - providing a platform for students to demonstrate their knowledge and passion for the field while fostering a spirit of collaboration and innovation with experienced faculties.",
   coordinatorName: "Mr. K. Shantha Kumar, AP/CE ",
   coordinatorContactPhone: "7639691574",
   coordinatorEmail: "Shanthakumar.k@kce.ac.in",
@@ -23,11 +23,10 @@ const civil = {
         "Aims to provide the best platform to showcase your technical ideas in front of a panel of judges.",
       eventRules: [
         "Participation is open to individuals or teams, with each team consisting of no more than two members.",
-        "Each participant or team is allocated 8 to 12 minutes for their presentation, followed by a 2 to 3-minute Q&A session.",
+        "Each participant or team is allocated 8 to 12 minutes for their presentation, followed by a 2 to 3-minutes Q&A session.",
         "Submission (PPT / PDF) deadline is 10.03.2025. No extensions will be granted. On-spot registrations will also be accepted.",
         "Participants must be present 15 minutes before their scheduled time.",
-      ],
-      eventTopics: [
+      "TOPICS - Kindly refer to the below topics for Paper Presentation",
         "Traffic Management Solutions for Smart Cities",
         "Green Building Practices and Carbon Footprint Reduction in Construction",
         "Impact of Climate Change on Water Treatment Processes",
@@ -113,8 +112,7 @@ const civil = {
         "Each participant or team is allocated 8 to 12 minutes for their presentation, followed by a 2 to 3 minutes Q&A session.",
         "Submission (PPT/PDF) deadline is 10.03.2025. No extensions will be granted. On-spot registration will also be accepted.",
         "Participants must be present 15 minutes before their scheduled time.",
-      ],
-      eventTopics: [
+      "TOPICS - Kindly refer to the below topics for Paper Presentation",
         "Development of business ideas",
         "Startup concepts",
         "Product innovations",

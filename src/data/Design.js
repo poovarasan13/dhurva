@@ -125,8 +125,6 @@ const cd = {
       eventThumbnail: "",
       eventName: "Code Breakers: The Ultimate Hackathon Challenge",
       eventType: "Hackathon",
-      eventThumbnail: "",
-
       eventSubType: "Technical",
       eventTime: "10:00 AM to 1:00 PM",
       eventDescription:
@@ -171,20 +169,28 @@ const cd = {
       posterUrl: "",
       eventName: "Non-Technical - Free Fire Contest",
       eventType: "Non-Technical",
-      eventThumbnail: "",
-
       eventSubType: "NonTechnical",
       eventTime: "2:00 PM to 4:00 PM",
       eventDescription:
         "Join the battle! Compete in our electrifying Free Fire Tournament and prove your skills! Prizes await the champions! #FreeFire #GamingTournament #ProveYourSkills. Free Fire enhances strategic thinking, reflexes, and teamwork skills. It improves focus, problem-solving, and quick decision-making. The game provides entertainment, stress relief, and social interaction while fostering a competitive spirit and perseverance.",
       eventRules: [
-        "Only Clash Squad 4v4 format. Each team will have two games to reach the semi-finals.",
-        "Grenades should not be used in the Clash Squad match.",
-        "No climbing of buildings or entering inside buildings during the match.",
-        "No glow walls should be broken in the match.",
-        "Gun skins will not be allowed.",
+        "Only Clash Squad 4v4 format. Matches Conducted Upon Number Of Slots Filled (Max 48)",
+        "FFIC 2024 Rules Will Be Applied",
+        "No Character Skill And Gun Property",
+        "Tournament Store Will Be Given (Desert Eagle,UMP,M1887,M59,Woodpecker,AWM)",
+        "Emulators Blocked",
+        "Loadouts Will Be Turned Off (*No Rules Applied In Game On Behalf Of Unlimited Ammo) ",
+        
+        "Internet Stability Is Players Issue (We Suggest VI , Airtel For Better Stability)",
+        "Every Team Entries Should Be Confirmed By Department Co-Ordinators On List",
+        "Unregistered Team Cannot Participate in This Event",
+
         "All participants must bring their own mobile devices.",
         "Try to win with skills, not with skins.",
+
+        "Matches Will Be Streamed Live On DJ HARSH GAMERS",
+
+        "For Official Rules Check Garena Official Free Fire WS Site & CS Unlimited Rules Applied By RULEBREAKERZ & DON JUSTICE ESPORTS",
       ],
       eventVenue: "D Block - D408",
       eventRounds: ["3 Rounds"],

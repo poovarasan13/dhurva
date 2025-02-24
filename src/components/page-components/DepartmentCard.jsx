@@ -45,21 +45,24 @@ function DepartmentCard({ events }) {
   return (
     <div className="relative group hover:scale-105 transition-transform duration-300 w-full max-w-sm sm:max-w-md mx-auto">
       {/* Glowing Background Effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-blue-500 rounded-lg opacity-0 group-hover:opacity-20 blur-md transition-opacity duration-500"></div>
+      <div className="absolute inset-0 overflow-hidden rounded-lg">
+        <div className="absolute w-40 h-40 -top-20 -left-20 bg-sky-400 rounded-full opacity-30 blur-3xl animate-[spin_3s_linear_infinite]" />
+        <div className="absolute w-40 h-40 -bottom-20 -right-20 bg-sky-400 rounded-full opacity-30 blur-3xl animate-[spin_8s_linear_infinite]" />
+      </div>
 
       {/* Card */}
-      <Card className="relative z-10 w-full h-full dark:bg-gray-800/80 border-2 border-gray-100 dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg transition-all duration-500 group-hover:bg-sky-400 overflow-hidden">
+      <Card className="relative z-10 w-full h-full dark:bg-gray-800/80 border-2 border-gray-100/85 dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg transition-all duration-500 group-hover:bg-sky-400 overflow-hidden">
         {/* Floating Icon Animation */}
         <div className="absolute -top-10 -right-10 w-20 h-20 bg-sky-400 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
         <div className="absolute -bottom-10 -left-10 w-20 h-20 bg-blue-400 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
 
         <CardHeader className="p-4 sm:p-6">
           <div className="flex items-center justify-between">
-            <h2 className="text-md sm:text-xl powergrok text-black dark:text-white group-hover:text-black transition-all duration-300">
+            <h2 className="text-md sm:text-xl powergrok text-black dark:text-white transition-all duration-300">
               {events.cardName}
             </h2>
             <div className="p-2 bg-blue-100 dark:bg-blue-900 rounded-full group-hover:bg-white transition-all duration-300">
-              <Laptop className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 dark:text-blue-300 transition-all duration-300 group-hover:rotate-12" />
+              <Laptop className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600 dark:text-blue-300 transition-all duration-300 group-hover:rotate-180" />
             </div>
           </div>
         </CardHeader>

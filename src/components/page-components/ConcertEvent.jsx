@@ -62,7 +62,7 @@ const ConcertEvent = () => {
 
               <div className="mt-6 flex items-center justify-center md:justify-start gap-4">
                 <Calendar className="text-sky-400" size={24} />
-                <span className="text-lg">March 13, 2025</span>
+                <span className="text-lg">March 13,14 and 15, 2025</span>
               </div>
             </div>
             <div className="mt-8 md:mt-0 w-full md:w-5/12 flex justify-center">
@@ -153,11 +153,11 @@ const ConcertEvent = () => {
       </div>
 
       {/* Social Links */}
-      <div className="flex justify-center gap-6 py-8">
-        <Facebook className="w-8 h-8 cursor-pointer hover:text-blue-600 transition-colors" />
-        <Instagram className="w-8 h-8 cursor-pointer hover:text-pink-600 transition-colors" />
-        <Twitter className="w-8 h-8 cursor-pointer hover:text-blue-400 transition-colors" />
-      </div>
+      {/* <div className="flex justify-center gap-6 py-8">
+        <Facebook href="https://www.facebook.com/share/1ERFLsRYj7/" target="_blank"className="w-8 h-8 cursor-pointer hover:text-blue-600 transition-colors" />
+        <Instagram href="https://www.instagram.com/kcedhruva?igsh=cmV3ZjloMW9oeDRs" target="_blank" className="w-8 h-8 cursor-pointer hover:text-pink-600 transition-colors" />
+        <Twitter target="_blank" className="w-8 h-8 cursor-pointer hover:text-blue-400 transition-colors" />
+      </div> */}
     </div>
   );
 };

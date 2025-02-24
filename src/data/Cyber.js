@@ -49,17 +49,17 @@ const cyber = {
         "As per the norms all the candidates will be given participation certificates.",
       ],
       eventStaffCoordinator: {
-        name: "Ms. R.Sasikala, AP / CY",
-        contact: "",
+        name: "Ms. R.Sasikala",
+        contact: "+91 8220843050",
       },
       studentCoordinator: [
         {
-          name: "P. Munish, III CY",
-          contact: "",
+          name: "P. Munish",
+          contact: "+91 9629794108  ",
         },
         {
-          name: "R.K. Iniyavan, II CY",
-          contact: "",
+          name: "Rohit S B",
+          contact: "+91 9361500036",
         },
       ],
     },
@@ -83,17 +83,17 @@ const cyber = {
       eventRounds: ["2 or 3 Events"],
       eventPrize: [],
       eventStaffCoordinator: {
-        name: "Mr. F. Jermina",
-        contact: "",
+        name: "Mrs. F. Jermina",
+        contact: "+91 9025506957",
       },
       studentCoordinator: [
         {
-          name: "A. Gokul (717822Y115)",
-          contact: "",
+          name: "A. Gokul",
+          contact: "+91 8754740118",
         },
         {
-          name: "Shivavishukumar Chandrasekhar (717823Y154)",
-          contact: "",
+          name: "Shivavishukumar Chandrasekhar",
+          contact: "+91 8248511061",
         },
       ],
     },
@@ -123,16 +123,16 @@ const cyber = {
       eventPrize: [],
       eventStaffCoordinator: {
         name: "Mr. Ravindaran F",
-        contact: "",
+        contact: "+91 7598548481",
       },
       studentCoordinator: [
         {
-          name: "R U Deekshitha (717822Y111)",
-          contact: "",
+          name: "R U Deekshitha",
+          contact: "+91 9025746098",
         },
         {
-          name: "D. Mathi Varsha (717823Y124)",
-          contact: "",
+          name: "D. Mathi Varsha",
+          contact: "+91 9600189471",
         },
       ],
     },
@@ -150,17 +150,17 @@ const cyber = {
       eventRounds: [],
       eventPrize: ["Participation certificate"],
       eventStaffCoordinator: {
-        name: "Ms. M. Banu Priya, AP/CY",
-        contact: "",
+        name: "Ms. M. Banu Priya",
+        contact: "+91 9715286054",
       },
       studentCoordinator: [
         {
-          name: "M. MirinMano, III CY",
-          contact: "",
+          name: "M. MirinMano",
+          contact: "+91 9363506419",
         },
         {
-          name: "C. Krishnaveni, II CY",
-          contact: "",
+          name: "C. Krishnaveni",
+          contact: "+91 8940069749",
         },
       ],
     },
@@ -178,17 +178,17 @@ const cyber = {
       eventRounds: [],
       eventPrize: ["Participation certificate"],
       eventStaffCoordinator: {
-        name: "Ms. M. Banu Priya, AP/CY",
-        contact: "",
+        name: "Ms. M. Banu Priya",
+        contact: "+91 9715286054",
       },
       studentCoordinator: [
         {
-          name: "A. Sheik Abdulla, III CY",
-          contact: "",
+          name: "Sanath S",
+          contact: "+91 9344860834",
         },
         {
-          name: "Z. Mohamed Jasim, II CY",
-          contact: "",
+          name: "Z. Mohamed Jasim",
+          contact: "+91 9384420790",
         },
       ],
     },
