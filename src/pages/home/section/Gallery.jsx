@@ -91,7 +91,7 @@ const Gallery = () => {
             </motion.button>
           </div> */}
 
-          <Button link="#" text="Register" />
+          <Button link="/registration" text="Register" />
         </motion.div>
       </div>
     </div>
