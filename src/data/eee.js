@@ -5,7 +5,7 @@ const eee = {
   nonTechnicalEventCount: 4,
   workshop: 4,
   departmentName: "Department of Electrical and Electronics Engineering",
-  cardName: "Electronics And Electrical Engineering",
+  cardName: "Electrical and Electronics Engineering",
   departmentDescription:
     "The Department of EEE is thrilled to unveil its event lineup for the upcoming academic year. We will be hosting 4 workshops, 2 technical events and 4 non-technical events, and designed to be informative and engaging for students, faculty, and industry professionals.",
   coordinatorName: "Mr.M.Muthukumaran / Assistant Professor",
@@ -54,16 +54,10 @@ const eee = {
       eventVenue: "E-block / NI lab",
       eventRounds: [],
       eventPrize: [],
-      eventStaffCoordinator: [
-        {
-          name: "Mr. P. Palpandian, AP/EE",
-          contact: "9894243194",
+      eventStaffCoordinator: {
+          name: "Mr. P. Palpandian, AP/EE & Mr. V. Govindaraj, AP/EE",
+          contact: "9894243194, 9865651312",
         },
-        {
-          name: "Mr. V. Govindaraj, AP/EE",
-          contact: "9865651312",
-        },
-      ],
       studentCoordinator: [
         {
           name: "Mohanraj M, 3rd Year",
@@ -89,16 +83,10 @@ const eee = {
       eventVenue: "E-block / PSS Lab",
       eventRounds: [],
       eventPrize: [],
-      eventStaffCoordinator: [
-        {
-          name: "Dr. M. Sivaramkrishnan, AP/EE",
-          contact: "9629573062",
+      eventStaffCoordinator:{
+          name: "Dr. M. Sivaramkrishnan, AP/EE, Mrs. R. Vidyalakshmi, AP/EE",
+          contact: "9629573062, 9597901377",
         },
-        {
-          name: "Mrs. R. Vidyalakshmi, AP/EE",
-          contact: "9597901377",
-        },
-      ],
       studentCoordinator: [
         {
           name: "Pannirselvaam A, 3rd Year",
@@ -123,20 +111,10 @@ const eee = {
       eventVenue: "E-block / Room No: E - 101",
       eventRounds: [],
       eventPrize: [],
-      eventStaffCoordinator: [
-        {
-          name: "Mrs. G. Adline Priya, AP/EE",
-          contact: "8220236574",
+      eventStaffCoordinator: {
+          name: "Mrs. G. Adline Priya, AP/EE , Mr.R. Krishnakumar, AP/EE, Mr.M. Muthukumaran, AP/EE",
+          contact: "8220236574 , 8056851877, 6380476434",
         },
-        {
-          name: "Mr. R. Krishnakumar, AP/EE",
-          contact: "8056851877",
-        },
-        {
-          name: "Mr. M. Muthukumaran, AP/EE",
-          contact: "6380476434",
-        },
-      ],
       studentCoordinator: [
         {
           name: "Eniyavan R, 3rd Year",
@@ -164,12 +142,10 @@ const eee = {
         "The winner will receive a prize of Rs. 1000, while the runner-up will receive a prize of Rs. 750.",
         "All the candidates will be given participation certificates.",
       ],
-      eventStaffCoordinator: [
-        {
+      eventStaffCoordinator: {
           name: "Prof. K. Kalaiselvi, AP/EE",
           contact: "9994138750",
         },
-      ],
       studentCoordinator: [
         {
           name: "Abimayu N S, 3rd Year",
@@ -189,9 +165,9 @@ const eee = {
       posterUrl: "",
       eventThumbnail: "",
       eventName: "Quiz Builder",
-      eventType: "Non-Technical",
-      eventSubType: "NonTechnical",
-      eventTime: "12:00 A.M",
+      eventType: "Technical",
+      eventSubType: "Technical",
+      eventTime: "12:00 P.M",
       eventDescription:
         "The Quiz Builder event challenges participants to design and create engaging quizzes on various topics. Participants will enhance their creativity, problem-solving, and knowledge-sharing skills while engaging in a fun and interactive quiz-building experience. Perfect for all knowledge enthusiasts.",
       eventRules: ["2 members/team"],
@@ -221,8 +197,8 @@ const eee = {
       posterUrl: "",
       eventThumbnail: "",
       eventName: "Walker Bottle",
-      eventType: "Technical",
-      eventSubType: "Technical",
+      eventType: "Non-Technical",
+      eventSubType: "NonTechnical",
       eventTime: "11:30 A.M",
       eventDescription:
         "Students can present their creative ideas, research, and innovations in electrical engineering through a PowerPoint presentation. This event offers a platform to share insights, showcase technical skills, and foster collaboration and knowledge exchange between peers and professionals in the field.",

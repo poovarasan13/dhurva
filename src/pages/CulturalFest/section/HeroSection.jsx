@@ -38,7 +38,7 @@ function HeroSection() {
           Get ready for an electrifying Cultural Fest! Experience the vibrant
           blend of music, dance, theatre, and art through
           <span className="font-bold text-black hover:text-red-600 ms-2 me-2">
-            9 dynamic on-stage events and 10 engaging off-stage activities.
+            10 dynamic on-stage events and 10 engaging off-stage activities.
           </span>
           Celebrate creativity, tradition, and artistic excellence as you
           participate, perform, and immerse yourself in the rich cultural
@@ -77,7 +77,7 @@ function HeroSection() {
               masterpieces, OnStage is where the magic happens.
             </p>
             <div className="flex justify-center md:justify-start">
-              <Button link="/onstage" text="Explore" />
+              <Button link="onstage" text="Explore" />
             </div>
           </motion.div>
         </div>
@@ -112,7 +112,7 @@ function HeroSection() {
               creative world. Connect, learn, and be inspired.
             </p>
             <div className="flex justify-center md:justify-start">
-              <Button link="/offstage" text="Explore" />
+              <Button link="offstage" text="Explore" />
             </div>
           </motion.div>
         </div>

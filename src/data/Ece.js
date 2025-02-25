@@ -11,7 +11,7 @@ const ece = {
   departmentDescription:
     "Dhruva 2025 technical festival organized by the Electronics and Communication Engineering department to showcase innovation, creativity, and technical excellence. It provides a platform for students to enhance their technical skills, compete in exciting challenges, and engage with industry experts. We will be hosting 6 workshops, 9 technical events and designed to be informative and engaging for students, faculty, and industry professionals.",
   coordinatorName: "Dr. G. Arun Francis AP/EC",
-  coordinatorContactPhone: "",
+  coordinatorContactPhone: "9786544630",
   coordinatorEmail: "ja.arunji@kce.ac.in",
   events: [
     {
@@ -22,14 +22,7 @@ const ece = {
       eventTime: "10:30 AM to 01:30 PM",
       eventSubType: "Technical",
       eventDescription:
-        "Arduino Project Expo is a technical event in which participants should present their project working and must bring the prototype model of the project (developed using Arduino, ESP32, Node MCU Boards, etc.) to demonstrate at the event if they get shortlisted. Project Expo is a platform that helps to unleash the potential of students. The main objective of the Project Expo is to bring out student innovation. Projects related to the following domains will be preferred:",
-      eventDomains: [
-        "Embedded systems projects",
-        "Home Automation",
-        "Agricultural fields",
-        "Women & Child Safety",
-        "IoT-based projects",
-      ],
+        "Arduino Project Expo is a technical event in which participants should present their project working and must bring the prototype model of the project (developed using Arduino, ESP32, Node MCU Boards, etc.) to demonstrate at the event if they get shortlisted. Project Expo is a platform that helps to unleash the potential of students. The main objective of the Project Expo is to bring out student innovation. Projects related to the following domains will be preferred:Embedded systems projects,Home Automation, Agricultural fields, Women & Child Safety, IoT-based projects",
       eventRules: [
         "1. Each team can have a maximum of 4 members.",
         "2. Must use Arduino, ESP32, Node MCU, Raspberry Pi, etc., in their project.",
@@ -44,11 +37,11 @@ const ece = {
       },
       studentCoordinator: [
         {
-          name: "Bavya R (IV / EC-B)",
+          name: "Bavya R",
           contact: "9791460973",
         },
         {
-          name: "Hemananth V (IV / EC-B)",
+          name: "Hemananth V ",
           contact: "9677444553",
         },
       ],
@@ -79,11 +72,11 @@ const ece = {
       },
       studentCoordinator: [
         {
-          name: "Priya R (III / EC-C)",
+          name: "Priya R",
           contact: "9787722144",
         },
         {
-          name: "Reshma MS (III / EC-C)",
+          name: "Reshma MS",
           contact: "9944909795",
         },
       ],
@@ -180,11 +173,11 @@ const ece = {
       },
       studentCoordinator: [
         {
-          name: "Poomeshwaran L (III / EC-C)",
+          name: "Poomeshwaran L",
           contact: "8838602553",
         },
         {
-          name: "Sangavi S (III / EC-C)",
+          name: "Sangavi S",
           contact: "9025296269",
         },
       ],
@@ -209,23 +202,18 @@ const ece = {
       ],
       eventVenue: "E block - E302",
       eventRounds: ["Event Round (If Exists)"],
-      eventStaffCoordinator: [
+      eventStaffCoordinator:
         {
-          name: "Ms. Tharanipriya, AP / EC",
-          contact: "7092618642",
+          name: "Ms. Tharanipriya, AP / EC, Ms. Deepika, AP / EC",
+          contact: "7092618642, 9080541774",
         },
-        {
-          name: "Ms. Deepika, AP / EC",
-          contact: "9080541774",
-        },
-      ],
       studentCoordinator: [
         {
-          name: "Rushanth M (III / EC-C)",
+          name: "Rushanth M",
           contact: "9994482211",
         },
         {
-          name: "Sivaharish V (III / EC-C)",
+          name: "Sivaharish V",
           contact: "6382948799",
         },
       ],
@@ -250,18 +238,14 @@ const ece = {
       },
       studentCoordinator: [
         {
-          name: "Vignesh N (III / EC-B)",
+          name: "Vignesh N",
           contact: "9080070492",
         },
         {
-          name: "Senthil Velan K (III / EC-B)",
+          name: "Senthil Velan K",
           contact: "8825458855",
         },
-        {
-          name: "Giritharan S (III / EC-B)",
-          contact: "9360552069",
-        },
-      ],
+      ]
     },
     {
       posterUrl: "",
@@ -285,11 +269,11 @@ const ece = {
       },
       studentCoordinator: [
         {
-          name: "Aravind M (III / EC-A)",
+          name: "Aravind M ",
           contact: "9566936466",
         },
         {
-          name: "Jai Prakash P (III / EC-A)",
+          name: "Jai Prakash P",
           contact: "8110035069",
         },
       ],
@@ -328,11 +312,11 @@ const ece = {
       },
       studentCoordinator: [
         {
-          name: "Aashiv Muthu Suthan S (II / EC-B)",
-          contact: "8825949878",
+          name: "Bavadhaarini K ",
+          contact: "8300844754",
         },
         {
-          name: "Adhithyan D (II / EC-B)",
+          name: "Adhithyan D",
           contact: "9080570436",
         },
       ],
@@ -349,21 +333,17 @@ const ece = {
         "Building Resilience in Entrepreneurship for Dynamic and Evolving Challenges, where you will explore how to navigate the unpredictable landscape of modern business and build a resilient entrepreneurial mindset. This workshop is designed to help both aspiring and established entrepreneurs develop strategies to overcome obstacles, manage uncertainties, and adapt to ever-changing market conditions.",
       eventVenue: "E-block / Embedded Project Lab",
       eventStaffCoordinator: {
-        name: "Dr. S. Sobana, ASP/EC",
-        contact: "7502753282",
+        name: "Dr. S. Sobana, ASP/EC, Ms. Deepika, AP/EC ",
+        contact: "7502753282, 9080541774",
       },
       studentCoordinator: [
         {
-          name: "Bavadhaarini K (III/EC-C)",
-          contact: "8300844754",
+          name: "Abiya D",
+          contact: "8248940080",
         },
         {
-          name: "Jeevitha A (III/EC-C)",
-          contact: "9080045256",
-        },
-        {
-          name: "Snehalatha T (III/EC - C)",
-          contact: "7708639099",
+          name: "Amrena A ",
+          contact: "9629467739",
         },
       ],
     },
@@ -371,94 +351,75 @@ const ece = {
       posterUrl: "",
       eventThumbnail: "",
       eventSubType: "WorkShop",
-      eventName: "Workshop on “Deep Learning – A Perspective View”",
+      eventName: "Workshop on \"A Perspective on Deep Learning: Trends and Insights\"",
       eventType: "Workshop",
       eventTime: "2:00 PM to 4:00 PM",
       eventDescription:
         "Deep learning is a method in artificial intelligence (AI) that teaches computers to process data in a way that is inspired by the human brain. Deep learning models can recognize complex patterns in pictures, text, sounds, and other data to produce accurate insights and predictions. This workshop will be an eye-opening workshop for understanding deep learning concepts in a perspective approach. Sessions will be handled by eminent resource persons from Industries / Institutions.",
       eventVenue: "E-block / NP LAB",
-      eventStaffCoordinator: [
+      eventStaffCoordinator:
         {
-          name: "Dr. A. Suresh Babu, ASP / EC",
-          contact: "9994714190",
+          name: "Dr. A. Suresh Babu, ASP/EC, Dr.S.M. Swaminathan, ASP/EC",
+          contact: "9994714190, 9944749649",
         },
-        {
-          name: "Dr. S. M. Swaminathan, ASP / EC",
-          contact: "9944749649",
-        },
-      ],
       studentCoordinator: [
         {
-          name: "Santhosh V (III/EC-A)",
+          name: "Santhosh V",
           contact: "9363652386",
         },
         {
-          name: "Santhosh M (III/EC-A)",
-          contact: "9361246491",
+          name: "Dharanisri Udaykishore M ",
+          contact: "9363454247",
         },
       ],
     },
     {
       posterUrl: "",
       eventThumbnail: "",
-      eventName: "Workshop on “CST tool for Antenna Design and Measurements”",
+      eventName: "Workshop on “RF and Antenna Engineering: A CST Studio Suite Approach”",
       eventType: "Workshop",
       eventSubType: "WorkShop",
-      eventTime: "10:00 AM to 12:00 NOON",
+      eventTime: "2:00 PM to 4.00 PM",
       eventDescription:
         "Participants will learn about the CST Studio Suite software which is a high-performance 3D EM analysis software package for designing, analyzing and optimizing electromagnetic (EM) components and systems like antennas. Electromagnetic field solvers for applications across the EM spectrum are contained within a single user interface in CST Studio Suite. The solvers can be coupled to perform hybrid simulations, giving engineers the flexibility to analyze whole systems made up of multiple components in an efficient and straightforward way. Sessions will be handled by eminent resource persons from Industries / Institutions.",
       eventVenue: "E-block / DSP LAB",
       eventStaffCoordinator: {
-        name: "Dr. G. Arun Francis, AP/EC",
-        contact: "9786544630",
+        name: "Dr. G. Arun Francis, AP/EC, Ms. L. Saranya, AP/EC ",
+        contact: "9786544630, 9787865982",
       },
       studentCoordinator: [
         {
-          name: "Lathika S (III/EC-A)",
-          contact: "8675262214",
-        },
-        {
-          name: "Navanitha T (III/EC-A)",
+          name: "Navanitha T ",
           contact: "6385812066",
         },
         {
-          name: "Sudali K (III/EC - A)",
-          contact: "9787179346",
+          name: "Santhosh Kumar S ",
+          contact: "7094516867",
         },
       ],
     },
     {
       eventThumbnail: "",
       posterUrl: "",
-      eventName: "Workshop on “Applications of IoT in Cloud”",
+      eventName: "Workshop on “AI for PCB Fault Detection”",
       eventType: "Workshop",
       eventSubType: "WorkShop",
       eventTime: "10:00 AM to 12:00 NOON",
-      eventDescription:
-        "The Internet of Things (IoT) and cloud computing are significant players in the evolving world of technology. These powerful technologies have transformed how we live, work, and interact with our environment by enabling seamless connections between devices in a smart ecosystem. The Internet of Things (IoT) is a vast network of interconnected devices.",
+      eventDescription:"Join us for an insightful workshop focused on leveraging Artificial Intelligence (AI) for Printed Circuit Board (PCB) fault detection. This hands-on session will guide participants through the latest AI techniques used in identifying and diagnosing faults in PCB manufacturing, enhancing quality control, and reducing human errors. Through practical demonstrations and expert-led discussions, attendees will explore the integration of machine learning models, image processing, and automation systems to detect defects, such as soldering issues, misalignment, or broken traces. The workshop will also cover the use of AI to streamline testing procedures and improve overall efficiency in the PCB production process.",
       eventVenue: "E-block / NP LAB",
-      eventStaffCoordinator: [
+      eventStaffCoordinator: 
         {
-          name: "Dr. C. Priya, ASP/EC",
-          contact: "9788216490",
+          name: "Ms.V.Lavanya AP / EC , Ms.Tharanipriya,  AP / EC ",
+          contact: "8778631342, 7092618642",
         },
-        {
-          name: "Ms. L. Saranya, AP / EC",
-          contact: "9787865982",
-        },
-      ],
       studentCoordinator: [
         {
-          name: "Akshaya M (III/EC-C)",
+          name: "Niyamath P ",
+          contact: "8220094656",
+        },
+        {
+          name: "Akshaya M ",
           contact: "8778232100",
-        },
-        {
-          name: "Deepika D (III/EC-A)",
-          contact: "9092481719",
-        },
-        {
-          name: "Kaaviya T (III/EC-A)",
-          contact: "9025432385",
         },
       ],
     },
@@ -466,7 +427,7 @@ const ece = {
       posterUrl: "",
       eventThumbnail: "",
       eventName:
-        "Workshop on “Exploring Embedded applications using TinkerCAD”",
+        "“Exploring Embedded applications using TinkerCAD”",
       eventType: "Workshop",
       eventSubType: "WorkShop",
       eventTime: "2:00 PM to 4:00 PM",
@@ -474,21 +435,17 @@ const ece = {
         "The Circuits section of TinkerCAD is a simulator for an electronic circuit with Arduino Uno or a Micro Bit board or a tiny chip in the browser. The code can be made with Code Blocks, which are graphical code pieces that can be put together by shifting them with the mouse cursor. Programming with code text is also possible. This workshop will be an eye-opening workshop for Simulating Embedded applications using the Arduino board. Sessions will be handled by eminent resource persons from Industries / Institutions.",
       eventVenue: "E-block / Embedded Project Lab",
       eventStaffCoordinator: {
-        name: "Mr. C. Mukuntharaj, AP / EC",
-        contact: "8122282717",
+        name: "Mr. C. Mukuntharaj, AP / EC, Dr.C.Priya ASP/EC ",
+        contact: "8122282717, 9788216490",
       },
       studentCoordinator: [
         {
-          name: "Monika K (III/EC-A)",
+          name: "Monika K",
           contact: "9751480642",
         },
         {
-          name: "Prathap R (II/EC-B)",
+          name: "Prathap R",
           contact: "8220313462",
-        },
-        {
-          name: "Vijayakumar M (III/EC - A)",
-          contact: "9361032401",
         },
       ],
     },
@@ -503,22 +460,18 @@ const ece = {
         "Join us for an exciting workshop on 3D Bioprinting, where you’ll explore the cutting-edge technology transforming healthcare and biotechnology. 3D bioprinting creates living tissues and organs by printing with bioinks made of cells and biomaterials. This workshop will introduce you to the principles of bioprinting, including techniques, bioinks, and applications in tissue engineering, organ printing, and drug testing. Learn from experts through real-world case studies, demonstrations, and discussions on challenges like cellular viability and vascularization. Whether you're a researcher, engineer, or student, this workshop will provide valuable insights into the future of 3D bioprinting and its impact on healthcare.",
       eventVenue: "E-block / DSP LAB",
       eventStaffCoordinator: {
-        name: "Dr. R. Aadhavan, Prof / EC",
-        contact: "8825702781",
+        name: "Dr. R. Aadhavan, Prof / EC, Ms. T. Dharanika AP/ EC ",
+        contact: "8825702781, 9500871289",
       },
       studentCoordinator: [
         {
-          name: "Abiya D (III/EC-A)",
-          contact: "8248940080",
+          name: "Deepika D ",
+          contact: "9092481719",
         },
         {
-          name: "Harini B (III/EC-A)",
-          contact: "7695803632",
-        },
-        {
-          name: "Jannathul Nisha S (III/EC-A)",
-          contact: "9787594533",
-        },
+          name: "Kaaviya T",
+          contact: "9025432385",
+        }
       ],
     },
   ],

@@ -26,7 +26,7 @@ function App() {
     <>
       {isLoading ? (
         <div className="center-container">
-            <img src={star} className="logo rotating" alt="Star logo" />
+            <img src="https://res.cloudinary.com/dzpkbej9y/image/upload/v1740402657/dhruva_star-min_qg5ty9.png" className="logo rotating" alt="Star logo" />
         </div>
       ) : (
         <>

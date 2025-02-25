@@ -15,8 +15,6 @@ const it = {
   events: [
     {
       posterUrl: "",
-      eventThumbnail: "",
-
       eventName: "Word- Scramble",
       eventType: "Non- Technical Event Puzzle-solving",
       eventSubType: "NonTechnical",
@@ -50,8 +48,6 @@ const it = {
       ],
     },
     {
-      eventThumbnail: "",
-
       posterUrl: "",
       eventName: "Dumb-charades",
       eventSubType: "NonTechnical",
@@ -86,8 +82,6 @@ const it = {
       ],
     },
     {
-      eventThumbnail: "",
-
       posterUrl: "",
       eventName: "Connection",
       eventSubType: "NonTechnical",
@@ -123,8 +117,6 @@ const it = {
       ],
     },
     {
-      eventThumbnail: "",
-
       posterUrl: "",
       eventName: "CodeVerse - Coding Contest - Technical Event",
       eventType: "Technical Event – Coding",
@@ -154,8 +146,6 @@ const it = {
       ],
     },
     {
-      eventThumbnail: "",
-
       posterUrl: "",
       eventName: "CODE CHAMP - 25",
       eventSubType: "Technical",
@@ -188,8 +178,6 @@ const it = {
       ],
     },
     {
-      eventThumbnail: "",
-
       posterUrl: "",
       eventName: "Paper quest",
       eventSubType: "Technical",
@@ -223,8 +211,6 @@ const it = {
       ],
     },
     {
-      eventThumbnail: "",
-
       posterUrl: "",
       eventName: "Hackathon: Unleash Your Coding Potential",
       eventType: "Technical Event",
@@ -259,8 +245,6 @@ const it = {
       ],
     },
     {
-      eventThumbnail: "",
-
       posterUrl: "",
       eventName: "FutureTech Forum - AI and ML Hands-on session - Workshop",
       eventType: "Workshop - Technical",
@@ -275,7 +259,7 @@ const it = {
         "As per the norms all the candidates will be given participation certificates.",
       ],
       eventStaffCoordinator: {
-        name: "Dr. N M Saravanakumar, Prof & HoD / IT",
+        name: "Dr. T. Guhan, ASP / IT",
         contact: "",
       },
       studentCoordinator: [
@@ -290,15 +274,12 @@ const it = {
       ],
     },
     {
-      eventThumbnail: "",
-
       posterUrl: "",
-      eventName: "Workshop",
-      eventType: "Technical",
+      eventName: "Workshop on Data Analytics with Python",
+      eventType: "Workshop - Technical",
       eventSubType: "WorkShop",
       eventTime: "10.30 a.m",
-      eventSubType: "workshop",
-      eventDescription: "Workshop on Data Analytics with Python",
+      eventDescription: "Interactive and Hands-on session is designed for tech enthusiasts, developers, and professionals to explore the practical aspects of Data Analytics with Python",
       eventRules: [],
       eventVenue: "MG Hall",
       eventRounds: [],

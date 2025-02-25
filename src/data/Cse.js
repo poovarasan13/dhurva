@@ -16,7 +16,6 @@ const cse = {
       posterUrl: "",
       eventName: "Workshop on Industrial Internet of Things",
       eventType: "Workshop",
-      eventThumbnail: "",
       eventSubType: "WorkShop",
       eventTime: "2:00 PM to 4:00 PM",
       eventDescription:
@@ -28,6 +27,7 @@ const cse = {
       eventStaffCoordinator: {
         name: "Prof. C. Vidya Prabha AP / CSE",
         contact: "",
+        
       },
       studentCoordinator: [
         {
@@ -76,7 +76,6 @@ const cse = {
       eventName: "Intelligent systems in Computing and Communication",
       eventType: "Paper Presentation",
       eventSubType: "Technical",
-      eventThumbnail: "",
       eventTime: "10:00 AM to 12:00 PM",
       eventDescription:
         "The Paper Presentation Event on Intelligent Systems in Computing and Communication provides a platform for researchers, students, and professionals to present innovative ideas and research findings in AI-driven computing and advanced communication technologies. Topics include machine learning, IoT, cybersecurity, cloud computing, and smart networking. Participants will showcase their research, discuss emerging trends, and exchange knowledge on intelligent systems shaping the future of technology.",
@@ -102,7 +101,7 @@ const cse = {
     {
       posterUrl: "",
       eventName: "Project Presentation on “Recent Trends in IT era",
-      eventThumbnail: "",
+
       eventType: "Project Presentation",
       eventSubType: "Technical",
       eventTime: "1 PM to 3:00 PM",
@@ -142,8 +141,6 @@ const cse = {
     {
       posterUrl: "",
       eventName: "Technical Quiz ",
-      eventThumbnail: "",
-
       eventDepartement: "Department Of Computer Science And Engineering",
       eventType: "Technical",
       eventSubType: "Technical",
@@ -177,8 +174,6 @@ const cse = {
       eventType: "Technical",
       eventSubType: "Technical",
       eventTime: "1:30 PM",
-      eventThumbnail: "",
-
       eventDescription: "",
       eventRules: ["2 members/team"],
       eventVenue: "C-block / Oracle Lab",
@@ -206,8 +201,6 @@ const cse = {
       posterUrl: "",
       eventName: "",
       eventType: "Technical",
-      eventThumbnail: "",
-
       eventSubType: "Technical",
       eventTime: "11:30 AM",
       eventDescription: "",
@@ -237,8 +230,6 @@ const cse = {
       posterUrl: "",
       eventName: "",
       eventType: "Non-Technical",
-      eventThumbnail: "",
-
       eventSubType: "NonTechnical",
       eventTime: "11:00 AM",
       eventDescription: [
@@ -274,8 +265,6 @@ const cse = {
       eventName: "Poster Design",
       eventType: "Non-Technical",
       eventSubType: "NonTechnical",
-      eventThumbnail: "",
-
       eventTime: "2:00 PM",
       eventDescription: "",
       eventRules: ["2 members / team"],
@@ -305,8 +294,6 @@ const cse = {
       eventName: "Tech Debate",
       eventType: "Non-Technical",
       eventSubType: "NonTechnical",
-      eventThumbnail: "",
-
       eventTime: "3:00 PM",
       eventDescription: "",
       eventRules: ["4 members/team"],

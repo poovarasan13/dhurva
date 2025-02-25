@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import {
   MapPin,
   Clock,
-  User,
+
   Rocket,
-  UserPen,
+  
   Check,
   MoveRight,
 } from "lucide-react";
@@ -13,7 +13,7 @@ import "../../assets/fonts/dmserif.css";
 import "../../assets/fonts/opensans.css";
 import "../../assets/fonts/sourcesans.css";
 import { useLocation, useNavigate } from "react-router-dom";
-import TestCard from "@/components/page-components/TestCard";
+// import TestCard from "@/components/page-components/TestCard";
 import CoordinatorCard from "@/components/page-components/CoordinatorCard";
 import backgroundGif from "../../assets/gif/card-background.webp";
 
@@ -94,32 +94,9 @@ function EventShowPage() {
               <MapPin className="w-5 h-5 text-red-500" />
               <span>{data.eventVenue}</span>
             </div>
-            <div className="flex justify-center">
-              <span>
-                <CoordinatorCard
-                  role="Staff Coordinator"
-                  deptDetails={data.eventStaffCoordinator}
-                />
-              </span>
-            </div>
-            <div className="flex flex-wrap justify-center gap-4">
-              {studentCoordinator.map((student, index) => (
-                <div key={index} className="">
-                  <CoordinatorCard
-                    role="Student Coordinator"
-                    deptDetails={student}
-                  />
-                </div>
-              ))}
-            </div>
           </div>
 
-          <Button
-            className="mt-6 flex dm-sans items-center justify-center gap-3 bg-sky-500 text-white px-6 py-3 text-lg rounded-full shadow-lg hover:bg-sky-600 transition-all duration-300"
-            onClick={handleRegister}
-          >
-            Register Now <Rocket className="w-5 h-5" />
-          </Button>
+          
         </div>
 
         <div className="p-4 dm-sans lg:ms-7 text-gray-800 text-lg">
@@ -142,7 +119,9 @@ function EventShowPage() {
               <p className="text-xl text-yellow-500">Prizes</p>
               <ul>
                 {eventPrize.map((price, index) => (
-                  <div className="flex">
+                  <div className="flex" key={
+                    index
+                  }>
                     <MoveRight className="text-green-600" />
                     <li className="ms-1" key={index}>
                       {price}
@@ -157,7 +136,7 @@ function EventShowPage() {
               <p className="text-xl text-yellow-500">Rounds</p>
               <ul>
                 {eventRounds.map((round, index) => (
-                  <div className="flex">
+                  <div className="flex" key={index}>
                     <MoveRight className="text-green-600" />
                     <li className="ms-1" key={index}>
                       {round}
@@ -168,6 +147,34 @@ function EventShowPage() {
             </>
           )}
         </div>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Button
+              className="mt-6 flex dm-sans items-center justify-center gap-3 bg-sky-500 text-white px-6 py-3 text-lg rounded-full shadow-lg hover:bg-sky-600 transition-all duration-300"
+              onClick={handleRegister}
+            >
+              Register Now <Rocket className="w-5 h-5" />
+            </Button>
+          </div>   
+        <div className="flex justify-center">
+              <span>
+                <CoordinatorCard
+                  role="Staff Coordinator"
+                  deptDetails={data.eventStaffCoordinator}
+                />
+              </span>
+        </div>
+        <div className="flex flex-wrap justify-center gap-4">
+              {studentCoordinator.map((student, index) => (
+                <div key={index} className="">
+                  <CoordinatorCard
+                    role="Student Coordinator"
+                    deptDetails={student}
+                  />
+                </div>
+              ))}
+              
+        </div>
+         
       </div>
     </div>
   );

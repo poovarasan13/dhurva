@@ -63,6 +63,7 @@ const Gallery = () => {
               "Expert Speakers - Learn from the best in the field",
               "Interactive Workshops - Hands-on sessions to sharpen skills",
               "Networking Opportunities - Connect with peers & mentors",
+              "Gear Up for Glory – Show your skills, chase the championship"
             ].map((item, index) => (
               <motion.li
                 key={index}

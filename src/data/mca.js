@@ -68,7 +68,7 @@ const mca = {
       ],
       eventStaffCoordinator: {
         name: "Mr.K.Senthilkumar, AP/ SoCA",
-        contact: "N/A",
+        contact: "9788359909"
       },
       studentCoordinator: [
         {
@@ -101,7 +101,7 @@ const mca = {
       ],
       eventStaffCoordinator: {
         name: "Ms.Athira R, AP/ SoCA",
-        contact: "N/A",
+        contact: "7510805251",
       },
       studentCoordinator: [
         {
@@ -131,7 +131,7 @@ const mca = {
       ],
       eventStaffCoordinator: {
         name: "Mr. R. Ramprashath, AP/ SoCA",
-        contact: "N/A",
+        contact: "9789105210",
       },
       studentCoordinator: [
         {
@@ -161,7 +161,7 @@ const mca = {
       ],
       eventStaffCoordinator: {
         name: "Mr. R. Ramprashath, AP/ SoCA",
-        contact: "N/A",
+        contact: "97891 05210",
       },
       studentCoordinator: [
         {

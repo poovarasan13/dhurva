@@ -39,7 +39,7 @@ function HeroSectionComponent() {
               </span>
             </h1>
             <p className="mt-4 text-base sm:text-lg md:text-xl leading-6 sm:leading-7 text-gray-900 dark:text-gray-100">
-              Karpagam College of Engineering presents the 8th edition of{" "}
+              Karpagam College of Engineering presents the 9th edition of{" "}
               <strong>DHRUVA</strong>, a national-level
               techno-management-cultural fest on{" "}
               <strong>March 13, 14, 15</strong>. Join us for an unforgettable

@@ -9,9 +9,9 @@ const ad = {
   cardName: "Artificial Intelligence and Data Science",
   departmentDescription:
     "The Department of Artificial Intelligence and Data Science is delighted to reveal its esteemed roster of events for the forthcoming academic year. Featuring 7 technical events, 3  non-technical events, and  enriching workshops, Whether you are a student, faculty member, or industry professional, our meticulously curated events are designed to inform, engage, and inspire.",
-  coordinatorName: "Dr. C. N. Vanitha – Prof./AD",
-  coordinatorContactPhone: "9003962637",
-  coordinatorEmail: "vanitha.c.n@kce.ac.in",
+  coordinatorName: "Ms. K. Vishnupriya – Prof./AD",
+  coordinatorContactPhone: "6383486701",
+  coordinatorEmail: "vishnupriya.k@kce.ac.in",
   events: [
     {
       posterUrl: "",
@@ -45,14 +45,6 @@ const ad = {
         contact: "9003962637",
       },
       studentCoordinator: [
-        {
-          name: "Mr. N. Shiresha",
-          contact: "6380842526",
-        },
-        {
-          name: "Ms. K. B. Naveen Nesa Kumar",
-          contact: "6383486701",
-        },
         {
           name: "Mr. A. Vibishan",
           contact: "9042397500",
@@ -88,25 +80,12 @@ const ad = {
         "Teams must answer within the given time limit.",
         "The judges' decision will be final in case of any disputes.",
       ],
-      eventStaffCoordinator: [
+      eventStaffCoordinator:
         {
-          name: "Dr. G. Karthikeyan",
-          contact: "9344372393",
+          name: "Dr. G. Karthikeyan, Mr. M. NavaneethaKrishnan",
+          contact: "9344372393, 9865968068",
         },
-        {
-          name: "Mr. M. NavaneethaKrishnan",
-          contact: "9865968068",
-        },
-      ],
       studentCoordinator: [
-        {
-          name: "Mr. Naveennesakumar",
-          contact: "6383486701",
-        },
-        {
-          name: "Ms. Shiresha",
-          contact: "6380842526",
-        },
         {
           name: "Ms. Nandita Shree R. S",
           contact: "9025034255",
@@ -115,25 +94,29 @@ const ad = {
           name: "Ms. Nandhini N",
           contact: "9344801818",
         },
-        {
-          name: "Ms. Santhiya N. S",
-          contact: "6382625677",
-        },
-        {
-          name: "Ms. Vignaya S. S",
-          contact: "7540090254",
-        },
       ],
     },
     {
       posterUrl: "",
       eventThumbnail: "",
       eventName: "Hackrithm",
-      eventType: "Technical",
+      eventType: "Hackathon",
       eventSubType: "Technical",
       eventTime: "9:00 AM to 3:00 PM",
       eventDescription:
         "Hackrithm 2025:\nWe invite you to participate in a dynamic Codeathon-Hackathon fusion, where problem-solving meets innovation. The event kicks off with a Codeathon, where participants will tackle real-world DSA challenges presented on the spot, requiring them to debug, decode, and solve within a limited timeframe. Top performers will advance to the Hackathon phase, where they will develop AI-driven solutions for public sector challenges.\nIn the Hackathon, participants will be encouraged to create unique and impactful solutions, with judging based on solution viability, working demo, development pipeline, and relevance to real-world problems. While existing problem solutions will be considered, priority will be given to innovative approaches. The event will conclude with evaluations, and cash prizes will be awarded to winners and runner-ups.\n\nHackathon Themes:\n- AI for Disaster Prediction & Management\n- AI-Powered Precision Agriculture\n- AI for Mental Health\n- AI in Fake News & Misinformation Detection\n- AI in Personalized Learning & Education\n- AI-Powered Healthcare Diagnostics",
+      eventRules: [
+        "Phase 1 Rules: Codeathon",
+        "Time Limit: A fixed time 1 hour to solve a set of DSA problems.",
+        "Scoring: Points will be awarded based on accuracy, efficiency, and execution time of the solutions",
+        "Language Restriction: Solutions can be written in any standard programming language (C++, Java, Python, etc.).",
+        "Submission Format: Participants must submit their solutions through the designated online platform.",
+        "Phase 2 Rules: Hackathon",
+        "Problem Statement Selection: Teams must choose any one of the predefined themes or any problem to participant’s choosing and work on a real-world problem.",
+        "Time Limit: Hackathon duration will be for 5 hours, within which participants must develop their project.",
+        "Working Demo Required: Submissions must include a working prototype/demo showcasing functionality.",
+        "Tech Stack Flexibility: AI, ML, Web/Cloud, Mobile Apps – any technology stack is allowed, as long as it aligns with the problem."
+      ],
       eventVenue: "Data Sciences and Analytics Center Lab/ C Block",
       eventRounds: [
         "Phase 1: Codeathon - Solve DSA challenges with speed and precision in a high-stakes coding sprint.",
@@ -143,6 +126,21 @@ const ad = {
         "The winner will receive a prize of Rs. 3000",
         " while the runner-up will receive a prize of Rs. 2000. ",
         "All participants will receive a participation certificate.",
+      ],
+      eventStaffCoordinator:
+        {
+          name: "Dr. R. Keerthika/ AP/AD ",
+          contact: "",
+        },
+      studentCoordinator: [
+        {
+          name: "Mr. Ashwin T",
+          contact: "8073887511",
+        },
+        {
+          name: "Mr. Dhanush",
+          contact: "9342514011",
+        },
       ],
     },
     {
@@ -167,21 +165,12 @@ const ad = {
         "Generate at least one image.",
         "The judgment will be based on the judge's remarks and clarity in the topic.",
       ],
-      eventStaffCoordinator: [
+      eventStaffCoordinator:
         {
           name: "Ms. K. Vishnupriya",
-          contact: "9095362677",
-        },
-      ],
-      studentCoordinator: [
-        {
-          name: "Mr. Naveennesakumar",
           contact: "6383486701",
         },
-        {
-          name: "Ms. Shiresha",
-          contact: "6380842526",
-        },
+      studentCoordinator: [
         {
           name: "Mr. Athithya Balu S",
           contact: "8098789025",
@@ -215,23 +204,12 @@ const ad = {
         "Industrial experts will do the evaluation process.",
         "In case of any disputes, the final decision will remain with the organizers.",
       ],
-      eventStaffCoordinator: [
+      eventStaffCoordinator:
         {
           name: "Mr. Surenther I AP/AD",
           contact: "",
         },
-      ],
       studentCoordinator: [
-        {
-          name: "Mr. Naveennesakumar",
-          contact: "6383486701",
-        },
-        {
-          name: "Ms. Shiresha",
-          contact: "6380842526",
-        },
-      ],
-      eventCoordinator: [
         {
           name: "Mr. Mukilanand",
           contact: "7502033278",
@@ -250,36 +228,52 @@ const ad = {
       eventSubType: "WorkShop",
       eventTime: "9.00am – 12.00pm",
       eventDescription:
-        'Dive into the realm of generative AI with our workshop, "Mastering Prompt Engineering with Generative AI". Uncover the power of state-of-the-art AI models like GPT through interactive, hands-on activities and insightful discussions. Learn how to craft precise, effective prompts to unlock the full potential of these models for real-world applications, from content creation to problem-solving and beyond. Whether you\'re a developer, content creator, or business professional, this workshop will provide you with the tools to communicate seamlessly with AI and get optimal results. Join us for an immersive experience, exploring the nuances of prompt design, iterative refinement, and ethical AI practices, all while harnessing the full capabilities of generative language models.',
-      resourcePerson: {
-        name: "Mr. Gunalan",
-        designation: "Jr Data Engineer",
-        company: "Aggregate Intelligence",
-      },
+        'Dive into the realm of generative AI with our workshop, "Mastering Prompt Engineering with Generative AI". Uncover the power of state-of-the-art AI models like GPT through interactive, hands-on activities and insightful discussions. Learn how to craft precise, effective prompts to unlock the full potential of these models for real-world applications, from content creation to problem-solving and beyond. Whether you\'re a developer, content creator, or business professional, this workshop will provide you with the tools to communicate seamlessly with AI and get optimal results. Join us for an immersive experience, exploring the nuances of prompt design, iterative refinement, and ethical AI practices, all while harnessing the full capabilities of generative language models.Resource-person: Mr. Gunalan,Jr Data Engineer,Aggregate Intelligence',
+      
       eventVenue: "C-block/ Lab – Microsoft Lab",
       eventRounds: [],
-      eventPrize: ["All Participants Participation certificates"],
+      eventPrize: ["All participants will receive participation certificates"],
       eventRules: [
         "Every participant must carry proof of ID.",
         "Everyone should attend the workshop for the entire duration.",
       ],
-      eventStaffCoordinator: [
+      eventStaffCoordinator:
+        {
+          name: "K. Vishnupriya AP/AD",
+          contact: "6383486701",
+        },
+      studentCoordinator: [
+        {
+          name: "Mr Naveen S",
+          contact: "9087742278",
+        },
+        {
+          name: "Ms Keerthana",
+          contact: "7845653168",
+        },
+      ]
+    },
+    {
+      posterUrl: "",
+      eventThumbnail: "",
+      eventName: "Workshop on Explainable AI (XAI) & Model Interpretability",
+      eventType: "WorkShop",
+      eventSubType: "WorkShop",
+      eventTime: "1.00PM – 3.00PM",
+      eventDescription:"Unlock the power of Explainable AI (XAI) in our hands-on workshop focused on model interpretability. Learn how to break down complex machine learning models using techniques like SHAP, LIME, and Feature Importance. Whether you're a data scientist, AI enthusiast, or business professional, this workshop will help you understand how AI makes decisions and ensure that your models are transparent, fair, and trustworthy. Through interactive sessions, you'll gain practical experience in applying XAI methods to real-world problems. Enhance the accountability of your AI systems and make informed, ethical decisions. Don’t miss this opportunity to elevate your AI expertise! Resource-person: Mr. Gunalan,Jr Data Engineer,Aggregate Intelligence",
+      eventVenue: "C-block/ Lab – Microsoft Lab",
+      eventRounds: [],
+      eventPrize: ["All participants will receive participation certificates"],
+      eventRules: [
+        "Every participant must carry proof of ID.",
+        "Everyone should attend the workshop for the entire duration.",
+      ],
+      eventStaffCoordinator:
         {
           name: "Dr. Murugeswari P Professor/AD",
           contact: "9095362677",
         },
-      ],
       studentCoordinator: [
-        {
-          name: "Mr. Naveennesakumar",
-          contact: "6383486701",
-        },
-        {
-          name: "Ms. Shiresha",
-          contact: "6380842526",
-        },
-      ],
-      eventCoordinator: [
         {
           name: "Ms. Monika S",
           contact: "8072125553",
@@ -288,7 +282,7 @@ const ad = {
           name: "Ms. Tharini G",
           contact: "8056578241",
         },
-      ],
+      ]
     },
     {
       posterUrl: "",
@@ -316,23 +310,12 @@ const ad = {
         "The winner will receive a prize of Rs. 1000",
         " while the runner-up will receive a prize of Rs. 750. ",
       ],
-      eventStaffCoordinator: [
+      eventStaffCoordinator:
         {
           name: "Mrs. Akila",
           contact: "838875539",
         },
-      ],
       studentCoordinator: [
-        {
-          name: "Ms. Shiresha N",
-          contact: "6380842526",
-        },
-        {
-          name: "Mr. NaveenNesakumar KB",
-          contact: "6383486701",
-        },
-      ],
-      eventCoordinator: [
         {
           name: "Mr. Leo Raja",
           contact: "63836 64703",
@@ -357,32 +340,13 @@ const ad = {
       ],
       eventVenue: "E Block Entrance",
       eventRounds: ["Based on the events"],
-      eventPrize: [
-        {
-          prize: "Something a small gift",
-        },
-      ],
-      eventStaffCoordinator: [
-        {
-          name: "Mr. Surenther I Faculty Coordinator",
-          contact: "",
-        },
+      eventPrize: ["Participation certificates for all participants."],
+      eventStaffCoordinator:
         {
           name: "Mr. Bala Krishnan M",
           contact: "9698548292",
         },
-      ],
       studentCoordinator: [
-        {
-          name: "Mr. NaveenNesakumar KB",
-          contact: "6383486701",
-        },
-        {
-          name: "Ms. Shiresha N",
-          contact: "6380842526",
-        },
-      ],
-      eventCoordinator: [
         {
           name: "Mr. Sanjairaj M",
           contact: "9655894186",
@@ -410,40 +374,14 @@ const ad = {
         "NOTE: If any team does not follow the given rules, they will be deducted negative points.",
       ],
       eventVenue: "E-Block 507",
-      eventRounds: ["Null (All films will be screened)"],
-      eventPrize: [
-        {
-          prize: "1st place",
-          amount: "₹1300",
-        },
-        {
-          prize: "2nd place",
-          amount: "₹800",
-        },
-        {
-          prize: "3rd place",
-          amount: "₹400",
-        },
-      ],
-      eventStaffCoordinator: [
+      eventRounds: ["All films will be screened"],
+      eventPrize: [ " 1st place - ₹1300, 2nd place - ₹800, 3rd place - ₹400"],
+      eventStaffCoordinator:
         {
           name: "Mr. G Karthikeyan,AP/AD",
-          contact: "9344372393",
+          contact: "9344372393"
         },
-      ],
       studentCoordinator: [
-        {
-          name: "Mr. Naveennesakumar",
-          contact: "6383486701",
-          year: "2nd year",
-        },
-        {
-          name: "Ms. Shiresha",
-          contact: "6380842526",
-          year: "2nd year",
-        },
-      ],
-      eventCoordinator: [
         {
           name: "Mr. Niranjan",
           contact: "7418278778",
@@ -456,7 +394,45 @@ const ad = {
         },
       ],
     },
+    {
+      posterUrl: "",
+      eventThumbnail: "",
+      eventName: "Virtual Treasure Hunt",
+      eventType: "Technical",
+      eventSubType: "Technical",
+      eventTime: "11.00AM - 03.00PM",
+      eventDescription:
+        "The Virtual Treasure Hunt is an online adventure where participants solve puzzles, follow clues, and complete challenges to uncover hidden treasures. Players navigate through a series of virtual environments, racing against time and competitors. It’s an engaging,",
+      eventVenue: "E507",
+      eventRounds: ["Single Round: If there is a tie, a hidden challenge will decide the winner."],
+      eventPrize: [
+        "Winner: ₹1000",
+        "Runner-up: ₹750"
+      ],
+      eventRules: [
+        "Eligibility: Open to all.",
+        "Team Size: 2-3 members.",
+        "Equipment: Bring laptops or smartphones.",
+        "No External Help: Assistance from non-participants is prohibited.",
+        "Fair Play: Cheating leads to disqualification.",
+        "Judgment: Judges' decisions are final."
+      ],
+      eventStaffCoordinator:
+        {
+          name: "Ms.Vishnu Priya K",
+          contact: "6383486701",
+        },
+      studentCoordinator: [
+        {
+          name: "Mr. Saravanavel E",
+          contact: "9488722837",
+        },
+        {
+          name: "Ms. Shalini G",
+          contact: "8825608542",
+        },
+      ],
+    },
   ],
 };
-
 export default ad;

@@ -1,6 +1,6 @@
 const onstage = {
   Stage:
-    "https://res.cloudinary.com/dl2wibcfp/image/upload/v1740027814/onstage_gi4cpn.png",
+    "https://res.cloudinary.com/dzpkbej9y/image/upload/v1740326736/onstage_gi4cpn_qfhcmf.jpg ",
   SoloSinging:
     "https://res.cloudinary.com/dl2wibcfp/image/upload/v1740031482/SoloSinging_kz3ndu.avif",
   SoloDancing:
@@ -16,5 +16,6 @@ const onstage = {
   Variety:
   "https://res.cloudinary.com/dl2wibcfp/image/upload/v1740041530/standupcomedy_sahtrn.jpg",
   Walk : "https://res.cloudinary.com/doqhh6cqt/image/upload/v1740062645/EthnicWalk_oy9jug.png",
+  standup :"https://res.cloudinary.com/doqhh6cqt/image/upload/v1740326359/PublicSpeaking_zdtf7x.png"
 };
 export default onstage;

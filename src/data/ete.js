@@ -2,7 +2,7 @@ const ete = {
   id: 9,
   shortName: "ETE",
   technicalEventCount: 3,
-  nonTechnicalEventCount: 0,
+  nonTechnicalEventCount: 1,
   workshop: 2,
   departmentName:
     "Department of Electronics and Telecommunications Engineering",
@@ -26,21 +26,19 @@ const ete = {
       eventVenue: "E-403",
       eventRounds: [],
       eventPrize: [],
-      eventStaffCoordinator: [
+      eventStaffCoordinator: 
         {
-          name: "Dr. C. Arul Murugan",
-          role: "Staff Coordinator",
-          designation: "AP/ET",
+          name: "Dr. C. Arul Murugan, AP/ET",
+          contact: "+91 8122107125"
         },
-      ],
       studentCoordinator: [
         {
           name: "E. Deeksha",
-          year: "3rd Year ET",
+          contact:  "9360293113"
         },
         {
           name: "A. Anitha",
-          year: "3rd Year ET",
+          contact: "8148973760"
         },
       ],
     },
@@ -57,21 +55,19 @@ const ete = {
       eventVenue: "E-403",
       eventRounds: [],
       eventPrize: [],
-      eventStaffCoordinator: [
+      eventStaffCoordinator:
         {
-          name: "Mr. S. Manikandan",
-          role: "Staff Coordinator",
-          designation: "AP/ET",
+          name: "Mr. S. Manikandan, AP/ET",
+          contact: "9788603561"
         },
-      ],
       studentCoordinator: [
         {
           name: "Mohammed Yousuf Hashir S",
-          year: "2nd Year ET",
+          contact: "9626777118"
         },
         {
           name: "Kayathri B",
-          year: "2nd Year ET",
+          contact: "9095020950"
         },
       ],
     },
@@ -92,28 +88,22 @@ const ete = {
       ],
       eventVenue: "E-403",
       eventRounds: ["Single Round"],
-      eventPrize: {
-        "1st Prize": 1000,
-        "2nd Prize": 750,
-      },
-      eventStaffCoordinator: [
-        {
-          name: "Dr. C. Arul Murugan",
-          designation: "AP/ET",
-        },
-        {
-          name: "Mr. S. Manikandan",
-          designation: "AP/ET",
-        },
+      eventPrize: [
+        "1st Prize - 1000",
+        "2nd Prize - 750"
       ],
+      eventStaffCoordinator:{
+          name: "Dr. C. Arul Murugan, AP/ET",
+          contact : "81221 07125"
+      },
       studentCoordinator: [
         {
-          name: "Rindhya B",
-          year: "2nd Year ET",
+          name: "Yogadharshini.V",
+          contact: "6380085670"
         },
         {
           name: "Deeksha",
-          year: "3rd Year ET",
+          contact: "9360293113"
         },
       ],
     },
@@ -136,24 +126,23 @@ const ete = {
         "Round 2: More challenging track.",
         "Robots are judged based on accuracy in following the line and completing the course within a specified time.",
       ],
-      eventPrize: {
-        "1st Prize": 1000,
-        "2nd Prize": 750,
-      },
-      eventStaffCoordinator: [
-        {
-          name: "Ms. E. Manoranjitham",
-          designation: "AP/ET",
-        },
+      eventPrize: [
+        "1st Prize - 1000",
+        "2nd Prize - 750",
       ],
+      eventStaffCoordinator:
+        {
+          name: "Ms. E. Manoranjitham, AP/ET",
+          contact: "82482 99843"
+        },
       studentCoordinator: [
         {
           name: "P. Gowtham",
-          year: "3rd Year ET",
+          contact: "88258 88205"
         },
         {
           name: "S. Shanmugavalli",
-          year: "3rd Year ET",
+          contact: "78128 28547"
         },
       ],
     },
@@ -176,24 +165,58 @@ const ete = {
         "Round 1: Teams have 2 minutes to memorize electronic components. One teammate then communicates component names and specs using sign language. The other teammate must correctly interpret signs to identify components.",
         "Round 2: Selected teams must solve real-time problems using digital circuits. Teams design and implement digital circuits to address specific problem statements. Judging is based on the effectiveness of solutions, correctness of designs, and teamwork.",
       ],
-      eventPrize: {
-        "1st Prize": 1000,
-        "2nd Prize": 750,
-      },
-      eventStaffCoordinator: [
-        {
-          name: "Ms. K.G Dhareni",
-          designation: "AP/ET",
-        },
+      eventPrize: [
+        "1st Prize - 1000",
+        "2nd Prize - 750",
       ],
+      eventStaffCoordinator:
+        {
+          name: "Ms. K.G Dhareni, AP/ET",
+          contact: "97901 91285"
+        },
       studentCoordinator: [
         {
           name: "B. Dhanush Kumar",
-          year: "3rd Year ET",
+          contact: "93453 81296"
         },
         {
           name: "N. Dinesh Bharathi",
-          year: "3rd Year ET",
+          contact: "95973 09366"
+        },
+      ],
+    },
+    {
+      posterUrl: "",
+      eventThumbnail: "",
+      eventName: "Mystic Maze",
+      eventType: "Non-Technical",
+      eventSubType: "NonTechnical",
+      eventTime: "2:00 PM-4:00 PM",
+      eventDescription:"In a  Mystic Maze participants form teams and are provided with a series of clues or riddles that lead them to various locations around the college campus or a designated area. At each location, they must solve the clue to uncover the next clue or find a hidden object. The final clue leads the teams to the \"treasure\" or the ultimate prize. The team that successfully completes the treasure hunt in the shortest time or with the most accuracy wins the competition.",
+      eventRules: [
+        "Team can consist of 1-3 members.",
+        "Teams must adhere to the rules and guidelines provided by the organizers throughout the competition."
+      ],
+      eventVenue: "E-block / ET Project Room-4th Floor ",
+      eventRounds: [
+      ],
+      eventPrize: [
+        "1st Prize - 1000",
+        "2nd Prize - 750",
+      ],
+      eventStaffCoordinator:
+        {
+          name: "Ms. K.G Dhareni, AP/ET",
+          contact: "82482 99843"
+        },
+      studentCoordinator: [
+        {
+          name: "Vithula .N",
+          contact: "7538861534"
+        },
+        {
+          name: "N. Dinesh Bharathi",
+          contact: "6381635327"
         },
       ],
     },

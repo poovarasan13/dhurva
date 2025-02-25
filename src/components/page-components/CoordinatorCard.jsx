@@ -6,6 +6,7 @@ import "../../assets/fonts/dmsans.css";
 import "../../assets/fonts/dmserif.css";
 
 function CoordinatorCard({ deptDetails, role }) {
+  console.log(deptDetails);
   return (
     <div className="p-3 flex justify-center">
       <motion.div
@@ -22,20 +23,22 @@ function CoordinatorCard({ deptDetails, role }) {
           </h5>
           <p className="text-gray-700 text-md dm-sans sm:text-base">
             {deptDetails.name}
+            
           </p>
+          {deptDetails.contact}
         </div>
 
         {/* Buttons Section */}
         <div className="flex flex-col sm:flex-row justify-center gap-3 mt-5 sm:mt-6">
           <Button className="dm-sans w-full sm:w-auto rounded-full px-5 sm:px-6 bg-sky-400 hover:bg-white hover:outline-sky-400 hover:outline-2 hover:border-2 hover:border-sky-400 hover:text-sky-400">
             <a
-              href={`tel:${deptDetails.coordinatorContactPhone}`}
+              href={`tel:${deptDetails.contact}`}
               className="flex items-center gap-2"
             >
               <Phone className="w-4 h-4" /> Call
             </a>
           </Button>
-          {deptDetails.coordinatorEmail && (
+          {/* {deptDetails.coordinatorEmail && (
             <Button className="dm-sans w-full sm:w-auto rounded-full px-5 sm:px-6 bg-sky-400 hover:bg-white hover:outline-sky-400 hover:outline-2 hover:border-2 hover:border-sky-400 hover:text-sky-400">
               <a
                 href={`mailto:${deptDetails.coordinatorEmail}`}
@@ -44,7 +47,7 @@ function CoordinatorCard({ deptDetails, role }) {
                 <Mail className="w-4 h-4" /> Email
               </a>
             </Button>
-          )}
+          )} */}
         </div>
       </motion.div>
     </div>

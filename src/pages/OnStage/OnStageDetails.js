@@ -4,10 +4,10 @@ const OnStageDetails = [
   {
     eventName: "Solo Singing",
     facultyCoordinator:
-      "Ms. Nivethitha (Kindle Club - Dept. of Science and Humanities)",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Ms. Ramsheena, AP/SH (Kindle Club)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "LBS Hall",
     time: "9:30 AM",
     description: [
@@ -24,10 +24,10 @@ const OnStageDetails = [
   {
     eventName: "Solo Dance",
     facultyCoordinator:
-      "Ms. Sakunthala J (Kindle Club - Department of Science And Humanities)",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Mr. Arun Kumar AP/ME (Riders Club)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "MG Hall",
     time: "9:30 a.m.",
     description: [
@@ -45,10 +45,10 @@ const OnStageDetails = [
   {
     eventName: "Group Dance",
     facultyCoordinator:
-      "Ms. Saranya L. (Music and Dance Club - Department of Electronics and Communication Engineering)",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Ms. Saranya, AP/ECE (Music and Dance Club)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "Auditorium",
     time: "10:00 a.m.",
     description: [
@@ -68,10 +68,10 @@ const OnStageDetails = [
   {
     eventName: "Instrumentals",
     facultyCoordinator:
-      "Mr. Prabhu (Music and Dance Club - Department of Science And Humanities )",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Mr. Prabhu, AP/S&H (My Campus Clubs)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "Auditorium",
     time: "12:00 p.m.",
     description: [
@@ -89,10 +89,10 @@ const OnStageDetails = [
   {
     eventName: "Adapt Tune",
     facultyCoordinator:
-      "Dr. Sreeja (Yoga Club - Department Of Information Technology )",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Mr. Pradeep Kumar, AP/ CE(Riders Club)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "MG Hall",
     time: "1:00 p.m.",
     description: [
@@ -106,12 +106,36 @@ const OnStageDetails = [
     reverse: false,
   },
   {
+    eventName: "Stand up",
+    facultyCoordinator:
+      "Ms. Charumathi, AP/S&H (Kindle Club)",
+    facultyNumber: "+91 99943 76667",
+    studentCoordinator: "",
+    studentNumber: "",
+    venue: "Conference hall (E-block)",
+    time: "1:00 p.m.",
+    description: [
+      "Variety events like mimicry, solo instrumentals, stand-up comedy, beatbox and others",
+      "Each participant will be given 3-5 minutes to prove themselves",
+      "Best talents will be awarded.",
+      "MIMICRY:",
+      "Each student artist shall be given 5 minutes time.",
+      "Participants may mimic the sound of machines, speeches of a well-known persons etc.,",
+      "Marks will be awarded based on skill imitating, variety of sound and voice imitation and presentation",
+      "STAND-UP COMEDY:",
+      "Only solo participants are allowed",
+      "No participant may make any reference to individuals or religion and any dual meaning obscene content is strictly prohibited",
+    ],
+    image: onstage.standup,
+    reverse: true,
+  },
+  {
     eventName: "Skit & Mime",
     facultyCoordinator:
-      "Dr. S. Vignesh (Software Development Club – Department of Computer Science and Engineering )",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Dr. C. Arulmurugan, AP/ETE(Radio Club)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "Conference hall (E-block)",
     time: "10:00 a.m.",
     description: [
@@ -131,15 +155,15 @@ const OnStageDetails = [
       "Act will be judged based on the script, facial expression, stage presence, co-ordination, voice modulation and overall performance.",
     ],
     image: onstage.mime,
-    reverse: true,
+    reverse: false,
   },
   {
     eventName: "Ethnic Walk",
     facultyCoordinator:
-      "Ms. Immaculate Nancy M. (Kindle Club - Department of Science and Humanities)",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Ms . Adlin Princy(Kindle Club)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "Auditorium",
     time: "2:00 p.m.",
     description: [
@@ -151,15 +175,15 @@ const OnStageDetails = [
       "Any form of indecency, vulgarity, obscenity will result in disqualification.",
     ],
     image: onstage.Walk,
-    reverse: false,
+    reverse: true,
   },
   {
     eventName: "RJ/VJ Hunt",
     facultyCoordinator:
-      "Dr. C. Arulmurugan (Radio Club - Department of Electronics and Telecommunications Engineering )",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Dr. Saminathan, ASP/ EC(Tamil Mandram)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "KIC",
     time: "12:00 p.m",
     description: [
@@ -170,15 +194,15 @@ const OnStageDetails = [
       "Participants will be judged on the basis of scripts, presentation, voice modulation, voice quality",
     ],
     image: onstage.rj,
-    reverse: true,
+    reverse: false,
   },
   {
     eventName: "Variety Event",
     facultyCoordinator:
-      "Dr. C. Arulmurugan (Radio Club - Department of Electronics and Telecommunications Engineering )",
-    facultyNumber: "+91 97867 63812",
-    studentCoordinator: "V.Deepakkumar V",
-    studentNumber: "+91 97867 63812",
+      "Ms Monisha L, AP / SH(Tamil Mandram)",
+    facultyNumber: "",
+    studentCoordinator: "",
+    studentNumber: "",
     venue: "Conference hall (E-block)",
     time: "1:00 p.m.",
     description: [
@@ -194,8 +218,9 @@ const OnStageDetails = [
       "No participant may make any reference to individuals or religion and any dual meaning obscene content is strictly prohibited",
     ],
     image: onstage.Variety,
-    reverse: false,
+    reverse: true,
   },
+  
 ];
 
 export default OnStageDetails;
