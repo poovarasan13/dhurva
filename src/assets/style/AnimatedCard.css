@@ -1,72 +1,98 @@
+/* AnimatedCard.css */
+
+/* Slide-up animation for list items */
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.4s ease-out forwards;
+}
+
+/* Card hover effects */
 .card {
-  position: relative;
-  width: 260px;
-  height: 310px;
-  border-radius: 14px;
-  z-index: 1111;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  transition: 
+    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s ease;
 }
 
-.bg {
+.card::before {
+  content: '';
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 250px;
-  height: 300px;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(24px);
-  border-radius: 10px;
-  overflow: hidden;
-  outline: 2px solid white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
 }
 
-/* Glowing and Moving Blob */
-.blob {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: orange;
-  opacity: 1;
-  filter: blur(12px) drop-shadow(0 0 20px rgba(255, 165, 0, 0.9));
-  box-shadow: 0 0 40px 20px rgba(255, 165, 0, 1);
-  animation: blob-bounce 3s infinite ease-in-out, blob-glow 2s infinite alternate ease-in-out;
+.card:hover::before {
+  border-color: rgba(249, 115, 22, 0.1);
 }
 
-/* Smooth Glowing Effect */
-@keyframes blob-glow {
-  0% {
-    box-shadow: 0 0 20px 10px rgba(255, 165, 0, 0.6);
-  }
-  100% {
-    box-shadow: 0 0 60px 30px rgba(255, 165, 0, 1);
-  }
+/* Price section scaling */
+.group:hover .group-hover\:scale-105 {
+  transform: scale(1.05);
 }
 
-/* Fluid Blob Movement */
-@keyframes blob-bounce {
-  0% {
-    transform: translate(-50%, -50%) translate3d(0, 0, 0);
-  }
-  25% {
-    transform: translate(-50%, -50%) translate3d(80px, -40px, 0);
-  }
-  50% {
-    transform: translate(-50%, -50%) translate3d(50px, 60px, 0);
-  }
-  75% {
-    transform: translate(-50%, -50%) translate3d(-60px, 50px, 0);
-  }
-  100% {
-    transform: translate(-50%, -50%) translate3d(0, 0, 0);
-  }
+/* Checkmark icon transition */
+.flex.items-start.gap-3 svg {
+  transition: transform 0.2s ease;
+}
+
+.flex.items-start.gap-3:hover svg {
+  transform: scale(1.1);
+}
+
+/* Button icon animation */
+.hover\:gap-3 {
+  transition: gap 0.3s ease;
+}
+
+.group-hover\:translate-x-1 {
+  transition: transform 0.3s ease;
+}
+
+/* General transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Smooth overflow transitions */
+.overflow-auto {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+.overflow-auto::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 4px;
 }

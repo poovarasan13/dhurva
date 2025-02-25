@@ -8,58 +8,6 @@ import "../../assets/fonts/powergrotesk.css";
 import "../../assets/fonts/dmsans.css";
 import AnimatedCard from "@/components/page-components/AnimatedCard";
 
-// const passes = [
-//   {
-//     id: 1,
-//     title: "Standard Pass",
-//     price: 200,
-//     benefits: ["Access to Standard Events"],
-//     date: "14th",
-//   },
-//   {
-//     id: 2,
-//     title: "Cultural Pass",
-//     price: 300,
-//     benefits: ["All Benefits of Standard Pass", "Additional Event Access"],
-//     date: "14th",
-//   },
-//   {
-//     id: 3,
-//     title: "Pro Pass",
-//     price: 400,
-//     benefits: [
-//       "All Benefits of Cultural Pass",
-//       "Priority Entry",
-//       "Exclusive Pass",
-//     ],
-//     date: "14th",
-//   },
-//   {
-//     id: 4,
-//     title: "Dhruva Pro Pass",
-//     price: 500,
-//     benefits: [
-//       "All Benefits of Pro Pass",
-//       "VIP Seating",
-//     ],
-//     date: "14th",
-//   },
-//   {
-//     id: 5,
-//     title: "Cultural Pass",
-//     price: 200,
-//     benefits: ["Access to Cultural Events"],
-//     date: "-",
-//   },
-//   // {
-//   //   id: 6,
-//   //   title: "Sports Pass",
-//   //   price: "500 / 1000",
-//   //   benefits: ["Participation in Sports Events"],
-//   //   date: "-",
-//   // },
-// ];
-
 const passes = [
   {
     id: 1,
@@ -122,8 +70,6 @@ const passes = [
   },
 ];
 
-
-
 const PassPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -150,7 +96,7 @@ const PassPage = () => {
           ))}
         </div>
       </div>
-      {/* <RegistrationPage /> */}
+    
     </div>
   );
 };
