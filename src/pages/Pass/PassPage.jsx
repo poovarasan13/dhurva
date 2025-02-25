@@ -90,13 +90,12 @@ const PassPage = () => {
       </motion.div>
 
       <div className="flex flex-col items-center mt-2 px-6 mb-6">
-        <div className="flex flex-wrap justify-center gap-12 mt-20 px-6 relative z-10">
+        <div className="flex-wrap mt-20 px-6 relative z-10">
           {passes.map((pass) => (
             <AnimatedCard key={pass.id} passDetails={pass} />
           ))}
         </div>
       </div>
-    
     </div>
   );
 };

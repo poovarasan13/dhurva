@@ -1,4 +1,16 @@
-/* AnimatedCard.css */
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
 
 /* Slide-up animation for list items */
 @keyframes slide-up {
@@ -18,13 +30,11 @@
 
 /* Card hover effects */
 .card {
-  transition: 
-    transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
 }
 
 .card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -95,4 +105,111 @@
 .overflow-auto::-webkit-scrollbar-thumb {
   background-color: rgba(155, 155, 155, 0.5);
   border-radius: 4px;
+}
+
+/* Responsive Grid */
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card Styles */
+.card-container {
+  max-width: 300px;
+  margin: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-price {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-price p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-benefits {
+  margin-bottom: 20px;
+}
+
+.card-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-benefits li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-benefits svg {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #ff9900;
+}
+
+.card-button {
+  text-align: center;
+}
+
+.card-button button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card-button button:hover {
+  background-color: #ffad33;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .card-container {
+    max-width: 100%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    margin: 10px;
+  }
+  .card-content {
+    padding: 15px;
+  }
 }
