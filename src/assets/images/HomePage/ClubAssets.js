@@ -1,4 +1,5 @@
     const ClubAssets = {
+        SK:"",
         IOT: "https://res.cloudinary.com/dzpkbej9y/image/upload/v1739969203/IOT_s1wymv.png",
         PhotoClub: "https://res.cloudinary.com/dzpkbej9y/image/upload/v1739969200/PhotoClub_pztdvc.png",
         SDC:"https://res.cloudinary.com/dzpkbej9y/image/upload/v1739969204/SDC_l2unl2.png",

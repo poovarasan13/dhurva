@@ -95,37 +95,41 @@ const EventsDisplay = ({ scrollToEvent }) => {
                 <UserPen className="text-red-500 w-[24px] h-[20px]" />
                 {event.facultyCoordinator}
               </p>
+              {event.facultyNumber && (
+                <div className="flex items-center gap-[2px] text-gray-600 text-xs sm:text-sm">
+                  <Phone className="text-blue-500 w-[20px] h-[16px]" />
+                  <p>
+                    <a
+                      href={`tel:${event.facultyNumber}`}
+                      className="text-black hover:text-blue-800 text-xs md:text-sm"
+                    >
+                      {event.facultyNumber}
+                    </a>
+                  </p>
+                </div>
+              )}
+            </div>
 
-              <div className="flex items-center gap-[2px] text-gray-600 text-xs sm:text-sm">
-                <Phone className="text-blue-500 w-[20px] h-[16px]" />
-                <p>
+            {(event.studentCoordinator || event.studentNumber) &&
+            <div className="space-y-[2px]">
+              {event.studentCoordinator && (
+                <p className="text-[10px] sm:text-[14px] font-semibold flex items-center gap-[2px] text-gray-700">
+                  <User className="text-green-500 w-[20px] h-[20px]" />
+                  {event.studentCoordinator}
+                </p>
+              )}
+              {event.studentNumber && (
+                <div className="flex items-center gap-[2px] text-gray-600 text-xs sm:text-sm">
+                  <Phone className="text-blue-500 w-[20px] h-[16px]" />
                   <a
-                    href={`tel:${event.facultyNumber}`}
+                    href={`tel:${event.studentNumber}`}
                     className="text-black hover:text-blue-800 text-xs md:text-sm"
                   >
-                    {event.facultyNumber}
+                    {event.studentNumber}
                   </a>
-                </p>
-              </div>
-            </div>
-
-            {/* Student Coordinator */}
-            <div className="space-y-[2px]">
-              <p className="text-[10px] sm:text-[14px] font-semibold flex items-center gap-[2px] text-gray-700">
-                <User className="text-green-500 w-[20px] h-[20px]" />
-                {event.studentCoordinator}
-              </p>
-
-              <div className="flex items-center gap-[2px] text-gray-600 text-xs sm:text-sm">
-                <Phone className="text-blue-500 w-[20px] h-[16px]" />
-                <a
-                  href={`tel:${event.studentNumber}`}
-                  className="text-black hover:text-blue-800 text-xs md:text-sm"
-                >
-                  {event.studentNumber}
-                </a>
-              </div>
-            </div>
+                </div>
+              )}
+            </div>}
 
             {/* Register Button */}
             <div className="py-5 flex justify-center lg:justify-start">

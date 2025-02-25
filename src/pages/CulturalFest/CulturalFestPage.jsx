@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import RulesAndRegulation from "./section/RulesAndRegulation";
 import HeroSection from "./section/HeroSection";
 import Banners from "@/components/page-components/Banners";
+import Sponors from "@/components/page-components/Sponsor";
 
 function CulturalFestPage() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function CulturalFestPage() {
       <HeroSection />
       <RulesAndRegulation />
       <Banners />
+      {/* <Sponors/> */}
     </div>
   );
 }

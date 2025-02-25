@@ -220,9 +220,9 @@ const SportsInfo = () => {
         animate={controls}
         className="bg-white text-black py-12 px-4 md:px-12 lg:px-24"
       >
-        <h1 className="text-2xl md:text-4xl  font-bold text-gray-800 text-center flex items-center gap-2">
-          <Trophy className="w-8 h-8 text-yellow-500" />
-          {sport.title}
+        <h1 className="text-2xl md:text-4xl   text-gray-800 text-center dm-sans font-black md:py-3 flex items-center gap-2">
+          <Trophy className="w-8 h-8 text-yellow-500 " />
+          <span className="font-black tracking-wider">{sport.title}</span>
         </h1>
 
         <div className="grid md:grid-cols-2 gap-8 mt-6">

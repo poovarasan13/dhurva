@@ -26,7 +26,7 @@ function EventShowPage() {
   const events = location.state || {};
   const data = events.events || {};
   const navigate = useNavigate();
-
+  const eventTopics=data.eventTopics||[];
   const eventRounds = data.eventRounds || [];
   const eventPrize = data.eventPrize || [];
   const eventRules = data.eventRules || [];
@@ -95,8 +95,6 @@ function EventShowPage() {
               <span>{data.eventVenue}</span>
             </div>
           </div>
-
-          
         </div>
 
         <div className="p-4 dm-sans lg:ms-7 text-gray-800 text-lg">
@@ -113,15 +111,26 @@ function EventShowPage() {
               </ul>
             </>
           )}
+          {eventTopics.length !== 0 && (
+            <>
+              <h4 className="text-yellow-400">Event Topics</h4>
+              <ul className="list-disc list-inside mt-2">
+                {eventTopics.map((topic, idx) => (
+                  <li key={idx} className="list-none dm-sans flex">
+                    <Check className="text-green-500" />
+                    {topic}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
 
           {eventPrize.length !== 0 && (
             <>
               <p className="text-xl text-yellow-500">Prizes</p>
               <ul>
                 {eventPrize.map((price, index) => (
-                  <div className="flex" key={
-                    index
-                  }>
+                  <div className="flex" key={index}>
                     <MoveRight className="text-green-600" />
                     <li className="ms-1" key={index}>
                       {price}
@@ -149,32 +158,30 @@ function EventShowPage() {
         </div>
         <div className="flex flex-wrap justify-center gap-4">
           <Button
-              className="mt-6 flex dm-sans items-center justify-center gap-3 bg-sky-500 text-white px-6 py-3 text-lg rounded-full shadow-lg hover:bg-sky-600 transition-all duration-300"
-              onClick={handleRegister}
-            >
-              Register Now <Rocket className="w-5 h-5" />
-            </Button>
-          </div>   
+            className="mt-6 flex dm-sans items-center justify-center gap-3 bg-sky-500 text-white px-6 py-3 text-lg rounded-full shadow-lg hover:bg-sky-600 transition-all duration-300"
+            onClick={handleRegister}
+          >
+            Register Now <Rocket className="w-5 h-5" />
+          </Button>
+        </div>
         <div className="flex justify-center">
-              <span>
-                <CoordinatorCard
-                  role="Staff Coordinator"
-                  deptDetails={data.eventStaffCoordinator}
-                />
-              </span>
+          <span>
+            <CoordinatorCard
+              role="Staff Coordinator"
+              deptDetails={data.eventStaffCoordinator}
+            />
+          </span>
         </div>
         <div className="flex flex-wrap justify-center gap-4">
-              {studentCoordinator.map((student, index) => (
-                <div key={index} className="">
-                  <CoordinatorCard
-                    role="Student Coordinator"
-                    deptDetails={student}
-                  />
-                </div>
-              ))}
-              
+          {studentCoordinator.map((student, index) => (
+            <div key={index} className="">
+              <CoordinatorCard
+                role="Student Coordinator"
+                deptDetails={student}
+              />
+            </div>
+          ))}
         </div>
-         
       </div>
     </div>
   );

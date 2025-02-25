@@ -229,8 +229,8 @@ const SportsPage = () => {
         {sportsData.map((sport, index) => (
           <SportCard sport={sport} key={index} />
         ))}
-        <Queries />
       </div>
+      <Queries />
     </>
   );
 };

@@ -8,14 +8,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import Autoscroll from "embla-carousel-auto-scroll";
 import "../../assets/fonts/dmserif.css";
 // import ClubAssets from "@/assets/images/ClubAssets";
-import ClubAssets from "@/assets/images/HomePage/ClubAssets";
-const images = Object.values(ClubAssets);
+// import ClubAssets from "@/assets/images/HomePage/ClubAssets";
+import SponsorAssests from "@/assets/images/HomePage/SponorsAssests";
+const images = Object.values(SponsorAssests);
 // const images = [one,two];
-export default function Banners() {
+export default function Sponors() {
   const autoscroll = useRef(
     Autoscroll({
       speed: 0.8,
-      direction: "backward",
+      direction: "forward",
       stopOnInteraction: false,
       stopOnMouseEnter: false,
     })
@@ -23,7 +24,7 @@ export default function Banners() {
 
   return (
     <div className="container mx-auto my-8 ">
-      <h4 className="text-center text-5xl my-4 bebas">Our Clubs</h4>
+      <h4 className="text-center text-5xl my-4 bebas">Our Sponors</h4>
       <div className="">
         <div className="relative bg-transparent rounded-2xl">
           <Carousel
